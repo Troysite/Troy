@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Havana Experience Westwood | Durban's Afro-Luxury</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Havana Experience Westwood | Durban</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#050507;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
-.hero{height:100vh;min-height:700px;position:relative;display:flex;align-items:center;padding:0 5%;background:radial-gradient(ellipse at 15% 50%,#1c1320 0%,#050507 60%),linear-gradient(180deg,#0a0a0c,#050507)}
-.nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:30px 5%;z-index:10;font-size:10px;letter-spacing:4px;color:#d4af37}
-.line{width:100%;height:1px;background:linear-gradient(90deg,transparent,#d4af37,transparent);opacity:.3;margin:20px 0}
-h1{font-family:'Playfair Display',serif;font-size:clamp(48px,9vw,132px);line-height:.85;letter-spacing:-4px;font-weight:900}
-h1 i{color:#d4af37;font-weight:400;display:block;font-size:.85em;margin-top:6px}
-.tag{color:#d4af37;letter-spacing:6px;font-size:10px;margin-bottom:26px;display:flex;align-items:center;gap:12px}
-.tag::before{content:"";width:40px;height:1px;background:#d4af37;display:inline-block}
-.desc{max-width:480px;color:#8a8a90;font-size:17px;line-height:1.9;font-weight:300;margin:30px 0 40px}
-.btn-gold{background:#d4af37;color:#000;padding:20px 44px;text-decoration:none;font-weight:700;letter-spacing:2px;font-size:12px;display:inline-block;transition:.4s}
-.btn-gold:hover{background:#fff;transform:translateY(-2px);box-shadow:0 20px 40px rgba(212,175,55,.25)}
-.btn-ghost{border:1px solid #ffffff1a;color:#fff;padding:19px 32px;text-decoration:none;font-size:11px;letter-spacing:3px;margin-left:14px;transition:.3s}
-.btn-ghost:hover{border-color:#d4af37}
-.stats{display:flex;gap:40px;margin-top:50px;border-top:1px solid #ffffff0f;padding-top:30px;max-width:400px}
-.stats b{font-family:'Playfair Display',serif;font-size:32px;display:block;color:#fff}
-.stats span{font-size:10px;letter-spacing:2px;color:#666}
-.mid{padding:100px 5%;display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center;background:#08080a;border-top:1px solid #d4af3715}
-.mid h2{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);line-height:1;margin-bottom:20px}
-.mid p{color:#777;line-height:1.8}
-.gold-box{background:linear-gradient(135deg,#111012,#0c0c0e);border:1px solid #d4af371e;padding:50px;position:relative}
-.gold-box::before{content:"";position:absolute;top:-1px;left:-1px;right:-1px;height:1px;background:linear-gradient(90deg,#d4af37,transparent)}
-.price{font-family:'Playfair Display',serif;font-size:42px;color:#d4af37;margin:20px 0}
-.reserve{background:#d4af37;color:#000;text-align:center;padding:90px 5%}
-.reserve h2{font-family:'Playfair Display',serif;font-size:clamp(36px,6vw,72px);line-height:.9;color:#000}
-.footer{padding:30px 5%;display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;color:#333;border-top:1px solid #111}
-@media(max-width:900px){.mid{grid-template-columns:1fr}.hero{height:auto;padding:120px 5% 80px}.btn-ghost{margin-left:0;margin-top:12px;display:block;text-align:center}}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#050507;color:#fff;font-family:'Inter',sans-serif}
+.hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;padding:0 6%;background:linear-gradient(90deg,#050507 35%,transparent 80%),url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000') center/cover}
+.top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:28px 6%;font-size:9px;letter-spacing:4px;color:#d4af37;z-index:5}
+h1{font-family:'Playfair Display',serif;font-size:clamp(48px,9vw,120px);line-height:.85;letter-spacing:-3px;font-weight:900}
+h1 em{color:#d4af37;font-style:italic;display:block}
+.desc{max-width:520px;color:#8e8e93;line-height:1.8;margin:24px 0 36px;font-weight:300}
+.btn{display:inline-block;padding:18px 38px;text-decoration:none;font-size:11px;letter-spacing:2px;font-weight:700;transition:.3s}
+.gold{background:#d4af37;color:#000}.gold:hover{background:#fff;transform:translateY(-2px)}
+.ghost{border:1px solid #ffffff22;color:#fff;margin-left:12px}.ghost:hover{border-color:#d4af37}
+.badges{display:flex;gap:30px;margin-top:40px;border-top:1px solid #ffffff10;padding-top:24px;max-width:420px}
+.badges b{font-family:'Playfair Display';font-size:28px;display:block}.badges span{font-size:9px;letter-spacing:2px;color:#666}
+.menu{padding:90px 6%;background:#08080b;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;border-top:1px solid #d4af3718;border-bottom:1px solid #d4af3718;background-color:#d4af3712}
+.item{background:#0e0e11;padding:36px}.item h4{font-family:'Playfair Display';font-size:18px;margin-bottom:8px}.item p{color:#666;font-size:13px;line-height:1.6}.item .price{color:#d4af37;margin-top:12px;font-weight:600;letter-spacing:1px;font-size:13px}
+.gallery{display:grid;grid-template-columns:1fr 1fr 1fr;height:360px}
+.gallery div{background-size:cover;background-position:center}
+.cta{background:#d4af37;padding:80px 6%;text-align:center;color:#000}
+.cta h2{font-family:'Playfair Display';font-size:clamp(32px,6vw,64px);line-height:.9}
+.footer{padding:24px 6%;display:flex;justify-content:space-between;color:#333;font-size:9px;letter-spacing:2px}
+@media(max-width:800px){.gallery{grid-template-columns:1fr;height:auto}.gallery div{height:260px}.hero{background:linear-gradient(180deg,#050507 20%,#050507ee 60%,#050507),url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1000') center/cover}}
 </style>
 </head>
 <body>
-<div class="nav"><span>THE HAVANA EXPERIENCE</span><span>LINCOLN TER • DURBAN • OPEN 12PM-11PM</span></div>
+<div class="top"><span>THE HAVANA EXPERIENCE</span><span>WESTWOOD • LINCOLN TER • 12PM-11PM • 076 991 6166</span></div>
+
 <section class="hero">
 <div>
-<div class="tag">WESTWOOD RESTAURANT & COCKTAIL BAR</div>
-<h1>HAVANA <i>EXPERIENCE</i></h1>
-<div class="line"></div>
-<p class="desc"><span style="color:#fff">It's all about the experience!</span> Durban's only Afro-luxury dining & cocktail sanctuary. Rare spirits, curated plates, and nights designed for the elite. Lincoln Terrace, 4091.</p>
-<div>
-<a href="https://wa.me/27769916166?text=Hi%20Havana%20Experience%20—%20I%20want%20to%20book%20VIP%20for%20tonight" class="btn-gold">BOOK ON WHATSAPP • 076 991 6166</a>
-<a href="tel:+27769916166" class="btn-ghost">CALL CONCIERGE</a>
-</div>
-<div class="stats">
-<div><b>4.8★</b><span>GOOGLE RATED</span></div>
-<div><b>12PM-11PM</b><span>OPEN DAILY</span></div>
-<div><b>VIP</b><span>BOOKINGS ONLY</span></div>
-</div>
+<p style="letter-spacing:6px;color:#d4af37;font-size:10px;margin-bottom:18px">— WESTWOOD RESTAURANT & COCKTAIL BAR</p>
+<h1>HAVANA <em>EXPERIENCE</em></h1>
+<p class="desc"><b style="color:#fff">It's all about the experience!</b> Durban's Afro-luxury sanctuary. Premium dining, cocktail lab, and VIP nights where the city’s elite collides. Open Daily 12PM – 11PM. Lincoln Terrace, 4091.</p>
+<a href="https://wa.me/27769916166?text=Hi%20Havana%20Westwood%20I%20want%20to%20book%20VIP" class="btn gold">WHATSAPP 076 991 6166</a>
+<a href="tel:+27769916166" class="btn ghost">CALL TO BOOK</a>
+<div class="badges"><div><b>4.9★</b><span>GOOGLE REVIEWS</span></div><div><b>R700</b><span>SET MENU P/P</span></div><div><b>VIP</b><span>BOTTLE SERVICE</span></div></div>
 </div>
 </section>
 
-<div class="mid">
-<div>
-<h2>Where Durban's Elite<br>Comes Alive After Dark.</h2>
-<p>Not a restaurant. Not a bar. A curated ritual. From Westwood's kitchen mastery to our cocktail lab — every detail engineered for status, flavor, and unforgettable nights. Premium bottle service, private booths, afro-house frequencies.</p>
-<p style="margin-top:18px;color:#d4af37;letter-spacing:2px;font-size:11px">● LINCOLN TER, DURBAN 4091 ● +27 76 991 6166</p>
-</div>
-<div class="gold-box">
-<p style="letter-spacing:4px;font-size:10px;color:#d4af37">TONIGHT'S EXPERIENCE</p>
-<h3 style="font-family:'Playfair Display';font-size:28px;margin:14px 0">VIP Table & Bottle Service</h3>
-<p style="color:#666;font-size:14px;line-height:1.7">Includes private booth, dedicated host, premium mixers, and priority entry. Limited to 6 tables per night.</p>
-<div class="price">From R1,500</div>
-<a href="https://wa.me/27769916166?text=Hi%20I%20want%20to%20reserve%20VIP%20Table%20at%20Havana%20Westwood" class="btn-gold" style="width:100%;text-align:center">RESERVE ON WHATSAPP</a>
-<p style="text-align:center;margin-top:16px;color:#444;font-size:10px;letter-spacing:1px">INSTANT CONFIRMATION • 076 991 6166</p>
-</div>
+<div class="menu">
+<div class="item"><h4>Cascading Prawn</h4><p>Sautéed prawns in spicy arrabbiata layered between crispy pastry drizzled with balsamic reduction</p><div class="price">Starter</div></div>
+<div class="item"><h4>Pasta Havana</h4><p>Penne tossed with mixed peppers & mushrooms in a spicy creamed arrabbiata — Signature</p><div class="price">Best Seller</div></div>
+<div class="item"><h4>Jalapeño & Feta Fillet</h4><p>200g wet aged fillet stuffed with jalapeños & creamy feta on velvet cheese sauce</p><div class="price">Main • Premium Cut</div></div>
+<div class="item"><h4>Che Guevara</h4><p>Linguine tossed with grilled chicken & prawn in creamy mustard sauce</p><div class="price">Chef's Special</div></div>
+<div class="item"><h4>Seven Seas</h4><p>Linguine with prawns, calamari, mussels in cream & tomato arrabbiata</p><div class="price">Seafood Deluxe</div></div>
+<div class="item"><h4>Havana Mojito • Daiquiri</h4><p>Fresh lime, mint, Bacardi rum, strawberry puree — Cocktail Lab</p><div class="price">R75 Cocktails</div></div>
 </div>
 
-<div class="reserve">
-<h2>Your Table Is<br>Waiting.</h2>
-<p style="color:#00000099;margin:20px auto;max-width:500px;line-height:1.7">Tap below to secure your night at The Havana Experience Westwood. Direct to management.</p>
-<a href="https://wa.me/27769916166" style="background:#000;color:#d4af37;padding:18px 40px;text-decoration:none;letter-spacing:3px;font-size:12px;font-weight:700;display:inline-block;margin-top:10px">WHATSAPP 076 991 6166</a>
+<div class="gallery">
+<div style="background-image:url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800')"></div>
+<div style="background-image:url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=800')"></div>
+<div style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800')"></div>
 </div>
 
-<div class="footer"><span>© 2026 THE HAVANA EXPERIENCE WESTWOOD • IT'S ALL ABOUT THE EXPERIENCE</span><span>DESIGNED BY TROY • R2500 LUXURY BUILD</span></div>
+<div class="cta">
+<h2>Your VIP Table<br>Is Waiting.</h2>
+<p style="margin:18px auto;max-width:520px;color:#000000a3;line-height:1.6">Tap to WhatsApp management directly — instant confirmation for tonight.</p>
+<a href="https://wa.me/27769916166?text=Hi%20I%20want%20to%20reserve%20VIP%20at%20Havana%20Westwood%20Lincoln%20Ter" style="background:#000;color:#d4af37;padding:18px 44px;text-decoration:none;letter-spacing:3px;font-size:12px;font-weight:800;display:inline-block;margin-top:10px">BOOK ON WHATSAPP • 076 991 6166</a>
+<p style="margin-top:14px;font-size:10px;letter-spacing:2px">LINCOLN TER, DURBAN 4091 • +27 76 991 6166 • OPEN 12PM-11PM</p>
+</div>
+
+<div class="footer"><span>© 2026 HAVANA EXPERIENCE WESTWOOD • IT'S ALL ABOUT THE EXPERIENCE</span><span>SITE BY TROY • LUXURY BUILD</span></div>
 </body>
-                                                                                                                                                                     </html>
+  </html>
