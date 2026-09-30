@@ -3,57 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Havana Experience | Durban Nightlife</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<title>The Havana Experience Westwood | Durban's Afro-Luxury</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#080808;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle at 30% 50%,#1a0a1a 0%,#080808 70%);padding:40px 20px}
-.badge{display:inline-block;border:1px solid #d4af37;padding:6px 14px;letter-spacing:3px;font-size:11px;color:#d4af37;margin-bottom:25px}
-h1{font-family:'Playfair Display',serif;font-size:clamp(42px,9vw,92px);line-height:0.9;font-weight:900;letter-spacing:-2px}
-h1 span{color:#d4af37;font-style:italic;font-weight:700}
-.sub{margin:22px 0 32px;max-width:520px;color:#a8a8a8;font-size:18px;line-height:1.6;font-weight:300}
-.cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn{padding:16px 32px;font-weight:600;letter-spacing:1px;text-decoration:none;border-radius:0;transition:0.3s;display:inline-block;font-size:13px}
-.btn-gold{background:#d4af37;color:#000}
-.btn-gold:hover{background:#fff}
-.btn-outline{border:1px solid rgba(255,255,255,0.2);color:#fff}
-.btn-outline:hover{border-color:#d4af37;color:#d4af37}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:rgba(212,175,55,0.15);margin:0;border-top:1px solid rgba(212,175,55,0.15);border-bottom:1px solid rgba(212,175,55,0.15)}
-.card{background:#0f0f0f;padding:50px 40px}
-.card h3{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:12px}
-.card p{color:#888;line-height:1.7;font-size:14px}
-.glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,#d4af3733,transparent 70%);top:-100px;right:-100px;pointer-events:none}
-.footer{padding:50px 20px;text-align:center;color:#555;font-size:12px;letter-spacing:2px;border-top:1px solid #111}
+body{background:#050507;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden}
+.hero{height:100vh;min-height:700px;position:relative;display:flex;align-items:center;padding:0 5%;background:radial-gradient(ellipse at 15% 50%,#1c1320 0%,#050507 60%),linear-gradient(180deg,#0a0a0c,#050507)}
+.nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:30px 5%;z-index:10;font-size:10px;letter-spacing:4px;color:#d4af37}
+.line{width:100%;height:1px;background:linear-gradient(90deg,transparent,#d4af37,transparent);opacity:.3;margin:20px 0}
+h1{font-family:'Playfair Display',serif;font-size:clamp(48px,9vw,132px);line-height:.85;letter-spacing:-4px;font-weight:900}
+h1 i{color:#d4af37;font-weight:400;display:block;font-size:.85em;margin-top:6px}
+.tag{color:#d4af37;letter-spacing:6px;font-size:10px;margin-bottom:26px;display:flex;align-items:center;gap:12px}
+.tag::before{content:"";width:40px;height:1px;background:#d4af37;display:inline-block}
+.desc{max-width:480px;color:#8a8a90;font-size:17px;line-height:1.9;font-weight:300;margin:30px 0 40px}
+.btn-gold{background:#d4af37;color:#000;padding:20px 44px;text-decoration:none;font-weight:700;letter-spacing:2px;font-size:12px;display:inline-block;transition:.4s}
+.btn-gold:hover{background:#fff;transform:translateY(-2px);box-shadow:0 20px 40px rgba(212,175,55,.25)}
+.btn-ghost{border:1px solid #ffffff1a;color:#fff;padding:19px 32px;text-decoration:none;font-size:11px;letter-spacing:3px;margin-left:14px;transition:.3s}
+.btn-ghost:hover{border-color:#d4af37}
+.stats{display:flex;gap:40px;margin-top:50px;border-top:1px solid #ffffff0f;padding-top:30px;max-width:400px}
+.stats b{font-family:'Playfair Display',serif;font-size:32px;display:block;color:#fff}
+.stats span{font-size:10px;letter-spacing:2px;color:#666}
+.mid{padding:100px 5%;display:grid;grid-template-columns:1.2fr .8fr;gap:80px;align-items:center;background:#08080a;border-top:1px solid #d4af3715}
+.mid h2{font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,56px);line-height:1;margin-bottom:20px}
+.mid p{color:#777;line-height:1.8}
+.gold-box{background:linear-gradient(135deg,#111012,#0c0c0e);border:1px solid #d4af371e;padding:50px;position:relative}
+.gold-box::before{content:"";position:absolute;top:-1px;left:-1px;right:-1px;height:1px;background:linear-gradient(90deg,#d4af37,transparent)}
+.price{font-family:'Playfair Display',serif;font-size:42px;color:#d4af37;margin:20px 0}
+.reserve{background:#d4af37;color:#000;text-align:center;padding:90px 5%}
+.reserve h2{font-family:'Playfair Display',serif;font-size:clamp(36px,6vw,72px);line-height:.9;color:#000}
+.footer{padding:30px 5%;display:flex;justify-content:space-between;font-size:10px;letter-spacing:2px;color:#333;border-top:1px solid #111}
+@media(max-width:900px){.mid{grid-template-columns:1fr}.hero{height:auto;padding:120px 5% 80px}.btn-ghost{margin-left:0;margin-top:12px;display:block;text-align:center}}
 </style>
 </head>
 <body>
-<div class="hero">
-<div class="glow"></div>
-<div style="max-width:1200px;width:100%;z-index:2">
-<div class="badge">DURBAN • MORNINGSIDE • VIP</div>
-<h1>HAVANA<br><span>EXPERIENCE</span></h1>
-<p class="sub">Durban's most exclusive Afro-luxury lounge. Where curated sound, rare spirits & elevated energy collide after dark.</p>
-<div class="cta">
-<a href="https://wa.me/27769916166" class="btn btn-gold">BOOK VIP TABLE</a>
-<a href="#experience" class="btn btn-outline">EXPLORE NIGHTS</a>
+<div class="nav"><span>THE HAVANA EXPERIENCE</span><span>LINCOLN TER • DURBAN • OPEN 12PM-11PM</span></div>
+<section class="hero">
+<div>
+<div class="tag">WESTWOOD RESTAURANT & COCKTAIL BAR</div>
+<h1>HAVANA <i>EXPERIENCE</i></h1>
+<div class="line"></div>
+<p class="desc"><span style="color:#fff">It's all about the experience!</span> Durban's only Afro-luxury dining & cocktail sanctuary. Rare spirits, curated plates, and nights designed for the elite. Lincoln Terrace, 4091.</p>
+<div>
+<a href="https://wa.me/27769916166?text=Hi%20Havana%20Experience%20—%20I%20want%20to%20book%20VIP%20for%20tonight" class="btn-gold">BOOK ON WHATSAPP • 076 991 6166</a>
+<a href="tel:+27769916166" class="btn-ghost">CALL CONCIERGE</a>
+</div>
+<div class="stats">
+<div><b>4.8★</b><span>GOOGLE RATED</span></div>
+<div><b>12PM-11PM</b><span>OPEN DAILY</span></div>
+<div><b>VIP</b><span>BOOKINGS ONLY</span></div>
 </div>
 </div>
+</section>
+
+<div class="mid">
+<div>
+<h2>Where Durban's Elite<br>Comes Alive After Dark.</h2>
+<p>Not a restaurant. Not a bar. A curated ritual. From Westwood's kitchen mastery to our cocktail lab — every detail engineered for status, flavor, and unforgettable nights. Premium bottle service, private booths, afro-house frequencies.</p>
+<p style="margin-top:18px;color:#d4af37;letter-spacing:2px;font-size:11px">● LINCOLN TER, DURBAN 4091 ● +27 76 991 6166</p>
 </div>
-<div class="card-grid" id="experience">
-<div class="card">
-<h3>Luxury Bottles</h3>
-<p>Premium reserves, champagne showers, and bottle service designed for status.</p>
-</div>
-<div class="card">
-<h3>Afro House Nights</h3>
-<p>Resident DJs, live percussion, and sound that moves Durban's elite.</p>
-</div>
-<div class="card">
-<h3>Private Booths</h3>
-<p>Discreet VIP lounges for celebrations, deal-making, and unforgettable nights.</p>
+<div class="gold-box">
+<p style="letter-spacing:4px;font-size:10px;color:#d4af37">TONIGHT'S EXPERIENCE</p>
+<h3 style="font-family:'Playfair Display';font-size:28px;margin:14px 0">VIP Table & Bottle Service</h3>
+<p style="color:#666;font-size:14px;line-height:1.7">Includes private booth, dedicated host, premium mixers, and priority entry. Limited to 6 tables per night.</p>
+<div class="price">From R1,500</div>
+<a href="https://wa.me/27769916166?text=Hi%20I%20want%20to%20reserve%20VIP%20Table%20at%20Havana%20Westwood" class="btn-gold" style="width:100%;text-align:center">RESERVE ON WHATSAPP</a>
+<p style="text-align:center;margin-top:16px;color:#444;font-size:10px;letter-spacing:1px">INSTANT CONFIRMATION • 076 991 6166</p>
 </div>
 </div>
-<div class="footer">© 2026 HAVANA EXPERIENCE DURBAN — LUXURY REDEFINED</div>
+
+<div class="reserve">
+<h2>Your Table Is<br>Waiting.</h2>
+<p style="color:#00000099;margin:20px auto;max-width:500px;line-height:1.7">Tap below to secure your night at The Havana Experience Westwood. Direct to management.</p>
+<a href="https://wa.me/27769916166" style="background:#000;color:#d4af37;padding:18px 40px;text-decoration:none;letter-spacing:3px;font-size:12px;font-weight:700;display:inline-block;margin-top:10px">WHATSAPP 076 991 6166</a>
+</div>
+
+<div class="footer"><span>© 2026 THE HAVANA EXPERIENCE WESTWOOD • IT'S ALL ABOUT THE EXPERIENCE</span><span>DESIGNED BY TROY • R2500 LUXURY BUILD</span></div>
 </body>
   </html>
