@@ -2,66 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | AVISS SYSTEMS</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Our Work | AVISS SYSTEMS</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#080C1A;color:#fff}
-nav{position:fixed;top:0;width:100%;background:rgba(8,12,26,0.95);padding:14px 6%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1e293b;z-index:100}
-.logo{font-weight:800;color:#FFC400}.logo span{color:#fff;font-size:9px;letter-spacing:3px;display:block}
-.btn{background:#FFC400;color:#000;padding:10px 20px;border-radius:30px;font-weight:800;text-decoration:none;font-size:13px}
-.section{padding:110px 6% 40px}
-.head h1{font-size:36px;font-weight:800}.head h1 span{color:#FFC400}.head p{color:#94a3b8;margin-top:8px;max-width:600px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
-.card{background:#131A30;border:1px solid #1e293b;border-radius:16px;padding:20px}
-.card h3{color:#FFC400;font-size:14px;margin-bottom:6px}.card p{color:#94a3b8;font-size:12px}
-/* SLIDER */
-.slider{margin-top:40px;position:relative;border-radius:18px;overflow:hidden;border:1px solid #1e293b;height:380px;background:#000}
-.slide{position:absolute;inset:0;opacity:0;transition:1s}
-.slide.active{opacity:1}
-.slide img{width:100%;height:100%;object-fit:cover}
-.slide.cap{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent, #000);padding:20px;font-size:13px}
-.dots{text-align:center;margin-top:12px}.dot{width:8px;height:8px;background:#334155;border-radius:50%;display:inline-block;margin:0 4px;cursor:pointer}.dot.active{background:#FFC400}
-@media(max-width:768px){.grid{grid-template-columns:1fr}.slider{height:240px}}
+:root{--bg:#070A14;--line:#1C2643;--yellow:#FFC91F;--text:#8B95B0;--card:#141D36}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Plus Jakarta Sans',sans-serif}
+body{background:var(--bg);color:#fff}
+nav{position:fixed;top:0;width:100%;background:rgba(7,10,20,0.95);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 6%;z-index:10}
+.logo{font-weight:800;color:var(--yellow)}.logo span{color:#fff;font-size:9px;letter-spacing:3px;display:block}
+.btn{padding:12px 22px;border-radius:100px;font-weight:800;font-size:13px;text-decoration:none;display:inline-block}.btn-yellow{background:var(--yellow);color:#000}.btn-ghost{border:1px solid var(--line);color:#fff}
+.section{padding:110px 6% 50px}
+.head h1{font-size:36px;font-weight:800;letter-spacing:-1px}.head h1 span{color:var(--yellow)}.head p{color:var(--text);margin-top:10px;max-width:600px;font-size:14px;line-height:1.6}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:30px}
+.footage{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000;position:relative}
+.footage img{width:100%;height:280px;object-fit:cover;display:block;filter:brightness(0.9)}
+.footage::after{content:'REC • 02:14:33 2026-05-13  • CH-04';position:absolute;top:12px;left:12px;background:rgba(0,0,0,0.7);color:#ff3b3b;font-size:10px;font-weight:800;padding:6px 10px;border-radius:6px;letter-spacing:1px}
+.footage .cap{padding:14px;background:var(--card);font-size:12px;color:var(--text)}
+.footage .cap b{color:#fff;display:block;font-size:13px;margin-bottom:2px}
+.why{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}.why b{color:var(--yellow);font-size:12px}.why p{font-size:12px;color:var(--text);margin-top:4px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.why{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<nav><div class="logo">AVISS SYSTEMS<span>OUR SERVICES</span></div><a href="aviss-systems.html" class="btn">← Back to Home</a></nav>
+<nav><div class="logo">AVISS SYSTEMS<span>INSTALLATION SHOWCASE</span></div><a href="aviss-systems.html" class="btn btn-ghost">← Home</a></nav>
 
 <div class="section">
 <div class="head">
-<h1>What We Do Best — <span>Security That Works</span></h1>
-<p>From QSR restaurants to logistics yards — AVISS designs, installs and maintains systems that prevent loss and protect your people.</p>
+<h1>Installation in Action — <span>Real CCTV Footage</span></h1>
+<p>We don't use stock YouTube videos. This is how AVISS installs look on site — clean mounting, perfect coverage, professional finish.</p>
 </div>
 
 <div class="grid">
-<div class="card"><h3>CCTV Surveillance Systems</h3><p>Dahua & HIKVISION 4K cameras, night vision, AI human detection, mobile app viewing.</p></div>
-<div class="card"><h3>Professional Installation</h3><p>Our technician mounts cameras with clean wiring, sealed housings and perfect angles for zero blind spots.</p></div>
-<div class="card"><h3>24/7 Remote Monitoring</h3><p>Off-site control room, instant phone alerts, cloud recording backup.</p></div>
-<div class="card"><h3>Gate & Boom Automation</h3><p>Automated gates, garage doors and booms linked to your CCTV and phone.</p></div>
-<div class="card"><h3>Biometric Access Control</h3><p>Fingerprint and facial recognition for staff access and time attendance.</p></div>
-<div class="card"><h3>Certified Dahua / HIKVISION</h3><p>Only genuine hardware with manufacturer warranty and support.</p></div>
+<div class="footage">
+<img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80" alt="Technician installing CCTV">
+<div class="cap"><b>Technician Installing HIKVISION 4K</b>Clean wiring, sealed housing, tested live on your phone</div>
+</div>
+<div class="footage">
+<img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=900&q=80" alt="CCTV Footage view">
+<div class="cap"><b>CCTV Live Footage View</b>100% coverage, no blind spots, night vision + AI detection</div>
+</div>
 </div>
 
-<div class="slider" id="slider">
-<div class="slide active"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1000" alt="Technician installing CCTV"><div class="cap"><b>Installation In Action:</b> Our certified installer mounting HIKVISION camera on site</div></div>
-<div class="slide"><img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1000" alt="CCTV Control Room"><div class="cap"><b>Control Room Setup:</b> Multi-screen monitoring for KFC, Steers, Debonairs</div></div>
-<div class="slide"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1000" alt="Security Camera"><div class="cap"><b>4K Coverage:</b> 100% coverage, no blind spots, clean cable management</div></div>
-</div>
-<div class="dots" id="dots"></div>
-
-<div style="margin-top:30px;text-align:center">
-<a href="aviss-systems.html" class="btn" style="margin-right:8px">← Back to Home</a>
-<a href="https://wa.me/27754080448?text=Hi%20AVISS%20-%20Quote" class="btn" style="background:#fff">Get Quote on WhatsApp</a>
+<div class="why">
+<div><b>✓ 150+ Sites Secured</b><p>KFC, Steers, Debonairs Pizza trust us daily for loss prevention.</p></div>
+<div><b>✓ 9 Provinces Nationwide</b><p>Cape Town to Limpopo — same day response team.</p></div>
+<div><b>✓ Clean Install Guarantee</b><p>No exposed cables. Every camera aligned and photo-documented.</p></div>
+<div><b>✓ 24/7 Real Support</b><p>Call 075 408 0448 — talk to an engineer, not a call centre.</p></div>
 </div>
 
+<div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
+<a href="aviss-systems.html" class="btn btn-ghost">← Back to Home</a>
+<a href="https://wa.me/27754080448?text=Hi%20AVISS%20-%20Quote" class="btn btn-yellow">WhatsApp Quote →</a>
 </div>
 
-<script>
-let cur=0; const slides=document.querySelectorAll('.slide'); const dots=document.getElementById('dots');
-slides.forEach((_,i)=>{let d=document.createElement('span');d.className='dot'+(i==0?' active':'');d.onclick=()=>show(i);dots.appendChild(d)});
-function show(n){slides[cur].classList.remove('active');dots.children[cur].classList.remove('active');cur=n;slides[cur].classList.add('active');dots.children[cur].classList.add('active')}
-setInterval(()=>{show((cur+1)%slides.length)},4000);
-</script>
+</div>
 </body>
-</html>
+                                                                              </html>
