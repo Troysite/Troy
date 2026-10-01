@@ -3,61 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AVISS SYSTEMS | Security Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<title>AVISS SYSTEMS | Welcome - Security Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#070A14;--line:#1C2643;--yellow:#FFC91F;--text:#8B95B0;--card:#141D36}
+:root{--bg:#070A14;--card:#10172A;--line:#1D2A4A;--yellow:#FFC91F;--text:#8FA0C0;--white:#fff}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Plus Jakarta Sans',sans-serif}
-body{background:var(--bg);color:#fff}
-nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(7,10,20,0.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 6%}
-.logo{font-weight:800;color:var(--yellow);line-height:1}.logo span{color:#fff;font-size:9px;letter-spacing:3px;display:block;opacity:0.7}
-.btn{padding:13px 24px;border-radius:100px;font-weight:800;font-size:13px;text-decoration:none;display:inline-block;transition:0.2s}
-.btn-yellow{background:var(--yellow);color:#000}.btn-dark{background:transparent;border:1px solid #2A375F;color:#fff}
-.hero{min-height:100vh;display:flex;align-items:center;padding:110px 6% 60px;background:linear-gradient(90deg, #070A14 38%, rgba(7,10,20,0.4) 70%, rgba(7,10,20,0.1)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80');background-size:cover;background-position:center right}
-.hero-content{max-width:560px}
-.hero-content .label{color:var(--yellow);font-size:11px;font-weight:800;letter-spacing:3px;margin-bottom:14px}
-.hero-content h1{font-size:52px;line-height:0.95;font-weight:800;letter-spacing:-1.5px}.hero-content h1 span{color:var(--yellow)}
-.hero-content p{color:var(--text);margin:18px 0 28px;line-height:1.7;font-size:15px}
-.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
-.stats{display:flex;gap:28px;margin-top:30px}.stats b{color:var(--yellow);font-size:20px;display:block}.stats small{color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:1px}
-.trusted{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#080B19;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-.trusted small{font-size:10px;letter-spacing:3px;color:var(--text);font-weight:700}
-.t-list{display:flex;gap:8px;flex-wrap:wrap}.t-list span{background:var(--card);border:1px solid var(--line);padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;color:#CBD5E1}
-.services{padding:60px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}.svc h3{color:var(--yellow);font-size:13px;margin-bottom:6px}.svc p{color:var(--text);font-size:12px;line-height:1.5}
-@media(max-width:850px){.hero{background:linear-gradient(rgba(7,10,20,0.85), rgba(7,10,20,0.85)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800');background-size:cover}.hero-content h1{font-size:34px}.services{grid-template-columns:1fr}.trusted{flex-direction:column}}
+body{background:var(--bg);color:var(--white);overflow-x:hidden}
+nav{position:fixed;top:0;width:100%;z-index:99;background:rgba(7,10,20,0.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:16px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:19px;color:var(--yellow);line-height:1}.logo span{color:#fff;font-size:8.5px;letter-spacing:3.5px;display:block;opacity:0.6;margin-top:3px}
+.btn{padding:12px 24px;border-radius:100px;font-weight:800;font-size:13px;text-decoration:none;display:inline-block;transition:0.2s}
+.btn-yellow{background:var(--yellow);color:#000}.btn-yellow:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,201,31,0.25)}
+.btn-outline{border:1px solid #2A3A60;color:#fff;background:transparent}
+
+/* HERO WELCOMING */
+.hero{padding:120px 6% 0;display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;min-height:92vh;background:radial-gradient(700px at 20% 10%, rgba(255,201,31,0.07), transparent)}
+.hero-left .eyebrow{color:var(--yellow);font-size:11px;font-weight:800;letter-spacing:3px;text-transform:uppercase;background:rgba(255,201,31,0.1);border:1px solid rgba(255,201,31,0.2);padding:6px 12px;border-radius:100px;display:inline-block;margin-bottom:18px}
+.hero-left h1{font-size:56px;line-height:0.92;font-weight:800;letter-spacing:-1.8px}
+.hero-left h1 span{color:var(--yellow)}
+.hero-left p{color:var(--text);font-size:16px;line-height:1.7;margin:20px 0 28px;max-width:520px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.trust-row{margin-top:36px;display:flex;gap:14px;align-items:center}
+.trust-avatars{display:flex}.trust-avatars img{width:32px;height:32px;border-radius:50%;border:2px solid var(--bg);margin-left:-8px;object-fit:cover}
+.trust-avatars img:first-child{margin-left:0}
+.trust-text{font-size:12px;color:var(--text)}.trust-text b{color:#fff}
+
+.hero-right{position:relative}
+.main-img{width:100%;height:520px;border-radius:28px;object-fit:cover;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+.float-card{position:absolute;bottom:24px;left:-18px;background:#0F1830;border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;gap:12px;align-items:center;box-shadow:0 20px 40px rgba(0,0,0,0.4);min-width:240px}
+.float-icon{width:44px;height:44px;background:var(--yellow);color:#000;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:900}
+.float-card b{font-size:13px;display:block}.float-card small{font-size:11px;color:var(--text)}
+.float-card2{position:absolute;top:30px;right:-10px;background:rgba(15,24,48,0.9);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+.float-card2 b{color:var(--yellow);font-size:12px}.float-card2 small{display:block;color:#fff;font-size:11px;margin-top:2px}
+
+/* BRANDS */
+.brands{padding:28px 6%;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#080C1C;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.brands small{font-size:10px;letter-spacing:3px;color:#5A6A8A;font-weight:700}
+.brand-logos{display:flex;gap:24px;flex-wrap:wrap;opacity:0.6}
+.brand-logos span{font-size:13px;font-weight:700;color:#CBD5E1}
+
+/* FEATURES */
+.features{padding:70px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;transition:0.3s}
+.feat:hover{border-color:rgba(255,201,31,0.3);transform:translateY(-3px)}
+.feat-icon{width:48px;height:48px;background:linear-gradient(135deg, rgba(255,201,31,0.15), rgba(255,201,31,0.05));border:1px solid rgba(255,201,31,0.2);border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.feat h3{font-size:14px;margin-bottom:8px}.feat p{font-size:13px;color:var(--text);line-height:1.6}
+
+footer{padding:24px 6%;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:11px;color:#5A6A8A;background:#050814}
+
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;padding-bottom:40px}.hero-left h1{font-size:38px}.main-img{height:380px}.float-card{left:10px;bottom:10px}.float-card2{right:10px;top:10px}.features{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
-<nav><div class="logo">AVISS SYSTEMS<span>SECURITY SOLUTIONS</span></div><a href="aviss-services.html" class="btn btn-yellow">Our Services →</a></nav>
 
-<div class="hero">
-<div class="hero-content">
-<div class="label">JOHANNESBURG • NATIONWIDE SERVICE</div>
-<h1>Smarter Surveillance,<br><span>Stronger Protection</span></h1>
-<p>Professional CCTV installation for South Africa's leading brands. 150+ sites secured across 9 provinces. Dahua & HIKVISION certified.</p>
-<div class="hero-btns">
-<a href="aviss-services.html" class="btn btn-yellow">View Our Work →</a>
-<a href="tel:0754080448" class="btn btn-dark">Call 075 408 0448</a>
-</div>
-<div class="stats">
-<div><b>150+</b><small>Sites Secured</small></div>
-<div><b>9</b><small>Provinces</small></div>
-<div><b>24/7</b><small>Support</small></div>
-</div>
-</div>
+<nav>
+<div class="logo">AVISS SYSTEMS<span>SECURITY SOLUTIONS</span></div>
+<a href="aviss-services.html" class="btn btn-yellow">Our Services →</a>
+</nav>
+
+<section class="hero">
+<div class="hero-left">
+<div class="eyebrow">● Available in 9 provinces — Same Day Response</div>
+<h1>Welcome to<br><span>Safer Business.</span></h1>
+<p>AVISS SYSTEMS protects South Africa's most loved brands with clean, professional CCTV installation. From KFC to Titan Cargo — we secure what matters.</p>
+<div class="hero-actions">
+<a href="aviss-services.html" class="btn btn-yellow">Explore Our Work →</a>
+<a href="tel:0754080448" class="btn btn-outline">Call 075 408 0448</a>
 </div>
 
-<div class="trusted">
-<small>TRUSTED BY LEADING BRANDS</small>
-<div class="t-list"><span>KFC</span><span>Steers</span><span>Debonairs Pizza</span><span>Fishaways</span><span>Supa Quick</span><span>Titan Cargo</span></div>
+<div class="trust-row">
+<div class="trust-avatars">
+<img src="https://i.pravatar.cc/100?img=12" alt="">
+<img src="https://i.pravatar.cc/100?img=32" alt="">
+<img src="https://i.pravatar.cc/100?img=15" alt="">
+</div>
+<div class="trust-text"><b>150+ sites secured</b><br>Trusted by QSR & logistics leaders</div>
+</div>
 </div>
 
-<div class="services">
-<div class="svc"><h3>CCTV Systems</h3><p>4K Dahua & HIKVISION with night vision</p></div>
-<div class="svc"><h3>Clean Installation</h3><p>No messy cables, perfect angles</p></div>
-<div class="svc"><h3>24/7 Monitoring</h3><p>Remote viewing on your phone</p></div>
+<div class="hero-right">
+<img class="main-img" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80" alt="AVISS Technician installing CCTV camera">
+<div class="float-card">
+<div class="float-icon">✓</div>
+<div><b>Certified Installation</b><small>Dahua & HIKVISION Partner</small></div>
 </div>
+<div class="float-card2">
+<b>LIVE • CH-04</b>
+<small>24/7 Monitoring Active</small>
+</div>
+</div>
+</section>
+
+<div class="brands">
+<small>TRUSTED BY LEADING BRANDS IN SA</small>
+<div class="brand-logos">
+<span>KFC</span><span>Steers</span><span>Debonairs Pizza</span><span>Fishaways</span><span>Supa Quick</span><span>Titan Cargo</span>
+</div>
+</div>
+
+<div class="features">
+<div class="feat">
+<div class="feat-icon"><svg width="20" height="20" fill="none" stroke="#FFC91F" stroke-width="2"><circle cx="10" cy="10" r="7"/><circle cx="10" cy="10" r="3"/></svg></div>
+<h3>4K CCTV Systems</h3>
+<p>Dahua & HIKVISION cameras with night vision, AI detection and mobile viewing on your phone.</p>
+</div>
+<div class="feat">
+<div class="feat-icon"><svg width="20" height="20" fill="none" stroke="#FFC91F" stroke-width="2"><path d="M4 10h12M10 4v12"/></svg></div>
+<h3>Clean Installation</h3>
+<p>No messy cables. Our team does precise mounting, sealed housing and perfect coverage angles.</p>
+</div>
+<div class="feat">
+<div class="feat-icon"><svg width="20" height="20" fill="none" stroke="#FFC91F" stroke-width="2"><path d="M10 2v4M10 16v4M2 10h4M16 10h4"/><circle cx="10" cy="10" r="3"/></svg></div>
+<h3>24/7 Remote Support</h3>
+<p>Real engineers on call. Remote monitoring, instant alerts and nationwide same-day response.</p>
+</div>
+</div>
+
+<footer>
+<span>© 2026 AVISS SYSTEMS • aviss.security@gmail.com • 075 408 0448 / 084 887 0022</span>
+<span>Built by Troysite — Smarter Surveillance Stronger Protection</span>
+</footer>
 
 </body>
-                               </html>
+  </html>
