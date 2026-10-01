@@ -4,107 +4,95 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AVISS SYSTEMS - Smarter Surveillance Stronger Protection</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#0a0f1e;color:#fff;overflow-x:hidden}
-.navbar{position:fixed;top:0;width:100%;z-index:99;background:rgba(10,15,30,.95);backdrop-filter:blur(10px);padding:14px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #ffbf00}
-.logo{font-size:26px;font-weight:800;color:#ffbf00;line-height:1}
-.logo span{color:#fff;font-size:11px;display:block;letter-spacing:3px;font-weight:600;margin-top:2px}
-.btn-gold{background:#ffbf00;color:#000;padding:12px 28px;border-radius:50px;font-weight:800;text-decoration:none;display:inline-block}
-.hero{min-height:100vh;background:linear-gradient(rgba(10,15,30,.7),rgba(10,15,30,.9)),url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1920') center/cover no-repeat;display:flex;align-items:center;padding:110px 5% 60px}
-.hero h1{font-size:58px;line-height:.95;font-weight:800;letter-spacing:-1px}
+body{background:#0a0f1e;color:#fff}
+.nav{position:fixed;top:0;width:100%;background:#0a0f1e;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #ffbf00;z-index:99}
+.logo{font-weight:800;color:#ffbf00;font-size:24px}
+.logo span{color:#fff;font-size:11px;display:block;letter-spacing:2px}
+.btn{background:#ffbf00;color:#000;padding:12px 26px;border-radius:50px;font-weight:800;text-decoration:none;display:inline-block}
+.hero{min-height:100vh;display:flex;align-items:center;padding:100px 5%;background:linear-gradient(rgba(10,15,30,.75),rgba(10,15,30,.9)),url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1920') center/cover}
+.hero h1{font-size:54px;font-weight:800;line-height:.9}
 .hero h1 span{color:#ffbf00}
-.hero p{font-size:18px;color:#cbd5e1;margin:20px 0 30px;max-width:620px;line-height:1.6}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;background:linear-gradient(rgba(11,60,128,.85),rgba(10,15,30,.9)),url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920') center/cover;padding:65px 5%;text-align:center}
-.stat h3{font-size:42px;color:#ffbf00;font-weight:800}
-.stat p{color:#fff;margin-top:5px;font-weight:600}
-.section{padding:80px 5%}.white{background:#f8fafc;color:#0a0f1e}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.12);transition:.3s}
-.card:hover{transform:translateY(-5px)}
-.card-img{height:220px;background-size:cover;background-position:center;position:relative}
-.card-img:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.4))}
-.card-body{padding:22px;position:relative}
-.card-body h3{color:#0a0f1e;font-size:19px;margin-bottom:8px;font-weight:800}
-.card-body p{color:#64748b;font-size:14px;line-height:1.6}
-.tag{background:#0a0f1e;color:#ffbf00;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:800;position:absolute;top:-12px;left:20px;letter-spacing:.5px}
-.brands{background:#0a0f1e;padding:70px 5%;text-align:center}
-.brand{background:#fff;color:#000;padding:14px 26px;border-radius:10px;font-weight:800;display:inline-block;margin:6px;font-size:14px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.contact-info{background:#0f1b36;padding:32px;border-radius:18px;border:1px solid rgba(255,191,0,.2)}
-.form{background:#fff;padding:30px;border-radius:18px}
-.form input,.form textarea{width:100%;padding:14px 16px;border:2px solid #e2e8f0;border-radius:10px;margin-bottom:12px;font-size:15px}
-.form h3{color:#0a0f1e;margin-bottom:16px;font-weight:800}
-@media(max-width:850px){.hero h1{font-size:38px}.stats{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}}
+.hero p{color:#cbd5e1;margin:20px 0;max-width:600px;line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:linear-gradient(rgba(11,60,128,.9),#0a0f1e),url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200') center/cover;padding:50px 5%;text-align:center}
+.stats h3{color:#ffbf00;font-size:38px;font-weight:800}
+.sec{padding:70px 5%}
+.white{background:#f8fafc;color:#0a0f1e}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.1)}
+.img{height:200px;background-size:cover;background-position:center}
+.body{padding:18px}
+.body h3{color:#0a0f1e;font-weight:800}
+.body p{color:#64748b;font-size:14px;margin-top:6px}
+.brands{background:#0a0f1e;padding:60px 5%;text-align:center}
+.badge{background:#fff;color:#000;padding:12px 20px;border-radius:8px;font-weight:800;margin:5px;display:inline-block}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.info{background:#0f1b36;padding:24px;border-radius:16px}
+.form{background:#fff;padding:24px;border-radius:16px}
+.form input,.form textarea{width:100%;padding:12px;border:2px solid #e2e8f0;border-radius:8px;margin-bottom:10px}
+@media(max-width:700px){.hero h1{font-size:34px}.stats{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<nav class="navbar">
-<div class="logo">AVISS SYSTEMS<span>SECURITY SOLUTIONS</span></div>
-<a href="#contact" class="btn-gold">Free Quote</a>
-</nav>
+<div class="nav"><div class="logo">AVISS SYSTEMS<span>SECURITY SOLUTIONS</span></div><a href="#contact" class="btn">Free Quote</a></div>
 
 <section class="hero">
 <div>
-<div style="background:#ffbf00;color:#000;display:inline-block;padding:6px 14px;border-radius:20px;font-weight:800;font-size:11px;margin-bottom:16px;letter-spacing:.5px">✓ TRUSTED BY KFC • DEBONAIRS • STEERS • 150+ SITES</div>
-<h1>SMARTER<br><span>SURVEILLANCE</span><br>STRONGER PROTECTION</h1>
-<p>Cutting-edge security solutions that blend technology with reliability. 150+ sites secured across 9 provinces. National work South Africa — same day in Gauteng.</p>
-<a href="#contact" class="btn-gold">Get Free Quote →</a>
-<a href="tel:0754080448" style="border:2px solid #fff;color:#fff;padding:12px 28px;border-radius:50px;font-weight:800;margin-left:10px;text-decoration:none;display:inline-block">📞 075 408 0448</a>
+<div style="background:#ffbf00;color:#000;display:inline-block;padding:5px 12px;border-radius:20px;font-weight:800;font-size:11px">TRUSTED BY KFC • DEBONAIRS • STEERS</div>
+<h1>SMARTER <span>SURVEILLANCE</span><br>STRONGER PROTECTION</h1>
+<p>Cutting-edge security solutions that blend technology with reliability. 150+ sites secured across 9 provinces. National work South Africa. Same day in Gauteng.</p>
+<a href="#contact" class="btn">Get Free Quote →</a>
+<a href="tel:0754080448" style="border:2px solid #fff;color:#fff;padding:12px 26px;border-radius:50px;font-weight:800;margin-left:8px;text-decoration:none">📞 075 408 0448</a>
 </div>
 </section>
 
 <div class="stats">
-<div class="stat"><h3>150+</h3><p>Sites Secured</p></div>
-<div class="stat"><h3>9</h3><p>Provinces</p></div>
-<div class="stat"><h3>24/7</h3><p>Support</p></div>
-<div class="stat"><h3>7+</h3><p>Brands Trust Us</p></div>
+<div><h3>150+</h3><p>Sites Secured</p></div>
+<div><h3>9</h3><p>Provinces</p></div>
+<div><h3>24/7</h3><p>Support</p></div>
+<div><h3>7+</h3><p>Brands Trust Us</p></div>
 </div>
 
-<section class="section white">
-<h2 style="text-align:center;font-size:42px;font-weight:800;margin-bottom:10px">Our <span style="color:#eab308">Security Solutions</span></h2>
-<p style="text-align:center;color:#64748b;margin-bottom:45px">Professional installations trusted by leading South African brands</p>
-<div class="grid">
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800')"></div><div class="card-body"><span class="tag">MOST POPULAR</span><h3>CCTV Security Systems</h3><p>HD surveillance, 24/7 protection, mobile viewing, motion alerts, night vision 30m, IP67 weatherproof.</p></div></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800')"></div><div class="card-body"><span class="tag">CERTIFIED TECHS</span><h3>CCTV Installation</h3><p>Technician on ladder installing dome camera. Safety helmet, harness, NVR config, 12 month warranty. Dahua & HIKVISION.</p></div></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800')"></div><div class="card-body"><span class="tag">24/7 MONITORING</span><h3>Monitoring Center</h3><p>Live wall 32 cameras online. Evidence, insurance, staff monitoring. Face detection, number plate, cloud backup.</p></div></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1558002038-1055907df827?w=800')"></div><div class="card-body"><span class="tag">SMART GATES</span><h3>Gate Automation</h3><p>Sliding, swing, boom gates. E.T Drive 300/500/1000, DACE, Digi-Door WiFi. Battery 24h, solar option, 24mo warranty.</p></div></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1558005137-d8d014d0b2b3?w=800')"></div><div class="card-body"><span class="tag">ACCESS CONTROL</span><h3>Biometric & Alarm</h3><p>Fingerprint, card, keypad, time & attendance, RFID. Used by KFC, Debonairs, Steers. Alarm integrated with app.</p></div></div>
-<div class="card"><div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800')"></div><div class="card-body"><span class="tag">TECH PARTNERS</span><h3>Dahua & HIKVISION</h3><p>Certified partners. One platform controls CCTV, access, alarms. Encrypted, tamper-proof, phone alerts instantly.</p></div></div>
+<section class="sec white">
+<h2 style="text-align:center;font-size:38px;font-weight:800">Our <span style="color:#eab308">Security Solutions</span></h2>
+<div class="grid" style="margin-top:30px">
+<div class="card"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800')"></div><div class="body"><h3>CCTV Security Systems</h3><p>HD surveillance, 24/7, mobile viewing, motion alerts, night vision 30m, IP67 weatherproof.</p></div></div>
+<div class="card"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800')"></div><div class="body"><h3>CCTV Installation</h3><p>Technician on ladder, helmet, harness, NVR config, 12 month warranty. Dahua & HIKVISION.</p></div></div>
+<div class="card"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800')"></div><div class="body"><h3>Monitoring Center</h3><p>Live wall 32 cameras online. Evidence, insurance, staff monitoring, face detection.</p></div></div>
+<div class="card"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1558002038-1055907df827?w=800')"></div><div class="body"><h3>Gate Automation</h3><p>Sliding, swing, boom gates. E.T Drive 300/500/1000, DACE, Digi-Door WiFi. 24h battery.</p></div></div>
+<div class="card"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1558005137-d8d014d0b2b3?w=800')"></div><div class="body"><h3>Biometric & Alarm</h3><p>Fingerprint, card, keypad, time attendance, RFID. Used by KFC, Debonairs, Steers.</p></div></div>
+<div class="card"><div class="img" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=800')"></div><div class="body"><h3>Dahua & HIKVISION Partners</h3><p>Certified. One platform CCTV, access, alarms. Encrypted, tamper-proof, phone alerts.</p></div></div>
 </div>
 </section>
 
-<section class="brands">
-<h2 style="font-size:38px;font-weight:800">Trusted By <span style="color:#ffbf00">Leading Brands</span></h2>
-<p style="color:#94a3b8;margin-top:10px">Join 150+ secured sites across South Africa</p>
-<div style="margin-top:32px">
-<span class="brand">KFC</span><span class="brand">Debonairs Pizza</span><span class="brand">Steers</span><span class="brand">Fishaways</span><span class="brand">Supa Quick</span><span class="brand">Titan Cargo</span><span class="brand">Cartime</span>
+<div class="brands">
+<h2 style="font-size:32px;font-weight:800">Trusted By <span style="color:#ffbf00">Leading Brands</span></h2>
+<div style="margin-top:20px"><span class="badge">KFC</span><span class="badge">Debonairs Pizza</span><span class="badge">Steers</span><span class="badge">Fishaways</span><span class="badge">Supa Quick</span><span class="badge">Titan Cargo</span><span class="badge">Cartime</span></div>
+<p style="color:#64748b;margin-top:15px">Cape Town • Johannesburg • Durban • Pretoria • Gqeberha • Nationwide</p>
 </div>
-<p style="color:#64748b;margin-top:24px;font-size:14px">Cape Town • Johannesburg • Durban • Pretoria • Gqeberha • Bloemfontein • Polokwane • Nationwide</p>
-</section>
 
-<section class="section" id="contact" style="background:#0f1b36">
-<h2 style="text-align:center;font-size:38px;font-weight:800;margin-bottom:40px">Get Free <span style="color:#ffbf00">Quote</span></h2>
-<div class="contact-grid">
-<div class="contact-info">
-<h3 style="color:#ffbf00;font-size:20px">📞 Contact AVISS</h3>
-<p style="font-size:30px;font-weight:800;color:#ffbf00;margin:20px 0;line-height:1.2">075 408 0448<br>084 887 0022</p>
-<p style="color:#cbd5e1;line-height:1.7;font-size:14px">aviss.security@gmail.com<br><br>🕒 24/7 Support<br>⚡ Response: Same day Gauteng, 24-48h other provinces<br><br>✅ KFC • Debonairs • Steers • Fishaways • Supa Quick • Titan Cargo • Cartime<br><br><span style="color:#ffbf00;font-weight:700">Dahua • HIKVISION • E.T • DACE • Digi-Door</span></p>
-<div style="background:#ffbf00;color:#000;padding:14px;border-radius:12px;text-align:center;font-weight:800;margin-top:24px;line-height:1.3">CALL NOW - FREE QUOTES<br>075 408 0448 | aviss.security@gmail.com</div>
+<section class="sec" id="contact" style="background:#0f1b36">
+<h2 style="text-align:center;font-size:34px;font-weight:800;margin-bottom:30px">Get Free <span style="color:#ffbf00">Quote</span></h2>
+<div class="contact">
+<div class="info">
+<h3 style="color:#ffbf00">📞 Contact AVISS</h3>
+<p style="font-size:28px;font-weight:800;color:#ffbf00;margin:15px 0">075 408 0448<br>084 887 0022</p>
+<p style="color:#cbd5e1;line-height:1.6">aviss.security@gmail.com<br><br>24/7 Support<br>Response: Same day Gauteng<br><br>KFC • Debonairs • Steers • Fishaways • Supa Quick<br><br><span style="color:#ffbf00">Dahua • HIKVISION • E.T • DACE • Digi-Door</span></p>
+<div style="background:#ffbf00;color:#000;padding:12px;border-radius:10px;text-align:center;font-weight:800;margin-top:15px">CALL NOW - FREE QUOTES<br>075 408 0448</div>
 </div>
-<form class="form" onsubmit="event.preventDefault();window.open('https://wa.me/27754080448?text=Hello AVISS SYSTEMS, I need a security quote - I saw your website','_blank')">
-<h3>Request Free Assessment</h3>
+<form class="form" onsubmit="event.preventDefault();window.open('https://wa.me/27754080448?text=Hello AVISS SYSTEMS I need a quote','_blank')">
+<h3 style="color:#0a0f1e;margin-bottom:12px">Request Free Assessment</h3>
 <input placeholder="Your Name" required>
 <input placeholder="Phone / WhatsApp" required>
-<input placeholder="Location (e.g. Johannesburg)" required>
-<textarea rows="4" placeholder="What do you need? CCTV / Gate / Alarm?"></textarea>
-<button type="submit" class="btn-gold" style="width:100%;border:none;cursor:pointer;padding:16px;font-size:16px">Send via WhatsApp →</button>
-<p style="text-align:center;color:#94a3b8;font-size:12px;margin-top:10px">We respond within 30 minutes</p>
+<input placeholder="Location" required>
+<textarea rows="3" placeholder="What do you need?"></textarea>
+<button class="btn" style="width:100%;border:none">Send via WhatsApp →</button>
 </form>
 </div>
 </section>
 
-<footer style="background:#060a14;padding:32px;text-align:center;color:#475569;font-size:12px;line-height:1.6">© 2026 AVISS SYSTEMS • 150+ sites secured • 9 provinces • Trusted by KFC, Debonairs Pizza, Steers<br>075 408 0448 • 084 887 0022 • aviss.security@gmail.com<br>Website by Troy - Troysite</footer>
+<footer style="background:#060a14;padding:24px;text-align:center;color:#475569;font-size:11px">© 2026 AVISS SYSTEMS • 150+ sites • 9 provinces • Trusted by KFC, Debonairs, Steers • 075 408 0448 • Website by Troy - Troysite</footer>
 </body>
   </html>
