@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Barber Shop - Sherwood | Best Haircut & Shave in Durban</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#C8A951;--black:#0F0F0F;--dark:#1A1A1A;--gray:#9A9A9A;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#0F0F0F;color:#fff;line-height:1.6;}
+h1,h2,h3{font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:1px;}
+.hero{position:relative;min-height:92vh;display:flex;align-items:end;padding:30px 20px;background:linear-gradient(to top,rgba(0,0,0,0.9) 20%,rgba(0,0,0,0.2) 100%),url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80');background-size:cover;background-position:center;}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#fff;color:#000;padding:6px 12px;border-radius:100px;font-size:13px;font-weight:700;margin-bottom:16px;}
+.hero h1{font-size:42px;line-height:0.95;margin-bottom:10px;}
+.hero h1 span{color:var(--gold);}
+.hero p{color:#ddd;font-size:15px;max-width:320px;margin-bottom:20px;}
+.cta-row{display:flex;gap:12px;margin-bottom:12px;}
+.btn{flex:1;display:flex;justify-content:center;align-items:center;gap:8px;padding:16px;border-radius:12px;font-weight:700;text-decoration:none;font-size:15px;border:none;cursor:pointer;text-transform:uppercase;letter-spacing:0.5px;}
+.btn-gold{background:var(--gold);color:#000;}
+.btn-white{background:#fff;color:#000;}
+.btn-outline{background:transparent;border:1px solid #333;color:#fff;padding:14px;}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--dark);border-top:1px solid #222;border-bottom:1px solid #222;}
+.stat{padding:18px;text-align:center;border-right:1px solid #222;}
+.stat:last-child{border:none;}
+.stat b{display:block;font-family:'Oswald';font-size:20px;color:var(--gold);}
+.stat span{font-size:11px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;}
+.section{padding:36px 20px;}
+.section-dark{background:var(--dark);}
+.label{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;display:block;}
+.section h2{font-size:28px;margin-bottom:20px;line-height:1.1;}
+.services{display:grid;gap:12px;}
+.service{display:flex;justify-content:space-between;align-items:center;background:#151515;border:1px solid #222;border-radius:14px;padding:16px;}
+.service-left{display:flex;gap:12px;align-items:center;}
+.icon{width:44px;height:44px;background:#1F1F1F;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--gold);}
+.service h4{font-size:15px;margin-bottom:2px;}
+.service p{font-size:12px;color:var(--gray);}
+.price{font-family:'Oswald';font-size:18px;color:var(--gold);font-weight:700;}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.gallery img{width:100%;height:170px;object-fit:cover;border-radius:14px;}
+.reviews{background:#111;border-radius:16px;padding:18px;border:1px solid #222;margin-top:20px;}
+.stars{color:var(--gold);letter-spacing:2px;margin-bottom:6px;}
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;background:#0F0F0F;border-top:1px solid #222;padding:12px 16px;display:flex;gap:10px;z-index:99;}
+</style>
+</head>
+<body>
+<div class="hero">
+<div>
+<div class="badge">5.0 (17 REVIEWS) - OPEN TILL 6:30 PM</div>
+<h1>THE BARBER SHOP <span>- SHERWOOD</span></h1>
+<p>Best haircut and shave in Durban. Fade, beard dyeing and classic cuts. R50-200.</p>
+<div class="cta-row">
+<a href="https://wa.me/27673471086?text=Hi%20The%20Barber%20Shop%20Sherwood%2C%20I%20want%20to%20book%20a%20haircut" class="btn btn-gold">BOOK ON WHATSAPP</a>
+<a href="https://www.google.com/maps/search/?api=1&query=The+Barber+Shop+Sherwood+Durban" class="btn btn-white">DIRECTIONS</a>
+</div>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>5.0 STAR</b><span>17 Reviews</span></div>
+<div class="stat"><b>MON-SAT</b><span>Open Daily</span></div>
+<div class="stat"><b>793</b><span>Sherwood Rd</span></div>
+</div>
+
+<div class="section">
+<span class="label">Price List</span>
+<h2>Cuts and Prices</h2>
+<div class="services">
+<div class="service"><div class="service-left"><div class="icon">CUT</div><div><h4>Classic Haircut</h4></div></div><div class="price">R50</div></div>
+<div class="service"><div class="service-left"><div class="icon">FADE</div><div><h4>Skin Fade + Design</h4></div></div><div class="price">R120</div></div>
+<div class="service"><div class="service-left"><div class="icon">BEARD</div><div><h4>Beard Trim and Shape</h4></div></div><div class="price">R80</div></div>
+<div class="service"><div class="service-left"><div class="icon">DYE</div><div><h4>Beard Dyeing</h4></div></div><div class="price">R100</div></div>
+<div class="service"><div class="service-left"><div class="icon">FULL</div><div><h4>Haircut + Beard + Shave</h4></div></div><div class="price">R200</div></div>
+</div>
+</div>
+
+<div class="section" style="background:#1A1A1A;">
+<span class="label">Our Work</span>
+<h2>Recent Fades</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=400&q=80">
+<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&q=80">
+<img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=400&q=80">
+<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=400&q=80">
+</div>
+<div class="reviews">
+<div class="stars">★★★★★</div>
+<div style="font-size:13px;color:#ccc;font-style:italic;">"Best haircut and shave in Durban - beard dyeing is perfect. 5 stars!"</div>
+<div style="margin-top:8px;font-size:11px;color:#777;">Google Review - 5.0 (17)</div>
+</div>
+</div>
+
+<div style="height:80px;"></div>
+<div class="sticky-bar">
+<a href="tel:+27673471086" class="btn btn-outline" style="flex:0.5;">CALL</a>
+<a href="https://wa.me/27673471086?text=Hi%20The%20Barber%20Shop%20Sherwood%2C%20I%20want%20to%20book%20now" class="btn btn-gold" style="flex:1;">BOOK ON WHATSAPP</a>
+</div>
+</body>
+  </html>
