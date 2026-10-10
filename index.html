@@ -3,72 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TROY SITE - Luxury Web Agency</title>
+<title>TROY SITE</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-:root{
-  --bg:#070707;
-  --gold-light:#E9DDC2;
-  --gold-mid:#C7B99F;
-  --gold-dark:#9A8A6B;
-  --logo-gold:rgb(177,166,140);
+body{background:#070707;color:#F2F0EB;font-family:Inter,system-ui,sans-serif}
+.gold{
+  background:linear-gradient(180deg,#FFF0B3 0%,#E7C25C 30%,#C99A1C 65%,#8C6710 100%);
+  box-shadow:inset 0 1px 0 #fff, 0 0 0 1px #C99A1C, 0 18px 50px rgba(201,154,28,.35);
 }
-body{background:var(--bg);color:#F2F0EB;font-family:Inter,system-ui,sans-serif}
-.gold-matched{
-  background:linear-gradient(180deg, var(--gold-light) 0%, var(--gold-mid) 52%, var(--gold-dark) 100%);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.8), 0 0 0 1px var(--gold-dark), 0 20px 50px rgba(199,185,159,.25);
-}
-.glass{
-  background:#0E0E0E;
-  border:1px solid rgba(199,185,159,.22);
-}
-.line{background:linear-gradient(90deg,transparent, rgba(199,185,159,.35), transparent);height:1px}
-.label{letter-spacing:.35em;font-size:10px;color:var(--gold-mid)}
+.glass{background:#0F0F0F;border:1px solid rgba(231,194,92,.22)}
+.line{height:1px;background:linear-gradient(90deg,transparent,rgba(231,194,92,.35),transparent)}
 </style>
 </head>
-<body class="px-5 py-2 max-w-[440px] mx-auto">
+<body class="px-5 max-w-[440px] mx-auto">
 
-<!-- LOGO - EXACT MATCH BG -->
-<div class="flex flex-col items-center bg-[#070707] py-8 -mx-5 px-5">
-  <img src="IMG-20261010-WA7068.jpg" alt="TROY SITE" class="w-[300px] max-w-[85%] h-auto">
+<!-- LOGO - YOUR NEW GOLD GLOBE -->
+<div class="flex justify-center bg-[#070707] pt-6 pb-2 -mx-5">
+  <img src="IMG-20261011-WA4001.jpg" alt="Troy Site Logo" class="w-full max-w-[420px] h-auto">
 </div>
 
-<!-- PRICE - NOW CHAMPAGNE GOLD TO MATCH LOGO -->
-<div class="gold-matched rounded-[28px] p-[1.2px] mt-2">
-  <div class="gold-matched rounded-[27px] py-7 px-6 text-center">
-    <div class="bg-[#070707] text-[rgb(199,185,159)] text-[10px] tracking-[0.32em] px-4 py-2 rounded-full inline-block mb-4 font-bold border border-[rgba(199,185,159,.3)]">PREMIUM • NO SUBSCRIPTION</div>
-    <h1 class="text-[#0A0A0A] font-black text-[30px] leading-[1.05] tracking-[-0.02em]">R2,500 ONCE-OFF<br>NO MONTHLY FEE<br>DONE IN 24HRS</h1>
+<!-- PRICE - MATCHED TO REAL GOLD GLOBE -->
+<div class="gold rounded-[28px] p-[1.2px] mt-3">
+  <div class="gold rounded-[27px] py-7 px-6 text-center">
+    <div class="bg-black text-[#E7C25C] text-[10px] tracking-[0.32em] px-4 py-2 rounded-full inline-block mb-4 font-bold border border-[#E7C25C]/30">PREMIUM • NO SUBSCRIPTION</div>
+    <h1 class="text-black font-black text-[30px] leading-[1.05]">R2,500 ONCE-OFF<br>NO MONTHLY FEE<br>DONE IN 24HRS</h1>
   </div>
 </div>
 
-<!-- WHAT'S INCLUDED - MATCHED TO LOGO -->
+<!-- WHAT'S INCLUDED - PROFESSIONAL NO EMOJIS -->
 <div class="glass rounded-[28px] p-8 mt-5">
-  <h2 class="text-center label font-bold">WHAT'S INCLUDED</h2>
+  <h2 class="text-center text-[10px] tracking-[0.4em] text-[#E7C25C]/70 font-bold">WHAT'S INCLUDED</h2>
   <div class="line my-5"></div>
   <div class="space-y-[18px] text-[13px]">
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Call Button</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">Tap to Call</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">WhatsApp Integration</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">Direct Chat</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Google Maps Pin</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">Location</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Quote Request Form</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">To WhatsApp</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Photo Gallery</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">Before / After</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Client Reviews</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">Trust</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Services Section</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">Your Work</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Custom Link</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">troysite.co.za/name</span></div>
-    <div class="flex justify-between"><span class="text-[#F2F0EB]">Mobile Optimized</span><span class="text-[rgb(199,185,159)]/60 text-[11px]">All Devices</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Call Button</span><span class="text-[#E7C25C]/50 text-[11px]">Tap to Call</span></div>
+    <div class="flex justify-between"><span class="font-semibold">WhatsApp Integration</span><span class="text-[#E7C25C]/50 text-[11px]">Direct Chat</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Google Maps Pin</span><span class="text-[#E7C25C]/50 text-[11px]">Location</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Quote Request Form</span><span class="text-[#E7C25C]/50 text-[11px]">To WhatsApp</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Photo Gallery</span><span class="text-[#E7C25C]/50 text-[11px]">Before / After</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Client Reviews</span><span class="text-[#E7C25C]/50 text-[11px]">Trust</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Services Section</span><span class="text-[#E7C25C]/50 text-[11px]">Your Work</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Custom Link</span><span class="text-[#E7C25C]/50 text-[11px]">troysite.co.za/name</span></div>
+    <div class="flex justify-between"><span class="font-semibold">Mobile Optimized</span><span class="text-[#E7C25C]/50 text-[11px]">All Devices</span></div>
   </div>
   <div class="line mt-6"></div>
 </div>
 
-<!-- CTA - MATCHED -->
+<!-- CTA -->
 <div class="mt-6 space-y-3 pb-10">
-  <a href="tel:0780902298" class="gold-matched rounded-full w-full py-[18px] text-center block text-[#0A0A0A] font-black text-[13px] tracking-[0.22em]">CALL 078 090 2298</a>
-  <a id="waBtn" href="#" class="bg-[#F2F0EB] rounded-full w-full py-[18px] text-center block text-[#070707] font-black text-[13px] tracking-[0.22em]">WHATSAPP NOW</a>
-  <p class="text-center text-[8.5px] tracking-[0.45em] text-[rgba(199,185,159,.35)] pt-4">ROODEPOORT • SOUTH AFRICA • EST 2024</p>
+  <a href="tel:0780902298" class="gold rounded-full w-full py-[18px] text-center block text-black font-black text-[13px] tracking-[0.22em]">CALL 078 090 2298</a>
+  <a id="waBtn" href="#" class="bg-[#F2F0EB] rounded-full w-full py-[18px] text-center block text-black font-black text-[13px] tracking-[0.22em]">WHATSAPP NOW</a>
+  <p class="text-center text-[8px] tracking-[0.45em] text-[#E7C25C]/30 pt-4">ROODEPOORT • SOUTH AFRICA • EST 2024</p>
 </div>
 
 <script>
-const wa="27780902298";
-document.getElementById('waBtn').href=`https://wa.me/${wa}?text=${encodeURIComponent("Hello Troy Site, I want a luxury website. Is R2500 still available?")}`;
+document.getElementById('waBtn').href="https://wa.me/27780902298?text="+encodeURIComponent("Hello Troy Site, I want a luxury website. Is R2500 still available?");
 </script>
 </body>
   </html>
