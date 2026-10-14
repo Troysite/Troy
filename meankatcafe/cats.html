@@ -2,54 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Meet the Cats - MeanKat Café</title>
+<title>Meet the Cats - MeanKat</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
 *{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
 .header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:10}
-.logo{height:54px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:18px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
+.logo{height:56px;background:white;border-radius:10px;padding:4px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:16px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
 .hero{max-width:1280px;margin:0 auto;padding:20px;display:grid;grid-template-columns:380px 1fr;gap:18px}
 .card{background:var(--cream);color:#1A0F2E;border-radius:24px;padding:18px;border:3px solid var(--yellow)}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-.filter{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;border:2px solid #111;background:white;cursor:pointer}
-.filter.active{background:var(--yellow)}
+.filter{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;border:2px solid #111;background:white;cursor:pointer}.filter.active{background:var(--yellow)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
 .cat-card{background:#111;color:white;border-radius:20px;overflow:hidden;border:2px solid #2a2a2a}
-.cat-card img{width:100%;height:180px;object-fit:cover}
-.cat-body{padding:14px}
-.tag{display:inline-block;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:800;margin-right:4px}
-.tag-res{background:var(--yellow);color:#111}.tag-adopt{background:#7C3AED;color:white}.tag-tlc{background:#F472B6;color:white}
 @media(max-width:900px){.hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="header"><a href="index.html"><img src="logo.png" class="logo"></a><nav><a href="index.html">Home</a><a class="active" href="cats.html">Meet the Cats</a><a href="menu.html">Menu</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav></header>
+<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo"></a><nav><a href="index.html">Home</a><a class="active" href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav></header>
 <div class="hero">
-<div class="card" style="background:#111;color:white;border-color:var(--purple);position:sticky;top:88px">
-<img src="interior.jpg" style="width:100%;height:200px;object-fit:cover;border-radius:16px;border:2px solid white">
-<h2 style="margin-top:12px;color:var(--yellow)">They run this place</h2>
-<p style="font-size:13px;margin-top:6px;line-height:1.5">Real sanctuary with spiral staircase, cat towers, air purifiers. Luca, Orci & Chino are residents. Others are adoptable via rescue partners.</p>
-<div class="filters"><button class="filter active" data-f="all">All</button><button class="filter" data-f="resident">Resident</button><button class="filter" data-f="adoptable">Adoptable</button><button class="filter" data-f="dual">Dual</button><button class="filter" data-f="tlc">Extra TLC</button></div>
-</div>
-<div>
-<div class="grid" id="grid">
-<div class="cat-card" data-tags="resident"><div style="background:var(--yellow);height:180px;display:grid;place-items:center;color:#111;font-size:32px;font-weight:800">LUCA</div><div class="cat-body"><h3>Luca <span class="tag tag-res">Resident</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Soft Soul • Mikah's Baby. Loves top shelf of spiral stairs, watches everything. Calm, observant.</p></div></div>
-<div class="cat-card" data-tags="resident"><div style="background:#A78BFA;height:180px;display:grid;place-items:center;color:#111;font-size:32px;font-weight:800">ORCI</div><div class="cat-body"><h3>Orci <span class="tag tag-res">Resident</span><span class="tag tag-adopt">Dual</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Loving Explorer. Greets every guest, leads tours to second floor ivy balcony. Social butterfly.</p></div></div>
-<div class="cat-card" data-tags="resident"><div style="background:#FDE68A;height:180px;display:grid;place-items:center;color:#111;font-size:32px;font-weight:800">CHINO</div><div class="cat-body"><h3>Chino <span class="tag tag-res">Resident</span><span class="tag tag-tlc">Extra TLC</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Chill King. Found sleeping on air purifier at base of stairs. Needs quiet corners, loves head scratches.</p></div></div>
-<div class="cat-card" data-tags="adoptable"><div style="background:#DDD;height:180px;display:grid;place-items:center">🐾</div><div class="cat-body"><h3>Milo <span class="tag tag-adopt">Adoptable</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Young, playful, litter-trained. Ready for forever home via SPCA partnership.</p></div></div>
-<div class="cat-card" data-tags="adoptable dual"><div style="background:#DDD;height:180px;display:grid;place-items:center">🐾</div><div class="cat-body"><h3>Luna <span class="tag tag-adopt">Adoptable</span><span class="tag tag-res">Dual</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Resident foster - can stay or be adopted. Loves pinwheel skewer crumbs.</p></div></div>
-<div class="cat-card" data-tags="tlc adoptable"><div style="background:#DDD;height:180px;display:grid;place-items:center">🐾</div><div class="cat-body"><h3>Pepper <span class="tag tag-tlc">Extra TLC</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Shy but sweet, needs patient home. Thrives in purple quiet room upstairs.</p></div></div>
-</div>
-</div>
+<div class="card" style="background:#111;color:white;border-color:var(--purple)"><img src="logo-560.webp" style="width:100%;height:120px;object-fit:contain;background:white;border-radius:12px;padding:10px"><h2 style="margin-top:12px;color:var(--yellow)">They run this place</h2><p style="font-size:13px;margin-top:6px">Real cats: Luca, Orci, Chino. Filters: Resident / Adoptable / Dual / Extra TLC</p><div class="filters"><button class="filter active" data-f="all">All</button><button class="filter" data-f="resident">Resident</button><button class="filter" data-f="adoptable">Adoptable</button><button class="filter" data-f="dual">Dual</button><button class="filter" data-f="tlc">Extra TLC</button></div></div>
+<div><div class="grid" id="grid">
+<div class="cat-card" data-tags="resident"><div style="background:var(--yellow);height:180px;display:grid;place-items:center;color:#111;font-size:28px;font-weight:800">LUCA</div><div style="padding:14px"><h3>Luca - Soft Soul</h3><p style="font-size:12px;opacity:.8">Mikah's Baby, loves spiral stairs</p></div></div>
+<div class="cat-card" data-tags="resident"><div style="background:#A78BFA;height:180px;display:grid;place-items:center;color:#111;font-size:28px;font-weight:800">ORCI</div><div style="padding:14px"><h3>Orci - Loving Explorer</h3><p style="font-size:12px;opacity:.8">Greets guests, tour guide</p></div></div>
+<div class="cat-card" data-tags="resident"><div style="background:#FDE68A;height:180px;display:grid;place-items:center;color:#111;font-size:28px;font-weight:800">CHINO</div><div style="padding:14px"><h3>Chino - Chill King</h3><p style="font-size:12px;opacity:.8">Sleeps on air purifier</p></div></div>
+</div></div>
 </div>
 <script>
-document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{
-document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');
-const f=b.dataset.f;document.querySelectorAll('.cat-card').forEach(c=>{
-c.style.display=(f==='all'||c.dataset.tags.includes(f))?'block':'none';
-})
-}));
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.f;document.querySelectorAll('.cat-card').forEach(c=>{c.style.display=(f==='all'||c.dataset.tags.includes(f))?'block':'none'})}));
 </script>
 </body>
-  </html>
+</html>
