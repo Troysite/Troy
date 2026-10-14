@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visit & Prices | MeanKat Café - Services, Menu, Booking</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFFBF8;--purple:#7C3AED;--purple-dark:#4C1D95;--lilac:#F3E8FF;--gold:#FBBF24;--ink:#1F1235;--brown:#6B5B7A}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--cream);color:var(--ink)}
+h1,h2,h3{font-family:Fredoka,sans-serif}
+.header{position:fixed;top:0;width:100%;background:rgba(255,251,248,.92);backdrop-filter:blur(14px);z-index:200;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #EEE6FF}
+.logo{font-family:Fredoka;font-weight:700;font-size:24px;text-decoration:none;color:var(--ink)}.logo span{color:var(--purple)}
+.nav{display:flex;gap:22px;align-items:center}.nav a{color:var(--ink);text-decoration:none;font-size:14.5px}.nav a.active{color:var(--purple);font-weight:700;border-bottom:3px solid var(--gold)}
+.btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;border:none;cursor:pointer}.btn-purple{background:var(--purple);color:white}.btn-dark{background:var(--ink);color:white}.btn-gold{background:var(--gold);color:var(--ink)}
+.section{padding:100px 28px 60px;max-width:1320px;margin:0 auto}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.price-card{background:white;border-radius:24px;padding:24px;border:2px solid #EEE6FF;position:relative}.price-card.popular{border-color:var(--purple);transform:scale(1.02);box-shadow:0 12px 40px rgba(124,58,237,.15)}
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}.service-card{background:white;border-radius:24px;padding:24px;border:1px solid #EEE6FF;display:flex;gap:16px}
+@media(max-width:900px){.price-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo" href="index.html">Mean<span>Kat</span> Café</a>
+<nav class="nav"><a href="index.html">Home</a><a href="cats.html">Our Cats</a><a class="active" href="services.html">Visit & Prices</a><a class="btn btn-purple" href="https://wa.me/27817745066?text=Book">Book Now</a></nav>
+</header>
+
+<section class="section">
+<h1 style="font-size:54px;line-height:.9">Visit, Prices & <span style="color:var(--purple)">Services</span></h1>
+<p style="color:var(--brown);max-width:700px;margin:14px 0 28px">All information from original captured - pricing for students, adults, kids, families, plus services that were missing. We accommodate everyone.</p>
+
+<h2 style="font-size:32px;margin-bottom:16px">💰 Price Range - Visiting Cats (Per Hour)</h2>
+<div class="price-grid">
+<div class="price-card"><h3>🎓 Students</h3><p style="font-size:34px;font-weight:700;margin:8px 0">R50<span style="font-size:14px;font-weight:400">/hr</span></p><p style="font-size:12px;color:var(--brown)">Student card required. Study-friendly. Includes 1 drink + WiFi + cat time. Whole day
