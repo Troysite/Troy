@@ -2,32 +2,77 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Visit & Prices | MeanKat Café - Services, Menu, Booking</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<title>Services & Visit - MeanKat Café</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#FFFBF8;--purple:#7C3AED;--purple-dark:#4C1D95;--lilac:#F3E8FF;--gold:#FBBF24;--ink:#1F1235;--brown:#6B5B7A}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--cream);color:var(--ink)}
+:root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
 h1,h2,h3{font-family:Fredoka,sans-serif}
-.header{position:fixed;top:0;width:100%;background:rgba(255,251,248,.92);backdrop-filter:blur(14px);z-index:200;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #EEE6FF}
-.logo{font-family:Fredoka;font-weight:700;font-size:24px;text-decoration:none;color:var(--ink)}.logo span{color:var(--purple)}
-.nav{display:flex;gap:22px;align-items:center}.nav a{color:var(--ink);text-decoration:none;font-size:14.5px}.nav a.active{color:var(--purple);font-weight:700;border-bottom:3px solid var(--gold)}
-.btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;border:none;cursor:pointer}.btn-purple{background:var(--purple);color:white}.btn-dark{background:var(--ink);color:white}.btn-gold{background:var(--gold);color:var(--ink)}
-.section{padding:100px 28px 60px;max-width:1320px;margin:0 auto}
-.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.price-card{background:white;border-radius:24px;padding:24px;border:2px solid #EEE6FF;position:relative}.price-card.popular{border-color:var(--purple);transform:scale(1.02);box-shadow:0 12px 40px rgba(124,58,237,.15)}
-.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}.service-card{background:white;border-radius:24px;padding:24px;border:1px solid #EEE6FF;display:flex;gap:16px}
-@media(max-width:900px){.price-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr}}
+.header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100}
+.logo{height:54px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:16px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
+.marquee{background:var(--yellow);color:#111;padding:8px 0;overflow:hidden;white-space:nowrap;font-weight:800;font-size:13px}
+.wrap{max-width:1280px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 360px;gap:18px}
+.card{background:var(--cream);color:#1A0F2E;border-radius:24px;padding:20px;border:3px solid var(--yellow)}
+.card-dark{background:#111;color:white;border-radius:24px;padding:20px;border:3px solid var(--purple)}
+.service{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed #E9D5FF}
+.service-icon{width:52px;height:52px;border-radius:14px;background:#111;color:var(--yellow);display:grid;place-items:center;font-size:24px;font-weight:800;flex-shrink:0}
+.pill{background:#111;color:var(--yellow);padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;display:inline-block;margin:3px}
+.price-tag{background:var(--purple);color:white;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:800}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header class="header">
-<a class="logo" href="index.html">Mean<span>Kat</span> Café</a>
-<nav class="nav"><a href="index.html">Home</a><a href="cats.html">Our Cats</a><a class="active" href="services.html">Visit & Prices</a><a class="btn btn-purple" href="https://wa.me/27817745066?text=Book">Book Now</a></nav>
+<a href="index.html"><img src="logo.png" class="logo" alt="MeanKat"></a>
+<nav class="nav"><a href="index.html">Home</a><a href="cats.html">Meet the Cats</a><a href="menu.html">Menu</a><a class="active" href="services.html">Services</a><a class="btn" href="https://wa.me/27817745066">Book Visit</a></nav>
 </header>
+<div class="marquee"><span>🐾 EAT • PLAY • ADOPT 🐾 SERVICES: CAT THERAPY • BIRTHDAYS • ADOPTION • PHOTOGRAPHY 🐾 87 SMISO NKWANYANA RD 🐾 </span></div>
 
-<section class="section">
-<h1 style="font-size:54px;line-height:.9">Visit, Prices & <span style="color:var(--purple)">Services</span></h1>
-<p style="color:var(--brown);max-width:700px;margin:14px 0 28px">All information from original captured - pricing for students, adults, kids, families, plus services that were missing. We accommodate everyone.</p>
+<div class="wrap">
+<div>
+<div style="background:var(--yellow);color:#111;border-radius:20px;padding:16px 20px"><h1 style="font-size:36px;line-height:.9">Visit & Services</h1><p style="font-size:12px;font-weight:700;margin-top:6px">Real sanctuary rules from your photos • Our own black/yellow/purple style</p></div>
 
-<h2 style="font-size:32px;margin-bottom:16px">💰 Price Range - Visiting Cats (Per Hour)</h2>
-<div class="price-grid">
-<div class="price-card"><h3>🎓 Students</h3><p style="font-size:34px;font-weight:700;margin:8px 0">R50<span style="font-size:14px;font-weight:400">/hr</span></p><p style="font-size:12px;color:var(--brown)">Student card required. Study-friendly. Includes 1 drink + WiFi + cat time. Whole day
+<div class="card" style="margin-top:14px">
+<h2 style="font-size:24px">How It Works</h2>
+<div class="service"><div class="service-icon">1</div><div><h3>Book on WhatsApp</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">WhatsApp 081 774 5066 to reserve your slot. Walk-ins welcome if space available. Entrance fee supports cat food, litter, vet care.</p><div style="margin-top:6px"><span class="pill">📍 87 Smiso Nkwanyana Rd, Morningside</span><span class="pill">🕘 Open Daily</span></div></div></div>
+<div class="service"><div class="service-icon">2</div><div><h3>Entrance Fee Supports Cats</h3><p style="font-size:13px;margin-top:4px;line-height:1.5"><b>Fee includes:</b> 1 hour with cats, free use of cat towers & spiral staircase lounge, air-purified sanctuary. All fees go to cat care - food, rescue, vet. From entrance photo sign.</p><span class="price-tag">Fee supports sanctuary</span></div></div>
+<div class="service"><div class="service-icon">3</div><div><h3>Rules (from your interior photo)</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">• Eating on premises is at your own risk (sign in photo)<br>• No picking up cats - let them come to you<br>• Quiet voices - purple walls = calm zone<br>• No flash photography<br>• Wash hands before/after</p></div></div>
+</div>
+
+<div class="card" style="margin-top:14px">
+<h2 style="font-size:24px">Our Services - Own Style</h2>
+
+<div class="service"><div class="service-icon">💜</div><div><h3>Cat Therapy & Chill</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">1 hour in purple sanctuary with spiral staircase. Cat towers, hammocks, air purifier with sleeping cat (like in your photo). Perfect for anxiety, study breaks, dates. Cats: Luca (soft soul), Orci (explorer), Chino (chill king).</p><div style="margin-top:6px"><span class="price-tag">Best for mental health</span><span class="pill">Real spiral staircase</span></div></div></div>
+
+<div class="service"><div class="service-icon">🎂</div><div><h3>Birthdays & Private Events</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">Rent whole café for birthdays, team builds, proposals. Pinwheel skewers R60, wraps R60-R65, crushers R50/R70, milkshakes R55-R75. Private use of upstairs ivy balcony.</p><div style="margin-top:6px"><span class="pill">Up to 15 guests</span><span class="pill">Catering: real menu</span></div></div></div>
+
+<div class="service"><div class="service-icon">🏠</div><div><h3>Adoption - Eat Play Adopt</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">Adoptable cats via SPCA partnership. Tags: Resident, Adoptable, Dual (can stay or be adopted), Extra TLC. Meet cats, fall in love, apply. Process explained in café.</p><div style="margin-top:6px"><span class="price-tag">Eat Play Adopt</span><span class="pill">SPCA partners</span></div></div></div>
+
+<div class="service"><div class="service-icon">📸</div><div><h3>Photography & Content</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">Instagram-ready: yellow retro logo, purple walls, spiral stairs, cat on air purifier. Tag @meankatcafe_durban. No flash. Perfect for TikTok - you have TikTok @meankatcafe_durban.</p><div style="margin-top:6px"><span class="pill">No flash</span><span class="pill">Tag us</span></div></div></div>
+
+<div class="service"><div class="service-icon">☕</div><div><h3>Coffee + Cats Combo</h3><p style="font-size:13px;margin-top:4px;line-height:1.5">Coffee R20-R45, Speciality lattes R55 (Rolo, Speckled Egg, Milk Tart, Double Choc), Matcha R65-R75, Crushers R50/R70. Food: Croissants R40-R65, Pinwheel skewers R60 bestseller, Wraps R60-R65.</p><div style="margin-top:6px"><span class="pill">Almond/Oat +R10</span><span class="pill">Real prices</span></div></div></div>
+</div>
+</div>
+
+<div style="position:sticky;top:88px">
+<div class="card-dark" style="border-color:var(--yellow)">
+<img src="interior.jpg" style="width:100%;height:240px;object-fit:cover;border-radius:16px;border:2px solid white">
+<h3 style="margin-top:12px;color:var(--yellow)">Real Rules From Photo</h3>
+<p style="font-size:12px;margin-top:8px;line-height:1.5;background:white;color:#111;padding:10px;border-radius:12px;border:2px dashed var(--purple)">⚠️ EATING ON THE PREMISES IS DONE AT YOUR OWN RISK - Sign visible in your spiral staircase photo on right wall</p>
+<div style="margin-top:12px">
+<div style="font-weight:800;font-size:12px;color:var(--yellow)">CONTACT & BOOK</div>
+<div style="font-size:13px;margin-top:6px;line-height:1.6">📍 87 Smiso Nkwanyana Rd, Morningside, Durban, 4001<br>📱 WhatsApp: 081 774 5066<br>📸 Insta/TikTok: @meankatcafe_durban<br>📘 FB: Meankat Cafe</div>
+<a href="https://wa.me/27817745066" class="btn" style="display:block;text-align:center;margin-top:12px;width:100%">Book on WhatsApp →</a>
+<a href="https://maps.google.com/?q=87+Smiso+Nkwanyana+Rd+Morningside+Durban" class="btn" style="display:block;text-align:center;margin-top:8px;width:100%;background:#111;color:var(--yellow);border:2px solid var(--yellow)">Open in Maps</a>
+</div>
+<div style="margin-top:14px;background:var(--yellow);color:#111;border-radius:12px;padding:10px;text-align:center;font-weight:800;font-size:12px">They run this place. We just make the coffee.</div>
+</div>
+
+<div class="card" style="margin-top:12px;background:var(--yellow);color:#111;border-color:#111">
+<h3 style="font-size:16px">Why Our Style Wins</h3>
+<p style="font-size:12px;margin-top:6px;line-height:1.5;font-weight:600">Old vercel site: no slider, no real prices, pale paper menu, fake cat photos.<br><br><b>Our style:</b> Black background like logo, yellow/purple accents, real spiral staircase photo, real menu R20-R75, real rules, sliding pictures, filters.</p>
+</div>
+</div>
+</div>
+</body>
+  </html>
