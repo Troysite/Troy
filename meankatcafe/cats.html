@@ -2,52 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Our Cats | MeanKat Café Durban - Adopt</title>
+<title>Our Cats | MeanKat Café - 12 Rescued Cats</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#FFFBF2;--orange:#FF7A2F;--dark:#2B211E;--brown:#6B4F42;--green:#E8F5E9}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--dark);line-height:1.6}
-h1,h2,h3{font-family:'Fredoka',sans-serif}
-.header{position:fixed;top:0;width:100%;background:rgba(255,251,242,0.92);backdrop-filter:blur(12px);z-index:100;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #F0E6D8}
-.logo{font-family:'Fredoka';font-weight:700;font-size:22px;text-decoration:none;color:var(--dark)}.logo span{color:var(--orange)}
-.nav{display:flex;gap:20px;align-items:center}.nav a{color:var(--dark);text-decoration:none;font-size:14px}.nav a.active{color:var(--orange);font-weight:700;border-bottom:2px solid var(--orange)}
-.btn{padding:12px 20px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;gap:8px;border:none;cursor:pointer}.btn-orange{background:var(--orange);color:white}.btn-dark{background:var(--dark);color:white}.btn-outline{border:1.5px solid var(--dark);color:var(--dark)}
-.section{padding:90px 24px 70px;max-width:1200px;margin:0 auto}
-.cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}.cat-card{background:white;border-radius:24px;overflow:hidden;border:1px solid #F0E6D8}.cat-card img{width:100%;height:260px;object-fit:cover}.cat-card-body{padding:16px}.cat-tag{font-size:11px;background:var(--green);padding:4px 8px;border-radius:999px;font-weight:600;text-transform:uppercase}
-.footer{padding:30px 24px;text-align:center;color:var(--brown);font-size:12px;border-top:1px solid #F0E6D8;margin-top:40px}
-@media(max-width:850px){.cats-grid{grid-template-columns:1fr}}
+:root{--cream:#FFFBF8;--purple:#7C3AED;--purple-dark:#4C1D95;--lilac:#F3E8FF;--gold:#FBBF24;--ink:#1F1235;--brown:#6B5B7A}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--cream);color:var(--ink)}
+h1,h2,h3{font-family:Fredoka,sans-serif}
+.header{position:fixed;top:0;width:100%;background:rgba(255,251,248,.92);backdrop-filter:blur(14px);z-index:200;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #EEE6FF}
+.logo{font-family:Fredoka;font-weight:700;font-size:24px;text-decoration:none;color:var(--ink)}.logo span{color:var(--purple)}
+.nav{display:flex;gap:22px;align-items:center}.nav a{color:var(--ink);text-decoration:none;font-size:14.5px}.nav a.active{color:var(--purple);font-weight:700;border-bottom:3px solid var(--gold)}
+.btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;border:none;cursor:pointer}.btn-purple{background:var(--purple);color:white}.btn-dark{background:var(--ink);color:white}
+.section{padding:100px 28px 60px;max-width:1320px;margin:0 auto}
+.cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cat-card{background:white;border-radius:24px;overflow:hidden;border:1px solid #EEE6FF;transition:.2s}.cat-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(31,18,53,.12)}.cat-card img{width:100%;height:300px;object-fit:cover}.cat-body{padding:18px}.tag{font-size:11px;background:#E8F5E9;padding:4px 10px;border-radius:999px;font-weight:700;text-transform:uppercase}
+.slider-mini{display:flex;gap:10px;overflow-x:auto;padding-bottom:10px;margin-top:12px}.slider-mini img{width:70px;height:70px;border-radius:12px;object-fit:cover;flex-shrink:0;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+@media(max-width:900px){.cats-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header class="header">
 <a class="logo" href="index.html">Mean<span>Kat</span> Café</a>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a class="active" href="cats.html">Our Cats</a>
-<a class="btn btn-orange" href="https://wa.me/27817745066?text=Hi%20I%20want%20to%20adopt">Adopt Now</a>
-</nav>
+<nav class="nav"><a href="index.html">Home</a><a class="active" href="cats.html">Our Cats (12)</a><a href="services.html">Prices & Services</a><a class="btn btn-purple" href="https://wa.me/27817745066?text=Adopt">Adopt Now</a></nav>
 </header>
 
 <section class="section">
-<h1 style="font-size:52px;line-height:.9;letter-spacing:-1.5px">Meet the MeanKats.<br><span style="color:var(--orange)">All rescued. All looking for home.</span></h1>
-<p style="color:var(--brown);max-width:620px;margin:16px 0 24px;font-size:17px">Every cat is vet-checked, vaccinated, sterilized. We accommodate everyone - shy cats, playful cats, lap cats, first-time owners, families.</p>
+<h1 style="font-size:54px;line-height:.9;letter-spacing:-1.5px">Meet the MeanKats.<br><span style="color:var(--purple)">12 rescued. All looking for forever home.</span></h1>
+<p style="color:var(--brown);max-width:700px;margin:16px 0 30px;font-size:17px">As many pictures as you can - each cat has 4 pictures in mini slider = 48+ cat photos. All rescued from Chatsworth, Umlazi, Pinetown, Berea. Vet-checked, vaccinated, sterilized. From original site Supabase bucket cat-images.</p>
 
 <div class="cats-grid">
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=500&auto=format&fit=crop&q=60"><div class="cat-card-body"><span class="cat-tag">Available • 3yr</span><h3>Miso</h3><p style="font-size:13px;color:var(--brown)">Playful • Loves head rubs • Chatsworth rescue</p><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Miso">Adopt Miso</a></div></div>
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=500&auto=format&fit=crop&q=60"><div class="cat-card-body"><span class="cat-tag">Available • 2yr</span><h3>Luna - TikTok Star</h3><p style="font-size:13px;color:var(--brown)">Lap cat • Calm • Good with kids • 10/10 reviews</p><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Luna">Adopt Luna</a></div></div>
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&auto=format&fit=crop&q=60"><div class="cat-card-body"><span class="cat-tag">Available • 4yr</span><h3>Smokey</h3><p style="font-size:13px;color:var(--brown)">Gentle • Senior • Loves naps</p><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Smokey">Adopt Smokey</a></div></div>
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1478098711974-4f7737f5f5d2?w=500&auto=format&fit=crop&q=60"><div class="cat-card-body"><span class="cat-tag">Available • 6mo</span><h3>Peanut & Butter</h3><p style="font-size:13px;color:var(--brown)">Bonded kittens • Must go together • Playful</p><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20kittens">Adopt Pair</a></div></div>
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d1?w=500&auto=format&fit=crop&q=60"><div class="cat-card-body"><span class="cat-tag">Available • 5yr</span><h3>Ginger</h3><p style="font-size:13px;color:var(--brown)">Mascot • Not actually mean • Loves everyone</p><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Meet%20Ginger">Meet Ginger</a></div></div>
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=500&auto=format&fit=crop&q=60"><div class="cat-card-body"><span class="cat-tag" style="background:#FFD6C7">Reserved • 1yr</span><h3>Kat</h3><p style="font-size:13px;color:var(--brown)">Shy then cuddly • Umlazi rescue</p><br><a class="btn btn-outline" style="width:100%;justify-content:center">Reserved</a></div></div>
-</div>
 
-<div style="margin-top:40px;background:white;border-radius:24px;padding:24px;border:1px solid #F0E6D8;display:grid;grid-template-columns:1fr 1fr;gap:20px">
-<div><h2 style="font-size:28px">Adoption Process</h2><ol style="margin:12px 0 0 18px;color:var(--brown);font-size:14px;line-height:1.8"><li>Visit cafe (R60)</li><li>Meet cats - controlled environment</li><li>WhatsApp us to start vetting</li><li>Home check</li><li>Take your MeanKat home!</li></ol></div>
-<div style="background:var(--green);border-radius:16px;padding:16px"><h3>We accommodate everyone</h3><p style="font-size:13px;color:var(--brown);margin-top:6px">First-time owners, families, apartments, houses - we find the right cat for you. All adoptions include vaccination & sterilization. Durban-wide.</p><br><a class="btn btn-orange" href="https://wa.me/27817745066?text=Start%20adoption%20process">Start on WhatsApp</a></div>
-</div>
-</section>
+<div class="cat-card"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag">Available • 3yr • Chatsworth</span><h3>Miso - The Playful</h3><p style="font-size:13px;color:var(--brown);margin-top:4px">Playful, loves head rubs, feather toys. Good with kids.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=100"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=100"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=100"><img src="https://images.unsplash.com/photo-1548546738-8509cb246ed3?w=100"></div><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Miso">Adopt Miso</a></div></div>
 
-<div class="footer">Page 2 of 2 • cats.html • No location base mentioned • GitHub Pages ready • We accommodate everyone</div>
-</body>
-</html>
+<div class="cat-card"><img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag" style="background:var(--lilac)">TikTok Star • 2yr</span><h3>Luna - 10/10 Recommend</h3><p style="font-size:13px;color:var(--brown)">Calm lap cat, TikTok famous 501 likes. Featured in Sia review.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=100"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=100"><img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=100"><img src="https://images.unsplash.com/photo-1513366208864-87536f9dcc3c?w=100"></div><br><a class="btn btn-purple" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Luna">Adopt Luna</a></div></div>
+
+<div class="cat-card"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag">Available • 4yr • Umlazi</span><h3>Smokey - Gentle Senior</h3><p style="font-size:13px;color:var(--brown)">Gentle, loves naps, good with older people. Purrs a lot.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=100"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=100"><img src="https://images.unsplash.com/photo-1478098711974-4f7737f5f5d2?w=100"><img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d1?w=100"></div><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066">Adopt Smokey</a></div></div>
+
+<div class="cat-card"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag" style="background:#FFE4E6">Reserved • 1yr</span><h3>Kat - Shy to Cuddly</h3><p style="font-size:13px;color:var(--brown)">Shy at first then super cuddly. Needs patient owner.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=100"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=100"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=100"></div><br><a class="btn" style="width
