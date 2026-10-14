@@ -2,79 +2,51 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Menu - MeanKat Café | Our Own Style</title>
+<title>Menu - MeanKat</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
 *{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
 h1,h2{font-family:Fredoka,sans-serif}
 .header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100}
-.logo{height:54px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:18px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
-.marquee{background:var(--yellow);color:#111;padding:8px 0;overflow:hidden;white-space:nowrap;font-weight:800;font-size:13px}
+.logo{height:56px;background:white;border-radius:10px;padding:4px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:16px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
 .hero{max-width:1280px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 360px;gap:18px}
 .menu-card{background:var(--cream);color:#1F1235;border-radius:28px;padding:22px;border:3px solid var(--yellow)}
-.sec{display:flex;align-items:center;gap:10px;margin:22px 0 12px}.sec h2{font-size:22px}.line{flex:1;height:3px;background:linear-gradient(90deg,var(--purple),var(--yellow));border-radius:999px}
-.item{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px dashed #E9D5FF;font-size:14px}
-.name{font-weight:700;max-width:70%}.price{font-weight:800;color:var(--purple)}.desc{font-size:11px;color:#6B5B7A}
-.pill{background:#111;color:var(--yellow);padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;display:inline-block;margin:3px}
+.sec{display:flex;align-items:center;gap:10px;margin:22px 0 12px}.sec h2{font-size:20px}.line{flex:1;height:3px;background:linear-gradient(90deg,var(--purple),var(--yellow));border-radius:999px}
+.item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #E9D5FF;font-size:14px}.name{font-weight:700}.price{font-weight:800;color:var(--purple)}.pill{background:#111;color:var(--yellow);padding:4px 8px;border-radius:999px;font-size:11px;font-weight:700;margin:2px;display:inline-block}
 @media(max-width:900px){.hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="header"><a href="index.html"><img src="logo.png" class="logo"></a><nav><a href="index.html">Home</a><a href="cats.html">Cats</a><a class="active" href="menu.html">Menu</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav></header>
-<div class="marquee"><span>🐾 EAT • PLAY • ADOPT 🐾 REAL MENU FROM YOUR PHOTOS 🐾 COFFEE R20-R75 🐾 PINWHEEL SKEWERS R60 BESTSELLER 🐾 </span></div>
+<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo"></a><nav><a href="index.html">Home</a><a href="cats.html">Cats</a><a class="active" href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav></header>
 <div class="hero">
 <div>
-<div style="background:var(--yellow);color:#111;border-radius:20px;padding:16px 20px"><h1 style="font-size:36px;line-height:.9">Our Own Style Menu</h1><p style="font-size:12px;font-weight:700;margin-top:4px">Real prices • No pale paper • Black/Yellow/Purple - legit</p></div>
+<div style="background:var(--yellow);color:#111;border-radius:20px;padding:16px 20px"><h1 style="font-size:34px">Our Own Style Menu</h1><p style="font-size:12px;font-weight:700">Real prices from your photos</p></div>
 <div class="menu-card" style="margin-top:14px">
-<div class="sec"><span>☕</span><h2>Coffee Bar</h2><div class="line"></div></div>
+<div class="sec"><h2>☕ Coffee</h2><div class="line"></div></div>
 <div class="item"><div class="name">Espresso</div><div class="price">R20</div></div>
 <div class="item"><div class="name">Cortado</div><div class="price">R30</div></div>
-<div class="item"><div class="name">Americano Short / Tall</div><div class="price">R30 / R35</div></div>
+<div class="item"><div class="name">Americano S / L</div><div class="price">R30 / R35</div></div>
 <div class="item"><div class="name">Flat White</div><div class="price">R45</div></div>
-<div class="item"><div class="name">Cappuccino Short / Tall</div><div class="price">R40 / R45</div></div>
+<div class="item"><div class="name">Cappuccino S / L</div><div class="price">R40 / R45</div></div>
 <div class="item"><div class="name">Speciality Lattes (Rolo, Speckled Egg, Milk Tart, Double Choc)</div><div class="price">R55</div></div>
-<div><span class="pill">+ Almond / Oat +R10</span></div>
-
-<div class="sec"><span>🍫</span><h2>Mochas / Hot Choc / Matcha</h2><div class="line"></div></div>
+<span class="pill">+ Almond/Oat R10</span>
+<div class="sec"><h2>🍫 Mochas / Hot Choc / Matcha</h2><div class="line"></div></div>
 <div class="item"><div class="name">Mocha Classic / White</div><div class="price">R45</div></div>
 <div class="item"><div class="name">Coconut Mocha</div><div class="price">R60</div></div>
-<div class="item"><div class="name">Hot Chocolate Classic Short / Tall</div><div class="price">R35 / R40</div></div>
-<div class="item"><div class="name">Double Chocolate</div><div class="price">R60</div></div>
-<div class="item"><div class="name">Matcha Coconut / Strawberry / Vanilla / Hazelnut</div><div class="price">R65-R70</div></div>
-<div class="item"><div class="name">Matcha Tiramisu</div><div class="price">R75</div></div>
-
-<div class="sec"><span>🧊</span><h2>Crushers / Frappés</h2><div class="line"></div></div>
-<div class="item"><div class="name">Crushers (Strawberry, Peach, Mango, Passion, Dragonfruit, Berry, Pear Elderflower) Reg / Large</div><div class="price">R50 / R70</div></div>
-<div class="item"><div class="name">Iced Capp / Chocolate</div><div class="price">R55 / R65</div></div>
-<div class="item"><div class="name">Cubed Ice Coffee</div><div class="price">R45 / R55</div></div>
-<div class="item"><div class="name">Vietnamese Ice Coffee</div><div class="price">R65 / R75</div></div>
-<div class="item"><div class="name">Spicy Chai Frappe</div><div class="price">R60 / R70</div></div>
-
-<div class="sec"><span>🥤</span><h2>Milkshakes / Smoothies</h2><div class="line"></div></div>
-<div class="item"><div class="name">Classic Shakes (Vanilla, Strawberry, Lime, Choc, Bubblegum)</div><div class="price">R55</div></div>
-<div class="item"><div class="name">Double Chocolate R65 / Mango R70</div><div class="price"></div></div>
-<div class="item"><div class="name">Speciality Shakes (Rolo, Milk Tart, Speckled Egg, Unicorn, Mixed Berry)</div><div class="price">R75</div></div>
-<div class="item"><div><div class="name">Vegan (banana & date) / Daily Dose</div><div class="desc">Banana, strawberry, yoghurt & honey</div></div><div class="price">R70</div></div>
-
-<div class="sec"><span>🥐</span><h2>Food</h2><div class="line"></div></div>
-<div class="item"><div><div class="name">Classic Croissant</div><div class="desc">Jam or Cheese</div></div><div class="price">R40</div></div>
-<div class="item"><div><div class="name">Cheese & Egg Croissant</div><div class="desc">Scrambled eggs on cheese</div></div><div class="price">R65</div></div>
-<div class="item"><div class="name">Grilled Cheese Croissant</div><div class="price">R50</div></div>
-<div class="item"><div><div class="name">Pinwheel Skewers ★ BESTSELLER</div><div class="desc">Kebab in tortilla, pinwheels on skewers + fries</div></div><div class="price">R60</div></div>
-<div class="item"><div class="name">Sweet Chilli Chicken Wraps / Chicken Cheese Roti</div><div class="price">R60</div></div>
-<div class="item"><div class="name">Jalapeño Steak Wraps / Steak Cheese Roti</div><div class="price">R65</div></div>
-<div class="item"><div class="name">Nuggets & Fries</div><div class="price">R50</div></div>
+<div class="item"><div class="name">Hot Choc Classic S/L R35/R40, Double R60</div><div class="price"></div></div>
+<div class="item"><div class="name">Matcha Coconut R65, Others R70, Tiramisu R75</div><div class="price"></div></div>
+<div class="sec"><h2>🥐 Food - Pinwheel R60 Bestseller</h2><div class="line"></div></div>
+<div class="item"><div class="name">Classic Croissant</div><div class="price">R40</div></div>
+<div class="item"><div class="name">Cheese & Egg Croissant</div><div class="price">R65</div></div>
+<div class="item"><div class="name">Pinwheel Skewers + fries</div><div class="price">R60</div></div>
+<div class="item"><div class="name">Wraps/Rotis R60-R65, Nuggets R50</div><div class="price"></div></div>
+<div class="sec"><h2>🧊 Crushers / Frappes / Shakes</h2><div class="line"></div></div>
+<div class="item"><div class="name">Crushers R50/R70, Iced Capp R55/R65, Vietnamese R65/R75</div><div class="price"></div></div>
+<div class="item"><div class="name">Milkshakes R55-R75, Smoothies R70</div><div class="price"></div></div>
 </div>
 </div>
-<div style="position:sticky;top:88px">
-<div style="background:linear-gradient(135deg,#7C3AED,#4C1D95);border-radius:24px;padding:18px;color:white;border:3px solid #FDE68A">
-<img src="interior.jpg" style="width:100%;height:220px;object-fit:cover;border-radius:16px;border:2px solid white">
-<h3 style="font-size:20px;margin-top:12px">Real Café</h3>
-<p style="font-size:13px;margin-top:6px;line-height:1.5">87 Smiso Nkwanyana Rd. Purple walls, spiral stairs, cats on air purifier. @meankatcafe_durban</p>
-<div style="margin-top:12px;background:var(--yellow);color:#111;border-radius:12px;padding:10px;text-align:center;font-weight:800">EAT • PLAY • ADOPT</div>
-</div>
-</div>
+<div style="position:sticky;top:88px"><div style="background:linear-gradient(135deg,#7C3AED,#4C1D95);border-radius:24px;padding:18px;color:white;border:3px solid #FDE68A"><img src="logo-560.webp" style="width:100%;height:120px;object-fit:contain;background:white;border-radius:12px;padding:10px"><h3 style="margin-top:12px">Real MeanKat</h3><p style="font-size:13px;margin-top:6px">87 Smiso Nkwanyana Rd. @meankatcafe_durban</p><div style="margin-top:12px;background:var(--yellow);color:#111;border-radius:12px;padding:10px;text-align:center;font-weight:800">EAT • PLAY • ADOPT</div></div></div>
 </div>
 </body>
-                    </html>
+  </html>
