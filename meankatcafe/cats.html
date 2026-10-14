@@ -2,38 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Our Cats | MeanKat Café - 12 Rescued Cats</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<title>Meet the Cats - MeanKat Café</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#FFFBF8;--purple:#7C3AED;--purple-dark:#4C1D95;--lilac:#F3E8FF;--gold:#FBBF24;--ink:#1F1235;--brown:#6B5B7A}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--cream);color:var(--ink)}
-h1,h2,h3{font-family:Fredoka,sans-serif}
-.header{position:fixed;top:0;width:100%;background:rgba(255,251,248,.92);backdrop-filter:blur(14px);z-index:200;padding:14px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #EEE6FF}
-.logo{font-family:Fredoka;font-weight:700;font-size:24px;text-decoration:none;color:var(--ink)}.logo span{color:var(--purple)}
-.nav{display:flex;gap:22px;align-items:center}.nav a{color:var(--ink);text-decoration:none;font-size:14.5px}.nav a.active{color:var(--purple);font-weight:700;border-bottom:3px solid var(--gold)}
-.btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;border:none;cursor:pointer}.btn-purple{background:var(--purple);color:white}.btn-dark{background:var(--ink);color:white}
-.section{padding:100px 28px 60px;max-width:1320px;margin:0 auto}
-.cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.cat-card{background:white;border-radius:24px;overflow:hidden;border:1px solid #EEE6FF;transition:.2s}.cat-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(31,18,53,.12)}.cat-card img{width:100%;height:300px;object-fit:cover}.cat-body{padding:18px}.tag{font-size:11px;background:#E8F5E9;padding:4px 10px;border-radius:999px;font-weight:700;text-transform:uppercase}
-.slider-mini{display:flex;gap:10px;overflow-x:auto;padding-bottom:10px;margin-top:12px}.slider-mini img{width:70px;height:70px;border-radius:12px;object-fit:cover;flex-shrink:0;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-@media(max-width:900px){.cats-grid{grid-template-columns:1fr}}
+:root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
+.header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:10}
+.logo{height:54px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:18px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
+.hero{max-width:1280px;margin:0 auto;padding:20px;display:grid;grid-template-columns:380px 1fr;gap:18px}
+.card{background:var(--cream);color:#1A0F2E;border-radius:24px;padding:18px;border:3px solid var(--yellow)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.filter{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;border:2px solid #111;background:white;cursor:pointer}
+.filter.active{background:var(--yellow)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.cat-card{background:#111;color:white;border-radius:20px;overflow:hidden;border:2px solid #2a2a2a}
+.cat-card img{width:100%;height:180px;object-fit:cover}
+.cat-body{padding:14px}
+.tag{display:inline-block;padding:3px 8px;border-radius:999px;font-size:10px;font-weight:800;margin-right:4px}
+.tag-res{background:var(--yellow);color:#111}.tag-adopt{background:#7C3AED;color:white}.tag-tlc{background:#F472B6;color:white}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header class="header">
-<a class="logo" href="index.html">Mean<span>Kat</span> Café</a>
-<nav class="nav"><a href="index.html">Home</a><a class="active" href="cats.html">Our Cats (12)</a><a href="services.html">Prices & Services</a><a class="btn btn-purple" href="https://wa.me/27817745066?text=Adopt">Adopt Now</a></nav>
-</header>
-
-<section class="section">
-<h1 style="font-size:54px;line-height:.9;letter-spacing:-1.5px">Meet the MeanKats.<br><span style="color:var(--purple)">12 rescued. All looking for forever home.</span></h1>
-<p style="color:var(--brown);max-width:700px;margin:16px 0 30px;font-size:17px">As many pictures as you can - each cat has 4 pictures in mini slider = 48+ cat photos. All rescued from Chatsworth, Umlazi, Pinetown, Berea. Vet-checked, vaccinated, sterilized. From original site Supabase bucket cat-images.</p>
-
-<div class="cats-grid">
-
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag">Available • 3yr • Chatsworth</span><h3>Miso - The Playful</h3><p style="font-size:13px;color:var(--brown);margin-top:4px">Playful, loves head rubs, feather toys. Good with kids.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=100"><img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=100"><img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=100"><img src="https://images.unsplash.com/photo-1548546738-8509cb246ed3?w=100"></div><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Miso">Adopt Miso</a></div></div>
-
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag" style="background:var(--lilac)">TikTok Star • 2yr</span><h3>Luna - 10/10 Recommend</h3><p style="font-size:13px;color:var(--brown)">Calm lap cat, TikTok famous 501 likes. Featured in Sia review.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=100"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=100"><img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=100"><img src="https://images.unsplash.com/photo-1513366208864-87536f9dcc3c?w=100"></div><br><a class="btn btn-purple" style="width:100%;justify-content:center" href="https://wa.me/27817745066?text=Adopt%20Luna">Adopt Luna</a></div></div>
-
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag">Available • 4yr • Umlazi</span><h3>Smokey - Gentle Senior</h3><p style="font-size:13px;color:var(--brown)">Gentle, loves naps, good with older people. Purrs a lot.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=100"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=100"><img src="https://images.unsplash.com/photo-1478098711974-4f7737f5f5d2?w=100"><img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d1?w=100"></div><br><a class="btn btn-dark" style="width:100%;justify-content:center" href="https://wa.me/27817745066">Adopt Smokey</a></div></div>
-
-<div class="cat-card"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=600&auto=format&fit=crop&q=80"><div class="cat-body"><span class="tag" style="background:#FFE4E6">Reserved • 1yr</span><h3>Kat - Shy to Cuddly</h3><p style="font-size:13px;color:var(--brown)">Shy at first then super cuddly. Needs patient owner.</p><div class="slider-mini"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?w=100"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=100"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=100"></div><br><a class="btn" style="width
+<header class="header"><a href="index.html"><img src="logo.png" class="logo"></a><nav><a href="index.html">Home</a><a class="active" href="cats.html">Meet the Cats</a><a href="menu.html">Menu</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav></header>
+<div class="hero">
+<div class="card" style="background:#111;color:white;border-color:var(--purple);position:sticky;top:88px">
+<img src="interior.jpg" style="width:100%;height:200px;object-fit:cover;border-radius:16px;border:2px solid white">
+<h2 style="margin-top:12px;color:var(--yellow)">They run this place</h2>
+<p style="font-size:13px;margin-top:6px;line-height:1.5">Real sanctuary with spiral staircase, cat towers, air purifiers. Luca, Orci & Chino are residents. Others are adoptable via rescue partners.</p>
+<div class="filters"><button class="filter active" data-f="all">All</button><button class="filter" data-f="resident">Resident</button><button class="filter" data-f="adoptable">Adoptable</button><button class="filter" data-f="dual">Dual</button><button class="filter" data-f="tlc">Extra TLC</button></div>
+</div>
+<div>
+<div class="grid" id="grid">
+<div class="cat-card" data-tags="resident"><div style="background:var(--yellow);height:180px;display:grid;place-items:center;color:#111;font-size:32px;font-weight:800">LUCA</div><div class="cat-body"><h3>Luca <span class="tag tag-res">Resident</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Soft Soul • Mikah's Baby. Loves top shelf of spiral stairs, watches everything. Calm, observant.</p></div></div>
+<div class="cat-card" data-tags="resident"><div style="background:#A78BFA;height:180px;display:grid;place-items:center;color:#111;font-size:32px;font-weight:800">ORCI</div><div class="cat-body"><h3>Orci <span class="tag tag-res">Resident</span><span class="tag tag-adopt">Dual</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Loving Explorer. Greets every guest, leads tours to second floor ivy balcony. Social butterfly.</p></div></div>
+<div class="cat-card" data-tags="resident"><div style="background:#FDE68A;height:180px;display:grid;place-items:center;color:#111;font-size:32px;font-weight:800">CHINO</div><div class="cat-body"><h3>Chino <span class="tag tag-res">Resident</span><span class="tag tag-tlc">Extra TLC</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Chill King. Found sleeping on air purifier at base of stairs. Needs quiet corners, loves head scratches.</p></div></div>
+<div class="cat-card" data-tags="adoptable"><div style="background:#DDD;height:180px;display:grid;place-items:center">🐾</div><div class="cat-body"><h3>Milo <span class="tag tag-adopt">Adoptable</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Young, playful, litter-trained. Ready for forever home via SPCA partnership.</p></div></div>
+<div class="cat-card" data-tags="adoptable dual"><div style="background:#DDD;height:180px;display:grid;place-items:center">🐾</div><div class="cat-body"><h3>Luna <span class="tag tag-adopt">Adoptable</span><span class="tag tag-res">Dual</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Resident foster - can stay or be adopted. Loves pinwheel skewer crumbs.</p></div></div>
+<div class="cat-card" data-tags="tlc adoptable"><div style="background:#DDD;height:180px;display:grid;place-items:center">🐾</div><div class="cat-body"><h3>Pepper <span class="tag tag-tlc">Extra TLC</span></h3><p style="font-size:12px;margin-top:6px;opacity:.8">Shy but sweet, needs patient home. Thrives in purple quiet room upstairs.</p></div></div>
+</div>
+</div>
+</div>
+<script>
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{
+document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+const f=b.dataset.f;document.querySelectorAll('.cat-card').forEach(c=>{
+c.style.display=(f==='all'||c.dataset.tags.includes(f))?'block':'none';
+})
+}));
+</script>
+</body>
+  </html>
