@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MeanKat Café | Durban Cat Sanctuary - Morningside</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFFBF2;--orange:#FF7A2F;--dark:#2B211E;--brown:#6B4F42;--pink:#FFD6C7;--green:#E8F5E9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:var(--cream);color:var(--dark);line-height:1.6}
+h1,h2,h3{font-family:'Fredoka',sans-serif}
+.header{position:fixed;top:0;width:100%;background:rgba(255,251,242,0.92);backdrop-filter:blur(12px);z-index:100;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #F0E6D8}
+.logo{font-family:'Fredoka';font-weight:700;font-size:22px;text-decoration:none;color:var(--dark)}.logo span{color:var(--orange)}
+.nav{display:flex;gap:20px;align-items:center}.nav a{color:var(--dark);text-decoration:none;font-weight:500;font-size:14px}.nav a.active{color:var(--orange);font-weight:700;border-bottom:2px solid var(--orange)}
+.btn{padding:12px 20px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;gap:8px;border:none;cursor:pointer}.btn-orange{background:var(--orange);color:white}.btn-dark{background:var(--dark);color:white}.btn-outline{border:1.5px solid var(--dark);color:var(--dark)}
+.hero{padding:110px 24px 60px;display:grid;grid-template-columns:1.1fr 0.9fr;max-width:1200px;margin:0 auto;gap:40px;align-items:center}.hero h1{font-size:60px;line-height:.9;letter-spacing:-2px;margin-bottom:16px}.hero h1 em{color:var(--orange);font-style:normal}
+.section{padding:80px 24px;max-width:1200px;margin:0 auto}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{background:white;border-radius:20px;padding:24px;border:1px solid #F0E6D8}
+.footer{padding:30px 24px;text-align:center;color:var(--brown);font-size:12px;border-top:1px solid #F0E6D8}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="header">
+<a class="logo" href="index.html">Mean<span>Kat</span> Café</a>
+<nav class="nav">
+<a class="active" href="index.html">Home</a>
+<a href="cats.html">Our Cats</a>
+<a class="btn btn-orange" href="https://wa.me/27817745066?text=Hi%20MeanKat%20book%20visit">Book Visit</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Durban's sanctuary for <em>rescued</em> cats & great coffee.</h1>
+<p style="color:var(--brown);font-size:18px;margin-bottom:20px">We accommodate everyone - humans and cats. Social space + sanctuary for rescued felines at 87 Smiso Nkwanyana Road, Morningside. Sip, chill, adopt your best friend.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn btn-dark" href="cats.html">Meet Our Cats 🐈</a>
+<a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=87+Smiso+Nkwanyana+Road+Morningside">📍 Visit Us</a>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px">
+<div style="background:white;border-radius:16px;padding:12px;border:1px solid #F0E6D8"><strong style="font-family:Fredoka;font-size:28px">40+</strong><br><span style="font-size:11px;text-transform:uppercase;color:var(--brown)">Cats Rehomed</span></div>
+<div style="background:white;border-radius:16px;padding:12px;border:1px solid #F0E6D8"><strong style="font-family:Fredoka;font-size:28px">4.9★</strong><br><span style="font-size:11px;text-transform:uppercase;color:var(--brown)">Google Loved</span></div>
+</div>
+</div>
+<img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&auto=format&fit=crop&q=60" style="width:100%;height:520px;object-fit:cover;border-radius:32px;border:4px solid white" alt="cat">
+</section>
+
+<section class="section">
+<h2 style="font-size:42px;letter-spacing:-1px">Not a regular café. A rescue model.</h2>
+<p style="color:var(--brown);max-width:600px;margin:10px 0 24px">Structured adoption pipeline, controlled environment, formal vetting. Their original site needed Next.js 16 + Supabase. Ours is GitHub Pages fast.</p>
+<div class="steps">
+<div class="step"><h3>1. Book Slot</h3><p style="font-size:14px;color:var(--brown);margin-top:6px">45-min sessions, small groups. R60 entry goes to rescue fund. Book on WhatsApp.</p></div>
+<div class="step"><h3>2. Meet & Chill</h3><p style="font-size:14px;color:var(--brown);margin-top:6px">No forced pets. Coffee, work, cats come to you. 100% stress-free.</p></div>
+<div class="step"><h3>3. Adopt</h3><p style="font-size:14px;color:var(--brown);margin-top:6px">Fall in love? Start vetting. Home checks for forever homes. We accommodate everyone.</p></div>
+</div>
+</section>
+
+<section class="section" style="background:white;border-top:1px solid #F0E6D8">
+<h2 style="font-size:36px;margin-bottom:16px">Coffee that funds rescue</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#FFFBF2;border-radius:24px;padding:20px;border:1px solid #F0E6D8">
+<div><h3>☕ Drinks</h3><div style="margin-top:10px"><div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #ddd"><span>Flat White</span><b>R38</b></div><div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #ddd"><span>MeanKat Latte</span><b>R45</b></div><div style="display:flex;justify-content:space-between;padding:8px 0"><span>Hot Chocolate</span><b>R40</b></div></div></div>
+<div><h3>🍰 Bites</h3><div style="margin-top:10px"><div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #ddd"><span>Paw Croissant</span><b>R42</b></div><div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #ddd"><span>Meow Muffin</span><b>R38</b></div><div style="display:flex;justify-content:space-between;padding:8px 0"><span>Entry = Rescue Fund</span><b>R60</b></div></div></div>
+</div>
+<br><a class="btn btn-dark" href="cats.html">See All Cats & Adoption →</a>
+</section>
+
+<div class="footer">MeanKat Café • Page 1 of 2 • index.html • GitHub Pages • We accommodate everyone</div>
+</body>
+  </html>
