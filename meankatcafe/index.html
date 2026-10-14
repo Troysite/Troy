@@ -2,60 +2,70 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MeanKat Café | Eat Play Adopt</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<title>MeanKat Café | They run this place. We just make the coffee.</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#FFFBF8;--purple:#7C3AED;--yellow:#FDE68A;--yellow-dark:#FCD34D;--ink:#1F1235;--brown:#6B5B7A}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--cream);color:var(--ink)}
-h1{font-family:Fredoka,sans-serif}
-.header{position:fixed;top:0;width:100%;background:rgba(255,251,248,.96);backdrop-filter:blur(14px);z-index:200;padding:8px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #EEE6FF}
-.logo-img{height:48px}
-.nav{display:flex;gap:18px;align-items:center}.nav a{color:var(--ink);text-decoration:none;font-size:13.5px}.nav a.active{color:var(--purple);font-weight:700;border-bottom:3px solid var(--yellow-dark)}
-.btn{padding:12px 22px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;border:none;cursor:pointer}.btn-purple{background:var(--purple);color:white}.btn-dark{background:var(--ink);color:white}
-.marquee{background:#111;color:var(--yellow);padding:10px 0;overflow:hidden;white-space:nowrap;font-size:14px;font-weight:600}
-.marquee span{display:inline-block;animation:scroll 20s linear infinite}
+:root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream);overflow-x:hidden}
+h1,h2,h3{font-family:Fredoka,sans-serif}
+.header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100}
+.logo{height:54px}.nav{display:flex;gap:18px;align-items:center}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
+.marquee{background:var(--yellow);color:#111;padding:10px 0;overflow:hidden;white-space:nowrap;font-weight:800;font-size:13px;border-y:2px solid #111}
+.marquee-inner{display:inline-block;animation:scroll 20s linear infinite}
 @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.hero{padding-top:64px;display:grid;grid-template-columns:1.05fr .95fr;min-height:90vh;max-width:1320px;margin:0 auto;align-items:center}
-.hero-text{padding:40px 24px 30px 20px}
-.hero-text h1{font-size:62px;line-height:.9;letter-spacing:-1.5px}
-.slider-wrap{position:relative;height:84vh;margin:12px 12px 12px 0;border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(31,18,53,.18);border:4px solid white}
-.slides{position:relative;width:100%;height:100%}.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s}.slide.active{opacity:1}.slide img{width:100%;height:100%;object-fit:cover}
-.slide-content{position:absolute;bottom:0;left:0;right:0;padding:18px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:white}
-.dots{position:absolute;bottom:80px;left:50%;transform:translateX(-50%);display:flex;gap:6px}.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.5)}.dot.active{background:white;width:24px;border-radius:999px}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.slider-wrap{height:50vh;margin:0 12px 18px}.hero-text h1{font-size:42px}}
+.slider{position:relative;height:520px;overflow:hidden;background:#111}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity.8s ease;background-size:cover;background-position:center}
+.slide.active{opacity:1}
+.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.7))}
+.slide-content{position:absolute;bottom:30px;left:20px;right:20px;z-index:2;max-width:600px}
+.badge{display:inline-block;background:var(--cream);color:#111;padding:6px 12px;border-radius:999px;font-size:11px;font-weight:800;margin-bottom:10px}
+.hero-title{font-size:clamp(32px,6vw,56px);line-height:.9;color:white;text-shadow:0 4px 20px rgba(0,0,0,.6)}
+.hero-grid{max-width:1280px;margin:0 auto;padding:24px 20px;display:grid;grid-template-columns:1.2fr.8fr;gap:18px}
+.card{background:var(--cream);color:#1A0F2E;border-radius:24px;padding:20px;border:3px solid var(--yellow)}
+.cat-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.cat-mini{background:#111;color:white;border-radius:16px;padding:10px;text-align:center;border:2px solid #2a2a2a}
+.cat-mini img{width:100%;height:90px;object-fit:cover;border-radius:12px}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.slider{height:420px}}
 </style>
 </head>
 <body>
 <header class="header">
-<a href="index.html"><img src="logo.png" alt="MeanKat Cafe - Eat Play Adopt" class="logo-img"></a>
-<nav class="nav"><a class="active" href="index.html">Home</a><a href="cats.html">Meet the Cats</a><a href="services.html">Visit</a><a class="btn btn-purple" href="https://wa.me/27817745066">Book</a></nav>
+<a href="index.html"><img src="logo.png" class="logo" alt="MeanKat Cafe"></a>
+<nav class="nav"><a class="active" href="index.html">Home</a><a href="cats.html">Meet the Cats</a><a href="menu.html">Menu</a><a class="btn" href="https://wa.me/27817745066">Book Visit</a></nav>
 </header>
+<div class="marquee"><div class="marquee-inner"><span>🐾 WE'RE OFFICIALLY ONLINE AND FELINE FINE! 🐾 EAT • PLAY • ADOPT 🐾 87 SMISO NKWANYANA RD, MORNINGSIDE 🐾 LUCA • ORCI • CHINO RUN THIS PLACE 🐾 WE'RE OFFICIALLY ONLINE AND FELINE FINE! 🐾 EAT • PLAY • ADOPT 🐾 </span></div></div>
 
-<div class="marquee" style="margin-top:64px"><span>🐾 We’re officially online and feline fine! 🐾 Eat • Play • Adopt 🐾 We’re officially online and feline fine! 🐾 Eat • Play • Adopt 🐾 We’re officially online and feline fine! 🐾 Eat • Play • Adopt 🐾 </span></div>
-
-<div class="hero">
-<div class="hero-text">
-<div style="background:#111;padding:12px;border-radius:16px;display:inline-block;margin-bottom:16px"><img src="logo.png" style="height:70px"></div>
-<h1>Durban's sanctuary for <em style="font-style:normal;color:#7C3AED">rescued</em> cats & great coffee.</h1>
-<p style="font-size:17px;color:var(--brown);margin:14px 0 20px">Real logo + real cats: Luca (Soft Soul), Orci (Loving Explorer), Chino - Resident Cats. They run this place. We just make the coffee. 87 Smiso Nkwanyana Rd, Morningside.</p>
-<div style="display:flex;gap:10px"><a class="btn btn-dark" href="cats.html">Meet Luca, Orci, Chino 🐈</a><a class="btn btn-purple" href="services.html">Visit</a></div>
+<div class="slider" id="slider">
+<div class="slide active" style="background-image:url('interior.jpg')"><div class="slide-content"><span class="badge">REAL SANCTUARY</span><h1 class="hero-title">They run this place. We just make the coffee.</h1></div></div>
+<div class="slide" style="background-image:url('menu1.jpg')"><div class="slide-content"><span class="badge">REAL MENU R20-R75</span><h1 class="hero-title">Coffee from R20. Cats for free.</h1></div></div>
+<div class="slide" style="background-image:url('menu2.jpg')"><div class="slide-content"><span class="badge">PINWHEEL SKEWERS R60</span><h1 class="hero-title">Eat. Play. Adopt.</h1></div></div>
 </div>
 
-<div class="slider-wrap" id="slider">
-<div class="slides">
-<div class="slide active"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1000&q=80"><div class="slide-content"><h3>Luca - The Soft Soul / Mikah's Baby 💜</h3><p>Resident Cat - slightly more reserved, shy at first</p></div></div>
-<div class="slide"><img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1000&q=80"><div class="slide-content"><h3>Orci - The Loving Explorer / Mikah's Baby 💜</h3><p>Confident, curious, asks for attention</p></div></div>
-<div class="slide"><img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=1000&q=80"><div class="slide-content"><h3>Chino - Resident Headquarters</h3><p>They run this place. We just make the coffee.</p></div></div>
+<div class="hero-grid">
+<div class="card">
+<h2 style="font-size:32px">MeanKat Café Durban</h2>
+<p style="margin-top:8px;font-size:14px;line-height:1.6;font-weight:600">Durban's only premium cat sanctuary café. Purple walls, spiral staircase, air purifiers, sleeping cats on towers. Real entrance at 87 Smiso Nkwanyana Rd with ivy deck.</p>
+<div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="cats.html">Meet Luca, Orci, Chino →</a><a class="btn" style="background:#111;color:var(--yellow);border:2px solid var(--yellow)" href="menu.html">See Real Menu</a></div>
+<div style="margin-top:20px;background:#111;color:white;border-radius:16px;padding:14px">
+<div style="font-weight:800;font-size:12px;color:var(--yellow)">LOCATION & HOURS</div>
+<div style="font-size:13px;margin-top:6px;line-height:1.5">📍 87 Smiso Nkwanyana Rd, Morningside, Durban<br>🕘 Open daily - bookings via WhatsApp<br>📱 @meankatcafe_durban</div>
 </div>
-<div class="dots" id="dots"></div>
+</div>
+<div>
+<div class="card" style="background:#111;color:white;border-color:var(--purple)">
+<h3 style="font-size:20px;color:var(--yellow)">Resident Royalty</h3>
+<div class="cat-preview">
+<div class="cat-mini"><div style="background:var(--yellow);height:90px;border-radius:12px;display:grid;place-items:center;color:#111;font-weight:800">LUCA</div><div style="font-size:11px;font-weight:800;margin-top:6px">LUCA</div><div style="font-size:10px;opacity:.7">Soft Soul • Mikah's Baby</div></div>
+<div class="cat-mini"><div style="background:#A78BFA;height:90px;border-radius:12px;display:grid;place-items:center;color:#111;font-weight:800">ORCI</div><div style="font-size:11px;font-weight:800;margin-top:6px">ORCI</div><div style="font-size:10px;opacity:.7">Loving Explorer</div></div>
+<div class="cat-mini"><div style="background:#FDE68A;height:90px;border-radius:12px;display:grid;place-items:center;color:#111;font-weight:800">CHINO</div><div style="font-size:11px;font-weight:800;margin-top:6px">CHINO</div><div style="font-size:10px;opacity:.7">Resident • Chill King</div></div>
+</div>
+<div style="margin-top:14px;background:var(--yellow);color:#111;border-radius:12px;padding:10px;text-align:center;font-weight:800;font-size:12px">They run this place. We just make the coffee.</div>
 </div>
 </div>
-
+</div>
 <script>
-let cur=0;const slides=document.querySelectorAll('.slide');const dotsWrap=document.getElementById('dots');
-slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i==0?' active':'');d.onclick=()=>{cur=i;upd()};dotsWrap.appendChild(d)});
-function upd(){slides.forEach((s,i)=>s.classList.toggle('active',i==cur));document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i==cur))}
-setInterval(()=>{cur=(cur+1)%slides.length;upd()},4000);
+let cur=0;const slides=document.querySelectorAll('.slide');
+setInterval(()=>{slides[cur].classList.remove('active');cur=(cur+1)%slides.length;slides[cur].classList.add('active')},3500);
 </script>
 </body>
   </html>
