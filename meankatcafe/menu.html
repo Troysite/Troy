@@ -2,51 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Menu - MeanKat</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Menu - MeanKat Cafe</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
-h1,h2{font-family:Fredoka,sans-serif}
-.header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100}
-.logo{height:56px;background:white;border-radius:10px;padding:4px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:16px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
-.hero{max-width:1280px;margin:0 auto;padding:20px;display:grid;grid-template-columns:1fr 360px;gap:18px}
-.menu-card{background:var(--cream);color:#1F1235;border-radius:28px;padding:22px;border:3px solid var(--yellow)}
-.sec{display:flex;align-items:center;gap:10px;margin:22px 0 12px}.sec h2{font-size:20px}.line{flex:1;height:3px;background:linear-gradient(90deg,var(--purple),var(--yellow));border-radius:999px}
-.item{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #E9D5FF;font-size:14px}.name{font-weight:700}.price{font-weight:800;color:var(--purple)}.pill{background:#111;color:var(--yellow);padding:4px 8px;border-radius:999px;font-size:11px;font-weight:700;margin:2px;display:inline-block}
-@media(max-width:900px){.hero{grid-template-columns:1fr}}
+:root{--yellow:#FDE68A;--ink:#0F0F0F}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
+.header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100;flex-wrap:wrap}
+.logo{height:50px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
+.nav{display:flex;align-items:center;gap:18px}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:14px}.nav a.active{color:var(--yellow)!important}
+.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px;white-space:nowrap}
+.wrap{max-width:900px;margin:0 auto;padding:20px}.menu-card{background:#FFFBF0;color:#111;border-radius:20px;padding:18px;margin-top:14px;border:2px solid var(--yellow)}
+@media(max-width:650px){.header{padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:space-between;gap:0;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:13px}.btn{font-size:11px;padding:8px 12px}}
 </style>
 </head>
 <body>
-<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo"></a><nav><a href="index.html">Home</a><a href="cats.html">Cats</a><a class="active" href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav></header>
-<div class="hero">
-<div>
-<div style="background:var(--yellow);color:#111;border-radius:20px;padding:16px 20px"><h1 style="font-size:34px">Our Own Style Menu</h1><p style="font-size:12px;font-weight:700">Real prices from your photos</p></div>
-<div class="menu-card" style="margin-top:14px">
-<div class="sec"><h2>☕ Coffee</h2><div class="line"></div></div>
-<div class="item"><div class="name">Espresso</div><div class="price">R20</div></div>
-<div class="item"><div class="name">Cortado</div><div class="price">R30</div></div>
-<div class="item"><div class="name">Americano S / L</div><div class="price">R30 / R35</div></div>
-<div class="item"><div class="name">Flat White</div><div class="price">R45</div></div>
-<div class="item"><div class="name">Cappuccino S / L</div><div class="price">R40 / R45</div></div>
-<div class="item"><div class="name">Speciality Lattes (Rolo, Speckled Egg, Milk Tart, Double Choc)</div><div class="price">R55</div></div>
-<span class="pill">+ Almond/Oat R10</span>
-<div class="sec"><h2>🍫 Mochas / Hot Choc / Matcha</h2><div class="line"></div></div>
-<div class="item"><div class="name">Mocha Classic / White</div><div class="price">R45</div></div>
-<div class="item"><div class="name">Coconut Mocha</div><div class="price">R60</div></div>
-<div class="item"><div class="name">Hot Choc Classic S/L R35/R40, Double R60</div><div class="price"></div></div>
-<div class="item"><div class="name">Matcha Coconut R65, Others R70, Tiramisu R75</div><div class="price"></div></div>
-<div class="sec"><h2>🥐 Food - Pinwheel R60 Bestseller</h2><div class="line"></div></div>
-<div class="item"><div class="name">Classic Croissant</div><div class="price">R40</div></div>
-<div class="item"><div class="name">Cheese & Egg Croissant</div><div class="price">R65</div></div>
-<div class="item"><div class="name">Pinwheel Skewers + fries</div><div class="price">R60</div></div>
-<div class="item"><div class="name">Wraps/Rotis R60-R65, Nuggets R50</div><div class="price"></div></div>
-<div class="sec"><h2>🧊 Crushers / Frappes / Shakes</h2><div class="line"></div></div>
-<div class="item"><div class="name">Crushers R50/R70, Iced Capp R55/R65, Vietnamese R65/R75</div><div class="price"></div></div>
-<div class="item"><div class="name">Milkshakes R55-R75, Smoothies R70</div><div class="price"></div></div>
-</div>
-</div>
-<div style="position:sticky;top:88px"><div style="background:linear-gradient(135deg,#7C3AED,#4C1D95);border-radius:24px;padding:18px;color:white;border:3px solid #FDE68A"><img src="logo-560.webp" style="width:100%;height:120px;object-fit:contain;background:white;border-radius:12px;padding:10px"><h3 style="margin-top:12px">Real MeanKat</h3><p style="font-size:13px;margin-top:6px">87 Smiso Nkwanyana Rd. @meankatcafe_durban</p><div style="margin-top:12px;background:var(--yellow);color:#111;border-radius:12px;padding:10px;text-align:center;font-weight:800">EAT • PLAY • ADOPT</div></div></div>
+<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a><nav class="nav"><a href="index.html">Home</a><a href="cats.html">Cats</a><a class="active" href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27772637424?text=Hi%20MeanKat%20-%20I%20want%20to%20book">Book • 077 263 7424</a></nav></header>
+<div class="wrap"><h1 style="font-family:Fredoka;font-size:32px">Menu ☕</h1>
+<div class="menu-card"><h3 style="font-family:Fredoka">Coffee & Drinks</h3><p style="margin-top:8px;font-size:14px;line-height:1.8">Cat-puccino R45 | MeanKat Latte R50 | Iced Coffee R55 | Hot Chocolate R40</p></div>
+<div class="menu-card"><h3 style="font-family:Fredoka">Food</h3><p style="margin-top:8px;font-size:14px;line-height:1.8">Toasted Sandwich R65 | Burger R95 | Cake R55 - All support cats 🐾</p></div>
+<div class="menu-card"><p style="font-size:13px">📱 <a href="https://wa.me/27772637424" style="color:#111;font-weight:800">WhatsApp 077 263 7424</a> | 📞 <a href="tel:+27772637424" style="color:#111;font-weight:800">Call 077 263 7424</a></p></div>
 </div>
 </body>
   </html>
