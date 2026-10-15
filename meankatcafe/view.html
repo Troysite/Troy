@@ -10,24 +10,45 @@
 body{font-family:Inter,sans-serif;background:#0F0F0F;background-image:radial-gradient(at 20% 20%, rgba(124,92,191,0.25) 0%, transparent 50%), radial-gradient(at 80% 10%, rgba(139,122,184,0.2) 0%, transparent 40%);background-attachment:fixed;color:#FFFBF8}
 .marquee-top{background:var(--dark);color:var(--yellow);padding:11px 0;overflow:hidden;white-space:nowrap;border-bottom:3px solid var(--yellow);font-family:Fredoka;font-weight:700;font-size:14px;letter-spacing:1px;position:sticky;top:0;z-index:200}.marquee-track{display:inline-block;animation:scroll 28s linear infinite}@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .header{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:39px;z-index:100;flex-wrap:wrap}.logo{height:52px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}.nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:13px}.nav a.active{color:var(--yellow)!important;background:var(--dark);padding:6px 12px;border-radius:999px;border:1px solid var(--yellow)}.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px}
-.wrap{max-width:1280px;margin:0 auto;padding:20px}.view-card{background:#1A1625;border-radius:24px;overflow:hidden;border:2px solid var(--dark)}.view-card img{width:100%;height:280px;object-fit:cover;display:block}
+.wrap{max-width:1280px;margin:0 auto;padding:20px}
+.view-card{background:#1A1625;border-radius:24px;overflow:hidden;border:2px solid var(--dark);min-height:280px;display:flex;align-items:center;justify-content:center}.view-card img{width:100%;height:320px;object-fit:cover;display:block}
 @media(max-width:700px){.header{top:38px;padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:flex-start;gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:11px}.btn{font-size:11px}}
 </style>
 </head>
 <body>
-<div class="marquee-top"><div class="marquee-track">🏠 TOUR OUR COZY CAT PARADISE - 87 SMISO NKWANYANA RD - PURPLE & COZY VIBES - 077 263 7424 🏠 &nbsp; 🏠 TOUR OUR COZY CAT PARADISE - 87 SMISO NKWANYANA RD - PURPLE & COZY VIBES - 077 263 7424 🏠 &nbsp;</div></div>
+<div class="marquee-top"><div class="marquee-track">🏠 OUR SPACE - 87 SMISO NKWANYANA RD - COZY PURPLE CAT PARADISE - BOOK 077 263 7424 🏠 &nbsp; 🏠 OUR SPACE - 87 SMISO NKWANYANA RD - COZY PURPLE CAT PARADISE - BOOK 077 263 7424 🏠 &nbsp;</div></div>
 <header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a><nav class="nav"><a href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a class="active" href="view.html">Our Space</a><a href="play.html">Paws & Play</a><a href="services.html">Services</a><a href="book.html">Book</a><a class="btn" href="book.html">Book • 077 263 7424</a></nav></header>
 <div class="wrap">
-<h1 style="font-family:Fredoka;font-size:34px">Our Space 🏠</h1><p style="opacity:.8;margin-top:6px">Cozy, purple, cat-approved. Come see it in real life!</p>
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:18px">
-<div class="view-card"><img src="View1.jpg" onerror="this.src='View%201.jpg'" alt="View 1"></div>
-<div class="view-card"><img src="View2.jpg" onerror="this.src='View%202.jpg'" alt="View 2"></div>
-<div class="view-card"><img src="View3.jpg" onerror="this.src='View%203.jpg'" alt="View 3"></div>
-<div class="view-card"><img src="View4.jpg" onerror="this.src='View%204.jpg'" alt="View 4"></div>
-<div class="view-card"><img src="View5.jpg" onerror="this.src='View%205.jpg'" alt="View 5"></div>
-<div class="view-card"><img src="View.jpg" alt="View"></div>
+<h1 style="font-family:Fredoka;font-size:34px">Our Space 🏠</h1>
+<p style="opacity:.8;margin-top:6px">If one still not showing, check exact name in GitHub</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:18px">
+
+<div class="view-card"><img data-srcs="View 1.jpg,View%201.jpg,View1.jpg,view1.jpg,View%201.JPG,View1.JPG" alt="View 1"></div>
+<div class="view-card"><img data-srcs="View 2.jpg,View%202.jpg,View2.jpg,view2.jpg,View%202.JPG,View2.JPG" alt="View 2"></div>
+<div class="view-card"><img data-srcs="View 3.jpg,View%203.jpg,View3.jpg,view3.jpg,View%203.JPG,View3.JPG" alt="View 3"></div>
+<div class="view-card"><img data-srcs="View 4.jpg,View%204.jpg,View4.jpg,view4.jpg,View%204.JPG,View4.JPG" alt="View 4"></div>
+<div class="view-card"><img data-srcs="View 5.jpg,View%205.jpg,View5.jpg,view5.jpg,View%205.JPG,View5.JPG" alt="View 5"></div>
+<div class="view-card"><img data-srcs="View.jpg,view.jpg,View.JPG,VIEW.jpg,View%20.jpg" alt="View Main"></div>
+
 </div>
 </div>
-<footer style="background:#2D1B4E;color:white;padding:32px 20px 20px;margin-top:40px;border-top:4px solid #FDE68A;text-align:center"><img src="logo-560.webp" style="height:70px;background:white;border-radius:16px;padding:8px;border:2px solid #FDE68A;margin-bottom:12px"><p style="font-size:14px;max-width:400px;margin:0 auto;opacity:.9">Durban's first dedicated cat café & rescue sanctuary.</p><p style="color:#FDE68A;font-weight:800;letter-spacing:2px;font-size:13px;margin-top:22px">LOCATION</p><p style="font-size:14px;margin-top:6px">87 Smiso Nkwanyana Road<br>Morningside, Durban</p><div style="border-top:1px solid rgba(255,255,255,0.15);margin-top:20px;padding-top:16px"><a href="book.html" style="display:block;background:#FDE68A;color:#111;padding:14px;border-radius:999px;text-decoration:none;font-weight:800;text-align:center;max-width:300px;margin:0 auto">📅 BOOK A VISIT - R50</a><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px"><a href="https://wa.me/27772637424" style="background:#FDE68A;color:#111;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">WhatsApp 077 263 7424</a><a href="tel:+27772637424" style="background:white;color:#111;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">Call 077 263 7424</a></div></div></footer>
+<footer style="background:#2D1B4E;color:white;padding:32px 20px 20px;margin-top:40px;border-top:4px solid #FDE68A;text-align:center"><img src="logo-560.webp" style="height:70px;background:white;border-radius:16px;padding:8px;border:2px solid #FDE68A;margin-bottom:12px"><p style="font-size:14px;max-width:400px;margin:0 auto;opacity:.9">Durban's first dedicated cat café & rescue sanctuary.</p><p style="color:#FDE68A;font-weight:800;letter-spacing:2px;font-size:13px;margin-top:22px">LOCATION</p><p style="font-size:14px;margin-top:6px">87 Smiso Nkwanyana Road<br>Morningside, Durban</p><div style="border-top:1px solid rgba(255,255,255,0.15);margin-top:20px;padding-top:16px"><a href="book.html" style="display:block;background:#FDE68A;color:#111;padding:14px;border-radius:999px;text-decoration:none;font-weight:800;text-align:center;max-width:300px;margin:0 auto">📅 BOOK A VISIT - R50</a></div></footer>
+
+<script>
+// AUTO-FIX FOR IMAGES WITH SPACES
+document.querySelectorAll('img[data-srcs]').forEach(img=>{
+  const list = img.dataset.srcs.split(',').map(s=>s.trim());
+  let i=0;
+  function next(){
+    if(i>=list.length){
+      img.parentElement.innerHTML='<div style="padding:40px;text-align:center;color:#9B8EC4;font-size:12px">⚠️ File not found:<br>'+list[0]+'<br>Check name in GitHub</div>';
+      return;
+    }
+    img.src=list[i++];
+  }
+  img.onerror=next;
+  next();
+});
+</script>
 </body>
   </html>
