@@ -5,28 +5,65 @@
 <title>Services - MeanKat Cafe</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FDE68A;--ink:#0F0F0F}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
+:root{--yellow:#FDE68A;--purple:#8B7AB8;--purple-dark:#9B8EC4;--ink:#0F0F0F;--cream:#FFFBF8}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
 .header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100;flex-wrap:wrap}
 .logo{height:50px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
-.nav{display:flex;align-items:center;gap:18px}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:14px}.nav a.active{color:var(--yellow)!important}
+.nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:13px}.nav a.active{color:var(--yellow)!important}
 .btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px;white-space:nowrap}
-.wrap{max-width:900px;margin:0 auto;padding:20px}.top-card{background:var(--yellow);color:#111;border-radius:20px;padding:18px}.white-card{background:#FFFBF0;color:#111;border-radius:20px;padding:20px;margin-top:14px;border:2px solid var(--yellow)}
-@media(max-width:650px){.header{padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:space-between;gap:0;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:13px}.btn{font-size:11px;padding:8px 12px}}
+.wrap{max-width:700px;margin:0 auto;padding:20px}
+.visit-card{background:var(--purple-dark);color:white;border-radius:28px;padding:28px 24px;border:3px solid var(--yellow)}
+.visit-card h1{font-family:Fredoka;font-size:32px;letter-spacing:1px}
+.price-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.2);font-weight:700}
+.price-row:last-of-type{border-bottom:none}
+.price-row .r{font-size:20px;font-weight:800}
+.price-row .label{font-size:15px;opacity:.9}
+.note{margin-top:18px;font-size:12px;line-height:1.5;opacity:.9}
+.vibes{margin-top:24px;text-align:center}
+.vibes h2{font-family:Fredoka;font-size:14px;color:var(--purple-dark);letter-spacing:2px}
+.vibes h3{font-family:Fredoka;font-size:32px;color:var(--purple-dark);line-height:1.1;margin-top:8px}
+.book-btn{display:block;width:100%;background:#7C5CBF;color:white;padding:16px;border-radius:999px;text-align:center;text-decoration:none;font-weight:800;font-size:16px;margin-top:20px;border:3px solid #111}
+.small-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.small-card{background:#FFFBF0;color:#111;border-radius:20px;padding:16px;border:2px solid var(--yellow)}
+.small-card h4{font-family:Fredoka;font-size:16px}
+@media(max-width:700px){.header{padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:flex-start;gap:12px;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:12px}.btn{font-size:11px}.visit-card h1{font-size:28px}.price-row .r{font-size:18px}}
 </style>
 </head>
 <body>
-<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a><nav class="nav"><a href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a class="active" href="services.html">Services</a><a class="btn" href="https://wa.me/27772637424?text=Hi%20MeanKat%20-%20I%20want%20to%20book">Book • 077 263 7424</a></nav></header>
+<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a>
+<nav class="nav"><a href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="view.html">Our Space</a><a href="play.html">Paws & Play</a><a class="active" href="services.html">Services</a><a href="book.html">Book</a><a class="btn" href="book.html">Book • 077 263 7424</a></nav></header>
+
 <div class="wrap">
-<div class="top-card"><h1 style="font-family:Fredoka;font-size:30px">Visit & Services</h1></div>
-<div class="white-card">
-<h2 style="font-family:Fredoka;font-size:22px">How It Works</h2>
-<p style="margin-top:16px"><strong>1. Book</strong><br>
-<a href="https://wa.me/27772637424" style="background:var(--yellow);color:#111;padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:800;display:inline-block;margin-top:8px">📱 WhatsApp 077 263 7424</a><br>
-<a href="tel:+27772637424" style="background:#111;color:white;padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:800;display:inline-block;margin-top:8px;margin-left:6px">📞 Call 077 263 7424</a><br>
-<span style="font-size:13px;margin-top:8px;display:block">Entrance fee supports cats. 87 Smiso Nkwanyana Rd.</span></p>
-<p style="margin-top:18px"><strong>2. Rules</strong><br><span style="font-size:13px">Eating at own risk. No picking up cats. Quiet voices. No flash.</span></p>
-<p style="margin-top:18px"><strong>3. Services</strong><br><span style="font-size:13px">Cat Therapy • Birthdays • Adoption • Photography<br><a href="https://instagram.com/meankatcafe_durban" style="color:#7C3AED;font-weight:700;text-decoration:none">@meankatcafe_durban</a></span></p>
+<div class="visit-card">
+<h1>VISIT THE CATS 🐱</h1>
+
+<div style="margin-top:20px">
+<div class="price-row"><span class="r">R50</span><span class="label">Per person</span></div>
+<div class="price-row"><span class="r">R40 <span style="font-size:14px;font-weight:400">Students • weekdays (card req.)</span></span><span class="label"></span></div>
+<div class="price-row"><span class="r">R40</span><span class="label">Pensioners</span></div>
+<div class="price-row"><span class="r">Free</span><span class="label">Children under 1 year</span></div>
 </div>
+
+<p class="note">Please note: your entrance fee is a donation to our rescue efforts – it goes straight to food, vet care and finding our cats their forever homes.</p>
+</div>
+
+<div class="vibes">
+<h2>COME FOR THE VIBES... ☕</h2>
+<h3>STAY BECAUSE A CAT<br>YOU LITERALLY CAN'T LEAVE.</h3>
+</div>
+
+<a class="book-btn" href="book.html">📅 BOOK A VISIT</a>
+
+<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px">
+<a href="https://wa.me/27772637424" style="background:var(--yellow);color:#111;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">WhatsApp 077 263 7424</a>
+<a href="tel:+27772637424" style="background:white;color:#111;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px;border:2px solid var(--yellow)">Call 077 263 7424</a>
+</div>
+
+<div class="small-cards">
+<div class="small-card"><h4>🐾 How It Works</h4><p style="font-size:12px;margin-top:6px">1. Book online or WhatsApp<br>2. Pay entrance at door<br>3. Play, order from menu, adopt!</p></div>
+<div class="small-card"><h4>📍 Location</h4><p style="font-size:12px;margin-top:6px">87 Smiso Nkwanyana Rd, Morningside<br>Durban<br>@meankatcafe_durban</p></div>
+</div>
+
 </div>
 </body>
-  </html>
+                                                    </html>
