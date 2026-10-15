@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book a Visit - MeanKat Cafe</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#FDE68A;--purple:#8B7AB8;--ink:#0F0F0F;--cream:#FFFBF8}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
+.header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100;flex-wrap:wrap}
+.logo{height:50px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
+.nav{display:flex;align-items:center;gap:18px}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:14px}.nav a.active{color:var(--yellow)!important}
+.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px;white-space:nowrap}
+.wrap{max-width:600px;margin:0 auto;padding:20px}
+.form-wrap{background:var(--cream);color:#111;border-radius:28px;padding:24px 20px;border:3px solid var(--yellow)}
+.form-title{font-family:Fredoka;font-size:36px;color:var(--purple)}
+label{display:block;font-weight:700;font-size:13px;margin-top:14px}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:2px solid #E9D5FF;margin-top:6px;font-family:Inter;font-size:14px;background:white}
+textarea{height:80px;resize:vertical}
+.submit{width:100%;background:#111;color:white;padding:14px;border-radius:999px;border:none;font-weight:800;font-size:15px;margin-top:18px;cursor:pointer}
+.submit2{width:100%;background:var(--purple);color:white;padding:12px;border-radius:999px;border:none;font-weight:800;font-size:13px;margin-top:10px;cursor:pointer}
+@media(max-width:650px){.header{padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:space-between;gap:0;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:13px}.btn{font-size:11px;padding:8px 12px}}
+</style>
+</head>
+<body>
+<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a><nav class="nav"><a href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27772637424">077 263 7424</a></nav></header>
+<div class="wrap">
+<div class="form-wrap">
+<div class="form-title">Book a Visit 📅</div>
+<p style="font-size:13px;margin-top:6px;opacity:.7">Fill in and we will confirm on WhatsApp 077 263 7424</p>
+
+<form id="bookForm">
+<label>Full Name *<input type="text" id="bname" required placeholder="Your name"></label>
+<label>Your WhatsApp Number *<input type="tel" id="bphone" required placeholder="e.g. 077 123 4567"></label>
+<label>Email<input type="email" id="bemail" placeholder="optional"></label>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<label>Date *<input type="date" id="bdate" required></label>
+<label>Time *<input type="time" id="btime" required></label>
+</div>
+<label>Number of People *<select id="bguests" required><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5-6</option><option>7-10</option><option>10+ (Party)</option></select></label>
+<label>Visit Type *<select id="btype" required><option value="">Select</option><option>General Visit - Play with Cats</option><option>Cat Therapy Session</option><option>Birthday Party</option><option>Photography</option><option>First Time Visit</option></select></label>
+<label>Message / Special Requests<textarea id="bmsg" placeholder="Any allergies, birthday, etc"></textarea></label>
+<button class="submit" type="submit">📱 Submit via WhatsApp - 077 263 7424</button>
+<button class="submit2" type="button" onclick="window.location.href='tel:+27772637424'">📞 Or Call Us Directly</button>
+</form>
+
+<p style="font-size:11px;margin-top:12px;text-align:center;opacity:.6">Your details will open in WhatsApp to 077 263 7424. Just press SEND.</p>
+</div>
+</div>
+<script>
+document.getElementById('bookForm').addEventListener('submit', function(e){
+e.preventDefault();
+let msg = `Hi MeanKat Cafe! 🐾 BOOKING REQUEST%0A%0AName: ${document.getElementById('bname').value}%0APhone: ${document.getElementById('bphone').value}%0AEmail: ${document.getElementById('bemail').value}%0ADate: ${document.getElementById('bdate').value}%0ATime: ${document.getElementById('btime').value}%0AGuests: ${document.getElementById('bguests').value}%0AType: ${document.getElementById('btype').value}%0AMessage: ${document.getElementById('bmsg').value}`;
+window.open(`https://wa.me/27772637424?text=${msg}`, '_blank');
+});
+</script>
+</body>
+</html>
