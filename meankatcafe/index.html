@@ -2,40 +2,56 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MeanKat Café | They run this place. We just make the coffee.</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>MeanKat Cafe - Durban Cat Sanctuary</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
-h1,h2,h3{font-family:Fredoka,sans-serif}
-.header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100}
-.logo{height:56px;background:white;border-radius:10px;padding:4px}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px;margin-left:16px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
-.marquee{background:var(--yellow);color:#111;padding:10px 0;overflow:hidden;white-space:nowrap;font-weight:800;font-size:13px}
-.marquee-inner{display:inline-block;animation:scroll 20s linear infinite}
-@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.slider{position:relative;height:520px;overflow:hidden;background:#111}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;background-size:cover;background-position:center}
-.slide.active{opacity:1}
-.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.7))}
-.slide-content{position:absolute;bottom:30px;left:20px;right:20px;z-index:2;max-width:600px}
-.badge{display:inline-block;background:var(--cream);color:#111;padding:6px 12px;border-radius:999px;font-size:11px;font-weight:800;margin-bottom:10px}
-.hero-title{font-size:clamp(32px,6vw,56px);line-height:.9;color:white}
-.hero-grid{max-width:1280px;margin:0 auto;padding:24px 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
-.card{background:var(--cream);color:#1A0F2E;border-radius:24px;padding:20px;border:3px solid var(--yellow)}
-@media(max-width:800px){.hero-grid{grid-template-columns:1fr}.slider{height:420px}}
+:root{--yellow:#FDE68A;--ink:#0F0F0F}*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,sans-serif;background:var(--ink);color:#FFFBF8}
+.header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100;flex-wrap:wrap}
+.logo{height:50px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
+.nav{display:flex;align-items:center;gap:18px}
+.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:14px}
+.nav a.active{color:var(--yellow)!important}
+.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px;white-space:nowrap}
+.wrap{max-width:1280px;margin:0 auto;padding:20px}
+.hero{background:var(--yellow);color:#111;border-radius:28px;padding:28px 22px;margin-top:14px}
+.hero h1{font-family:Fredoka;font-size:42px;line-height:.9}
+.card{background:#111;border-radius:20px;overflow:hidden;border:2px solid #2a2a2a}
+.card img{width:100%;height:200px;object-fit:cover;display:block}
+.card-info{padding:12px 14px}
+@media(max-width:650px){
+.header{padding:10px 12px}.logo{height:44px}
+.nav{width:100%;order:3;justify-content:space-between;gap:0;margin-top:10px;padding-top:10px;border-top:1px solid #222}
+.nav a{font-size:13px}.btn{font-size:11px;padding:8px 12px}
+.hero h1{font-size:34px}
+}
 </style>
 </head>
 <body>
 <header class="header">
 <a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a>
-<nav class="nav"><a class="active" href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav>
+<nav class="nav">
+<a class="active" href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="services.html">Services</a>
+<a class="btn" href="https://wa.me/27772637424?text=Hi%20MeanKat%20-%20I%20want%20to%20book">Book • 077 263 7424</a>
+</nav>
 </header>
-<div class="marquee"><div class="marquee-inner"><span>🐾 WE'RE OFFICIALLY ONLINE AND FELINE FINE! 🐾 EAT • PLAY • ADOPT 🐾 87 SMISO NKWANYANA RD, MORNINGSIDE 🐾 LUCA • ORCI • CHINO 🐾 </span></div></div>
-<div class="slider" id="slider">
-<div class="slide active" style="background-image:url('logo-560.webp');background-size:contain;background-repeat:no-repeat;background-color:#111"><div class="slide-content"><span class="badge">REAL LOGO</span><h1 class="hero-title">They run this place. We just make the coffee.</h1></div></div>
-<div class="slide" style="background-image:url('interior.jpg')"><div class="slide-content"><span class="badge">REAL SANCTUARY</span><h1 class="hero-title">Purple walls. Spiral staircase. Cats.</h1></div></div>
-<div class="slide" style="background-image:url('menu1.jpg')"><div class="slide-content"><span class="badge">REAL MENU R20-R75</span><h1 class="hero-title">Eat. Play. Adopt.</h1></div></div>
+<div class="wrap">
+<div class="hero">
+<h1>MeanKat Cafe<br>Durban</h1>
+<p style="margin-top:8px;font-weight:700">Cat Sanctuary • 87 Smiso Nkwanyana Rd • Eat Play Adopt</p>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+<a href="https://wa.me/27772637424" style="background:#111;color:white;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800">📱 WhatsApp 077 263 7424</a>
+<a href="tel:+27772637424" style="background:white;color:#111;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800;border:2px solid #111">📞 Call 077 263 7424</a>
+<a href="cats.html" style="background:#111;color:var(--yellow);padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:800">Meet 10 Cats 🐾</a>
 </div>
-<div class="hero-grid">
-<div class="card"><h2 style="font-size:32px">MeanKat Café Durban</h2><p style="margin-top:8px;font-size:14px;line-height:1.6;font-weight:600">Durban's only premium cat sanctuary café. Real logo, real spiral staircase, real cats Luca, Orci, Chino. 87 Smiso Nkwanyana Rd.</p><div style="margin-top:16px"><a class="btn" href="cats.html">Meet Cats →</a> <a class="btn" style="background:#111;color:var(--yellow);border:2px solid var(--yellow)" href="menu.html">Real Menu</a></div></div>
-<div class="card" style="background
+</div>
+<h2 style="font-family:Fredoka;margin-top:20px;font-size:24px">Featured Cats</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:12px">
+<div class="card"><img src="Luca.jpg" alt="Luca"><div class="card-info"><strong>Luca</strong></div></div>
+<div class="card"><img src="Chino.jpeg" onerror="this.src='Chino.jpg'" alt="Chino"><div class="card-info"><strong>Chino</strong></div></div>
+<div class="card"><img src="Luna.jpg" alt="Luna"><div class="card-info"><strong>Luna</strong></div></div>
+<div class="card"><img src="Theo.jpg" alt="Theo"><div class="card-info"><strong>Theo</strong></div></div>
+</div>
+</div>
+</body>
+  </html>
