@@ -2,61 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cats - MeanKat Cafe | 10 Real Cats</title>
+<title>Cats - MeanKat Cafe</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FDE68A;--purple:#7C3AED;--ink:#0F0F0F;--cream:#FFFBF8}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:var(--cream)}
-.header{padding:12px 20px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:10px}
-.logo{height:52px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow)}
-.nav{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.nav a{color:white;text-decoration:none;font-weight:700;font-size:13px}.nav a.active{color:var(--yellow)}.btn{background:var(--yellow);color:#111;padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px}
-.wrap{max-width:1280px;margin:0 auto;padding:20px}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
-.filter{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;border:2px solid #111;background:white;cursor:pointer}.filter.active{background:var(--yellow)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
-.cat-card{background:#111;border-radius:20px;overflow:hidden;border:2px solid #2a2a2a;transition:.2s}.cat-card:hover{border-color:var(--yellow);transform:translateY(-3px)}
-.cat-img{width:100%;height:220px;object-fit:cover;background:#222;display:block}
-.cat-info{padding:12px 14px}
-.cat-name{font-family:Fredoka,sans-serif;font-size:18px;color:white}.cat-desc{font-size:12px;opacity:.8;margin-top:4px}
-.tag{display:inline-block;font-size:10px;font-weight:800;padding:3px 8px;border-radius:999px;margin-top:6px}.tag-resident{background:var(--yellow);color:#111}.tag-adopt{background:#A78BFA;color:#111}
-@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr)}.cat-img{height:160px}}
+:root{--yellow:#FDE68A;--ink:#0F0F0F}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
+.header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100;flex-wrap:wrap}
+.logo{height:50px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
+.nav{display:flex;align-items:center;gap:18px}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:14px}.nav a.active{color:var(--yellow)!important}
+.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px;white-space:nowrap}
+.wrap{max-width:1280px;margin:0 auto;padding:20px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.filter{padding:8px 14px;border-radius:999px;font-size:12px;font-weight:700;border:2px solid #111;background:white;cursor:pointer}.filter.active{background:var(--yellow)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}.cat-card{background:#111;border-radius:20px;overflow:hidden;border:2px solid #2a2a2a}.cat-img{width:100%;height:220px;object-fit:cover;background:#222;display:block}.cat-info{padding:12px 14px}.cat-name{font-family:Fredoka;font-size:18px}.tag{display:inline-block;font-size:10px;font-weight:800;padding:3px 8px;border-radius:999px;margin-top:6px}.tag-resident{background:var(--yellow);color:#111}.tag-adopt{background:#A78BFA;color:#111}
+@media(max-width:650px){.header{padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:space-between;gap:0;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:13px}.btn{font-size:11px;padding:8px 12px}.grid{grid-template-columns:repeat(2,1fr)}.cat-img{height:160px}}
 </style>
 </head>
 <body>
-<header class="header">
-<a href="index.html"><img src="logo-560.webp" class="logo" onerror="this.src='https://troysite.github.io/logo-560.webp'" alt="MeanKat"></a>
-<nav class="nav"><a href="index.html">Home</a><a class="active" href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27817745066">Book</a></nav>
-</header>
-
-<div class="wrap">
-<h1 style="font-family:Fredoka;font-size:32px">Meet the Family 🐾 10 Cats</h1>
-
-<div class="filters">
-<button class="filter active" data-f="all">All 10</button>
-<button class="filter" data-f="resident">Resident</button>
-<button class="filter" data-f="adoptable">Adoptable</button>
-</div>
-
-<div class="grid">
-<div class="cat-card" data-tags="resident"><img class="cat-img" src="Luca.jpg" alt="Luca"><div class="cat-info"><div class="cat-name">Luca</div><div class="cat-desc">Soft Soul - Mikah's Baby</div><span class="tag tag-resident">RESIDENT</span></div></div>
-<div class="cat-card" data-tags="resident"><img class="cat-img" src="Chino.jpeg" onerror="this.src='Chino.jpg'" alt="Chino"><div class="cat-info"><div class="cat-name">Chino</div><div class="cat-desc">Chill King</div><span class="tag tag-resident">RESIDENT</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Lulu.jpg" alt="Lulu"><div class="cat-info"><div class="cat-name">Lulu</div><div class="cat-desc">Sweet & Curious</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Mimi.jpg" alt="Mimi"><div class="cat-info"><div class="cat-name">Mimi</div><div class="cat-desc">Playful Explorer</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Flicker.jpg" alt="Flicker"><div class="cat-info"><div class="cat-name">Flicker</div><div class="cat-desc">Fast & Friendly</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Ollie.jpg" alt="Ollie"><div class="cat-info"><div class="cat-name">Ollie</div><div class="cat-desc">Cuddle Monster</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Eddie.jpg" alt="Eddie"><div class="cat-info"><div class="cat-name">Eddie</div><div class="cat-desc">Gentle Giant</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Dudley.jpg" alt="Dudley"><div class="cat-info"><div class="cat-name">Dudley</div><div class="cat-desc">King of Naps</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Luna.jpg" alt="Luna"><div class="cat-info"><div class="cat-name">Luna</div><div class="cat-desc">Moon Child</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Theo.jpg" alt="Theo"><div class="cat-info"><div class="cat-name">Theo</div><div class="cat-desc">Brave Heart</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
-</div>
-</div>
-
-<script>
-document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{
-document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');
-const f=b.dataset.f;document.querySelectorAll('.cat-card').forEach(c=>{
-c.style.display=(f==='all'||c.dataset.tags.includes(f))?'block':'none'});
-}));
-</script>
+<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a><nav class="nav"><a href="index.html">Home</a><a class="active" href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="services.html">Services</a><a class="btn" href="https://wa.me/27772637424?text=Hi%20MeanKat%20-%20I%20want%20to%20book">Book • 077 263 7424</a></nav></header>
+<div class="wrap"><h1 style="font-family:Fredoka;font-size:32px">Meet the Family 🐾 10 Cats</h1><div class="filters"><button class="filter active" data-f="all">All 10</button><button class="filter" data-f="resident">Resident</button><button class="filter" data-f="adoptable">Adoptable</button></div><div class="grid">
+<div class="cat-card" data-tags="resident"><img class="cat-img" src="Luca.jpg" alt="Luca"><div class="cat-info"><div class="cat-name">Luca</div><span class="tag tag-resident">RESIDENT</span></div></div>
+<div class="cat-card" data-tags="resident"><img class="cat-img" src="Chino.jpeg" onerror="this.src='Chino.jpg'" alt="Chino"><div class="cat-info"><div class="cat-name">Chino</div><span class="tag tag-resident">RESIDENT</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Lulu.jpg" alt="Lulu"><div class="cat-info"><div class="cat-name">Lulu</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Mimi.jpg" alt="Mimi"><div class="cat-info"><div class="cat-name">Mimi</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Flicker.jpg" alt="Flicker"><div class="cat-info"><div class="cat-name">Flicker</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Ollie.jpg" alt="Ollie"><div class="cat-info"><div class="cat-name">Ollie</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Eddie.jpg" alt="Eddie"><div class="cat-info"><div class="cat-name">Eddie</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Dudley.jpg" alt="Dudley"><div class="cat-info"><div class="cat-name">Dudley</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Luna.jpg" alt="Luna"><div class="cat-info"><div class="cat-name">Luna</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+<div class="cat-card" data-tags="adoptable"><img class="cat-img" src="Theo.jpg" alt="Theo"><div class="cat-info"><div class="cat-name">Theo</div><span class="tag tag-adopt">ADOPTABLE</span></div></div>
+</div></div>
+<script>document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');const f=b.dataset.f;document.querySelectorAll('.cat-card').forEach(c=>{c.style.display=(f==='all'||c.dataset.tags.includes(f))?'block':'none'});}))</script>
 </body>
-                                                   </html>
+  </html>
