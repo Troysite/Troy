@@ -5,19 +5,14 @@
 <title>Our Space - MeanKat Cafe</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FDE68A;--purple:#8B7AB8;--ink:#0F0F0F;--cream:#FFFBF8}
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
+:root{--yellow:#FDE68A;--purple:#8B7AB8;--ink:#0F0F0F}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ink);color:white}
 .header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:#111;border-bottom:3px solid var(--yellow);position:sticky;top:0;z-index:100;flex-wrap:wrap}
 .logo{height:50px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
 .nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:13px}.nav a.active{color:var(--yellow)!important}
-.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px;white-space:nowrap}
-.wrap{max-width:1000px;margin:0 auto;padding:20px}
-.top{background:var(--yellow);color:#111;border-radius:28px;padding:24px;border:3px solid #111}
-.top h1{font-family:Fredoka;font-size:36px}
+.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px}
+.wrap{max-width:1000px;margin:0 auto;padding:20px}.top{background:var(--yellow);color:#111;border-radius:28px;padding:24px;border:3px solid #111}.top h1{font-family:Fredoka;font-size:36px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
-.img-card{background:#111;border-radius:20px;overflow:hidden;border:3px solid var(--yellow)}
-.img-card img{width:100%;height:320px;object-fit:cover;display:block}
-.img-card .cap{padding:10px 14px;font-weight:700;font-size:13px;background:#FFFBF0;color:#111}
+.img-card{background:#111;border-radius:20px;overflow:hidden;border:3px solid var(--yellow)}.img-card img{width:100%;height:320px;object-fit:cover;display:block;background:#222}.img-card .cap{padding:10px 14px;font-weight:700;font-size:13px;background:#FFFBF0;color:#111}
 @media(max-width:700px){.header{padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:flex-start;gap:12px;margin-top:10px;padding-top:10px;border-top:1px solid #222}.nav a{font-size:12px}.btn{font-size:11px}.img-card img{height:240px}}
 </style>
 </head>
@@ -25,15 +20,12 @@
 <header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a>
 <nav class="nav"><a href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a class="active" href="view.html">Our Space</a><a href="play.html">Paws & Play</a><a href="services.html">Services</a><a href="book.html">Book</a><a class="btn" href="book.html">Book • 077 263 7424</a></nav></header>
 <div class="wrap">
-<div class="top"><h1>Our Space 🏠</h1><p style="margin-top:8px;font-weight:600">Inside MeanKat Cafe - 87 Smiso Nkwanyana Rd - Cozy, Cat-Friendly, Instagram-Ready</p>
-<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><a href="https://wa.me/27772637424" style="background:#111;color:white;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">WhatsApp 077 263 7424</a><a href="tel:+27772637424" style="background:white;color:#111;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px;border:2px solid #111">Call 077 263 7424</a><a href="book.html" style="background:var(--purple);color:white;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">Book a Table 📅</a></div>
-</div>
+<div class="top"><h1>Our Space 🏠</h1><p style="margin-top:8px;font-weight:600">Inside MeanKat - 87 Smiso Nkwanyana Rd</p><div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><a href="https://wa.me/27772637424" style="background:#111;color:white;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">WhatsApp 077 263 7424</a><a href="tel:+27772637424" style="background:white;color:#111;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px;border:2px solid #111">Call 077 263 7424</a></div></div>
 <div class="grid">
-<div class="img-card"><img src="View1.jpg" alt="Inside MeanKat"><div class="cap">View 1 - Cozy interior where cats roam free 🐱</div></div>
-<div class="img-card"><img src="View2.jpg" alt="MeanKat Space"><div class="cap">View 2 - Your favorite corner to work & cuddle</div></div>
-<div class="img-card"><img src="View3.png" alt="MeanKat Cafe View"><div class="cap">View 3 - Perfect for birthdays & cat therapy</div></div>
+<div class="img-card"><img src="View1.jpg" onerror="this.onerror=null;this.src='View%201.jpg';this.onerror=function(){this.src='view1.jpg'}" alt="View 1"><div class="cap">View 1 - Cozy interior where cats roam free 🐱</div></div>
+<div class="img-card"><img src="View2.jpg" onerror="this.onerror=null;this.src='View%202.jpg';this.onerror=function(){this.src='View%202.png';this.onerror=function(){this.src='view2.jpg'}}" alt="View 2"><div class="cap">View 2 - Your favorite corner to work & cuddle</div></div>
+<div class="img-card"><img src="View3.png" onerror="this.onerror=null;this.src='View%203.png';this.onerror=function(){this.src='View3.jpg';this.onerror=function(){this.src='view3.png'}}" alt="View 3"><div class="cap">View 3 - Perfect for birthdays & cat therapy</div></div>
 </div>
-<div style="background:#FFFBF0;color:#111;border-radius:20px;padding:16px;margin-top:16px;border:2px solid var(--yellow)"><p style="font-size:13px;font-weight:600">Want to see it in person? Book a visit - entrance supports our 10 cats. 📍 87 Smiso Nkwanyana Rd, Morningside, Durban</p></div>
 </div>
 </body>
-</html>
+                        </html>
