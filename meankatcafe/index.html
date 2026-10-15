@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MeanKat Cafe - Welcome!</title>
+<title>MeanKat Cafe - Durban Cat Sanctuary</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--yellow:#FDE68A;--pink:#F9A8D4;--purple:#8B7AB8;--ink:#2D1B4E}
+:root{--yellow:#FDE68A;--purple:#8B7AB8;--purple-deep:#7C5CBF;--ink:#0F0F0F;--dark:#2D1B4E}
 *{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:Inter,sans-serif;
-  background:#FFFBEB;
-  background-image: radial-gradient(at 10% 10%, #FDE68A 0%, transparent 35%), radial-gradient(at 90% 15%, #F9A8D4 0%, transparent 30%), radial-gradient(at 50% 95%, #C4B5FD 0%, transparent 40%);
+  background:#0F0F0F;
+  background-image: 
+    radial-gradient(at 20% 20%, rgba(124,92,191,0.25) 0%, transparent 50%),
+    radial-gradient(at 80% 10%, rgba(139,122,184,0.2) 0%, transparent 40%),
+    radial-gradient(at 50% 100%, rgba(45,27,78,0.6) 0%, transparent 60%);
   background-attachment:fixed;
-  color:var(--ink);
+  color:#FFFBF8;
 }
 
-/* MOVING WELCOME HEADLINES - NON STOP */
+/* KEEP - Top moving headlines */
 .marquee-top{
-  background:var(--ink);
+  background:#2D1B4E;
   color:var(--yellow);
-  padding:10px 0;
+  padding:11px 0;
   overflow:hidden;
   white-space:nowrap;
   border-bottom:3px solid var(--yellow);
@@ -33,93 +36,120 @@ body{
 }
 .marquee-track{
   display:inline-block;
-  animation:scroll 25s linear infinite;
-  will-change:transform;
+  animation:scroll 28s linear infinite;
 }
 @keyframes scroll{
   0%{transform:translateX(0)}
   100%{transform:translateX(-50%)}
 }
 
-.header{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;background:white;border-bottom:4px solid var(--yellow);position:sticky;top:38px;z-index:100;flex-wrap:wrap;box-shadow:0 4px 20px rgba(0,0,0,0.07)}
-.logo{height:52px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
-.nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.nav a{color:var(--ink)!important;text-decoration:none!important;font-weight:800;font-size:13px}.nav a.active{color:white!important;background:var(--ink);padding:6px 12px;border-radius:999px}
-.btn{background:var(--ink);color:white!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px}
-.wrap{max-width:1280px;margin:0 auto;padding:20px}
-.hero{
-  background: linear-gradient(135deg, #FDE68A 0%, #FECACA 35%, #C4B5FD 75%, #A7F3D0 100%);
-  color:var(--ink);
-  border-radius:36px;
-  padding:34px 24px;
-  margin-top:16px;
-  border:3px solid var(--ink);
-  box-shadow:8px 8px 0px var(--ink);
+.header{
+  padding:14px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#111;
+  border-bottom:3px solid var(--yellow);
+  position:sticky;
+  top:39px;
+  z-index:100;
+  flex-wrap:wrap;
 }
-.hero h1{font-family:Fredoka;font-size:46px;line-height:.9}
-.hero h2{font-family:Fredoka;font-size:20px;margin-top:10px;opacity:.8}
-.card{background:white;border-radius:24px;overflow:hidden;border:3px solid var(--ink);box-shadow:6px 6px 0px var(--ink)}
-.card img{width:100%;height:200px;object-fit:cover;display:block}.card-info{padding:14px;font-weight:800}
-.hero-btn{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:13px;margin-top:8px;margin-right:6px;border:2px solid var(--ink);box-shadow:3px 3px 0px var(--ink)}
-.welcome-badge{display:inline-block;background:var(--ink);color:var(--yellow);padding:6px 14px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:12px}
+.logo{height:52px;background:white;border-radius:12px;padding:5px;border:2px solid var(--yellow);display:block}
+.nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.nav a{color:white!important;text-decoration:none!important;font-weight:700;font-size:13px}
+.nav a.active{color:var(--yellow)!important;background:#2D1B4E;padding:6px 12px;border-radius:999px;border:1px solid var(--yellow)}
+.btn{background:var(--yellow);color:#111!important;padding:9px 16px;border-radius:999px;text-decoration:none!important;font-weight:800;font-size:13px}
 
-@media(max-width:700px){.header{top:36px;padding:10px 12px}.logo{height:44px}.nav{width:100%;order:3;justify-content:flex-start;gap:10px;margin-top:10px;padding-top:10px;border-top:2px solid #FFF0C0}.nav a{font-size:11px}.btn{font-size:11px}.hero h1{font-size:32px}.marquee-top{font-size:12px}}
+.wrap{max-width:1280px;margin:0 auto;padding:20px}
+
+/* NEW PURPLE + BLACK HERO */
+.hero{
+  background: linear-gradient(135deg, #9B8EC4 0%, #7C5CBF 35%, #2D1B4E 100%);
+  color:white;
+  border-radius:32px;
+  padding:36px 28px;
+  margin-top:16px;
+  border:3px solid var(--yellow);
+  box-shadow: 0 0 0 3px #2D1B4E, 8px 8px 0px #2D1B4E;
+}
+.badge{display:inline-block;background:var(--yellow);color:#111;padding:7px 14px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:14px;border:2px solid #111}
+.hero h1{font-family:Fredoka;font-size:46px;line-height:.95}
+.hero p{margin-top:12px;font-size:15px;line-height:1.5;font-weight:600;opacity:.95;max-width:600px}
+.hero-btn{display:inline-block;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800;font-size:13px;margin-top:10px;margin-right:8px;border:2px solid #111}
+
+.card{background:#1A1625;border-radius:24px;overflow:hidden;border:2px solid #2D1B4E;transition:.2s}
+.card:hover{border-color:var(--yellow);transform:translateY(-2px)}
+.card img{width:100%;height:210px;object-fit:cover;display:block}
+.card-info{padding:14px 16px;font-weight:800;color:white;display:flex;justify-content:space-between}
+.card-info span{color:var(--yellow);font-size:12px}
+
+@media(max-width:700px){
+  .header{top:38px;padding:10px 12px}.logo{height:44px}
+  .nav{width:100%;order:3;justify-content:flex-start;gap:10px;margin-top:10px;padding-top:10px;border-top:1px solid #222}
+  .nav a{font-size:11px}.btn{font-size:11px}
+  .hero h1{font-size:34px}.hero{padding:24px 18px}
+}
 </style>
 </head>
 <body>
 
-<!-- MOVING WELCOME HEADLINES - CONTINUOUS RIGHT TO LEFT -->
+<!-- TOP MOVING HEADLINES - KEPT -->
 <div class="marquee-top">
   <div class="marquee-track">
     😻 WELCOME TO MEANKAT CAFE - DURBAN'S FIRST CAT CAFE & RESCUE SANCTUARY 😻 COME FOR THE VIBES, STAY BECAUSE A CAT WON'T LET YOU LEAVE ☕ 87 SMISO NKWANYANA RD, MORNINGSIDE 🐾 R50 PER PERSON - R40 STUDENTS & PENSIONERS 🐱 COFFEE, CATS & SECOND CHANCES ❤️ BOOK NOW: 077 263 7424 ❤️ &nbsp;
     😻 WELCOME TO MEANKAT CAFE - DURBAN'S FIRST CAT CAFE & RESCUE SANCTUARY 😻 COME FOR THE VIBES, STAY BECAUSE A CAT WON'T LET YOU LEAVE ☕ 87 SMISO NKWANYANA RD, MORNINGSIDE 🐾 R50 PER PERSON - R40 STUDENTS & PENSIONERS 🐱 COFFEE, CATS & SECOND CHANCES ❤️ BOOK NOW: 077 263 7424 ❤️ &nbsp;
-    😻 WELCOME TO MEANKAT CAFE - DURBAN'S FIRST CAT CAFE & RESCUE SANCTUARY 😻 COME FOR THE VIBES, STAY BECAUSE A CAT WON'T LET YOU LEAVE ☕ 87 SMISO NKWANYANA RD, MORNINGSIDE 🐾 R50 PER PERSON - R40 STUDENTS & PENSIONERS 🐱 COFFEE, CATS & SECOND CHANCES ❤️ BOOK NOW: 077 263 7424 ❤️ &nbsp;
   </div>
 </div>
 
-<header class="header"><a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a>
-<nav class="nav"><a class="active" href="index.html">Home</a><a href="cats.html">Cats</a><a href="menu.html">Menu</a><a href="view.html">Our Space</a><a href="play.html">Paws & Play</a><a href="services.html">Services</a><a href="book.html">Book</a><a class="btn" href="book.html">Book • 077 263 7424</a></nav></header>
+<header class="header">
+<a href="index.html"><img src="logo-560.webp" class="logo" alt="MeanKat"></a>
+<nav class="nav">
+<a class="active" href="index.html">Home</a>
+<a href="cats.html">Cats</a>
+<a href="menu.html">Menu</a>
+<a href="view.html">Our Space</a>
+<a href="play.html">Paws & Play</a>
+<a href="services.html">Services</a>
+<a href="book.html">Book</a>
+<a class="btn" href="book.html">Book • 077 263 7424</a>
+</nav>
+</header>
 
 <div class="wrap">
 <div class="hero">
-<span class="welcome-badge">🌈 WELCOME HOME, CAT LOVERS! 🌈</span>
-<h1>Welcome to<br>MeanKat Cafe! 😻</h1>
-<h2>Your purr-fect escape in Durban - where every coffee saves a cat!</h2>
-<p style="margin-top:14px;font-weight:700;font-size:15px;line-height:1.5">New here? Come relax with 10 rescue cats who can't wait to meet you. Work, play, cuddle & maybe adopt your new best friend. Your R50 entrance = food, vet care & love for our rescues.</p>
+<span class="badge">💜 DURBAN'S FIRST CAT CAFE</span>
+<h1>Welcome to<br>MeanKat Cafe</h1>
+<p>Your purple purr-fect escape. 10 rescue cats, great coffee, and a place where every visit saves lives. R50 entrance goes straight to food & vet care.</p>
 <div style="margin-top:18px">
-<a class="hero-btn" href="view.html" style="background:var(--ink);color:white">🏠 View Our Cozy Space</a>
-<a class="hero-btn" href="play.html" style="background:white;color:var(--ink)">🐾 Come Play with Cats</a>
-<a class="hero-btn" href="https://wa.me/27772637424" style="background:var(--ink);color:var(--yellow)">📱 WhatsApp 077 263 7424</a>
-<a class="hero-btn" href="tel:+27772637424" style="background:white;color:var(--ink)">📞 Call 077 263 7424</a>
+<a class="hero-btn" href="view.html" style="background:#111;color:white">🏠 View Our Space</a>
+<a class="hero-btn" href="play.html" style="background:white;color:#111">🐾 Play With Cats</a>
+<a class="hero-btn" href="https://wa.me/27772637424" style="background:var(--yellow);color:#111">📱 WhatsApp 077 263 7424</a>
 </div>
 </div>
 
-<!-- SECOND MOVING LINE FOR MORE WELCOME VIBES -->
-<div style="background:white;border:3px solid var(--ink);border-radius:999px;padding:10px 0;margin-top:16px;overflow:hidden;box-shadow:4px 4px 0 var(--ink)">
-  <div class="marquee-track" style="animation-duration:18s;animation-direction:reverse">
-    <span style="font-weight:800">✨ WELCOME! WELCOME! WELCOME! - FRIENDLY CATS - GREAT COFFEE - HAPPY VIBES - ADOPT DON'T SHOP - YOU'RE GONNA LOVE IT HERE - ✨ WELCOME! WELCOME! WELCOME! - FRIENDLY CATS - GREAT COFFEE - HAPPY VIBES - ADOPT DON'T SHOP - YOU'RE GONNA LOVE IT HERE - ✨</span>
-  </div>
-</div>
-
-<h2 style="font-family:Fredoka;margin-top:28px;font-size:28px;color:var(--ink)">Meet Our Rescue Family 😻</h2>
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px;margin-top:14px">
-<div class="card"><img src="Luca.jpg" alt="Luca"><div class="card-info">Luca 🐱 The Boss</div></div>
-<div class="card"><img src="Chino.jpeg" onerror="this.src='Chino.jpg'" alt="Chino"><div class="card-info">Chino 😸 Cuddle King</div></div>
-<div class="card"><img src="Luna.jpg" alt="Luna"><div class="card-info">Luna 🌙 Sweet Girl</div></div>
-<div class="card"><img src="Theo.jpg" alt="Theo"><div class="card-info">Theo 🐾 Playful Boy</div></div>
+<h2 style="font-family:Fredoka;margin-top:28px;font-size:26px;color:white">Meet Our Rescue Family <span style="color:var(--yellow)">😻</span></h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-top:14px">
+<div class="card"><img src="Luca.jpg" alt="Luca"><div class="card-info">Luca <span>🐱 Boss</span></div></div>
+<div class="card"><img src="Chino.jpeg" onerror="this.src='Chino.jpg'" alt="Chino"><div class="card-info">Chino <span>😸 Cuddler</span></div></div>
+<div class="card"><img src="Luna.jpg" alt="Luna"><div class="card-info">Luna <span>🌙 Sweet</span></div></div>
+<div class="card"><img src="Theo.jpg" alt="Theo"><div class="card-info">Theo <span>🐾 Playful</span></div></div>
 </div>
 </div>
 
-<footer style="background:#2D1B4E;color:white;padding:32px 20px 20px;margin-top:40px;border-top:4px solid #FDE68A;text-align:center;border-radius:32px 32px 0 0">
+<footer style="background:#2D1B4E;color:white;padding:32px 20px 20px;margin-top:40px;border-top:4px solid #FDE68A;text-align:center">
 <img src="logo-560.webp" style="height:70px;background:white;border-radius:16px;padding:8px;border:2px solid #FDE68A;margin-bottom:12px" alt="MeanKat">
-<p style="font-size:14px;max-width:400px;margin:0 auto">Durban's first dedicated cat café & rescue sanctuary. Coffee, cats & second chances.</p>
-<p style="color:#FDE68A;font-weight:800;letter-spacing:2px;font-size:13px;margin-top:22px">LOCATION</p><p style="font-size:14px;margin-top:6px">87 Smiso Nkwanyana Road<br>Morningside, Durban<br>Kwa-Zulu Natal</p>
+<p style="font-size:14px;max-width:400px;margin:0 auto;opacity:.9">Durban's first dedicated cat café & rescue sanctuary. Coffee, cats & second chances.</p>
+<p style="color:#FDE68A;font-weight:800;letter-spacing:2px;font-size:13px;margin-top:22px">LOCATION</p><p style="font-size:14px;margin-top:6px">87 Smiso Nkwanyana Road<br>Morningside, Durban</p>
 <p style="color:#FDE68A;font-weight:800;letter-spacing:2px;font-size:13px;margin-top:20px">NON-PROFIT CHARITY</p><p style="font-size:14px;margin-top:6px">MeanKat Cafe NPC<br>NPC 2025/784731/08</p>
 <div style="border-top:1px solid rgba(255,255,255,0.15);margin-top:20px;padding-top:16px">
-<a href="book.html" style="display:block;background:#FDE68A;color:#2D1B4E;padding:14px;border-radius:999px;text-decoration:none;font-weight:800;text-align:center;max-width:300px;margin:0 auto;border:2px solid white">📅 BOOK A VISIT</a>
+<a href="book.html" style="display:block;background:#FDE68A;color:#111;padding:14px;border-radius:999px;text-decoration:none;font-weight:800;text-align:center;max-width:300px;margin:0 auto">📅 BOOK A VISIT - R50</a>
 <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px">
 <a href="https://wa.me/27772637424" style="background:#FDE68A;color:#111;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">WhatsApp 077 263 7424</a>
 <a href="tel:+27772637424" style="background:white;color:#111;padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:12px">Call 077 263 7424</a>
-</div></div>
+</div>
+<p style="font-size:10px;opacity:.5;margin-top:12px">© 2026 MeanKat Cafe NPC</p>
+</div>
 </footer>
 </body>
-  </html>
+    </html>
