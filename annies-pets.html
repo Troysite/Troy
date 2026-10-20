@@ -3,95 +3,152 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Annie's Pets | Clare Estate Durban</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<title>Annie's Pets | #1 Pet Shop in Clare Estate Durban</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#fffef7;color:#111;line-height:1.6}
-header{padding:14px 5%;display:flex;justify-content:space-between;align-items:center;background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:20}
-.brand{font-family:'Fredoka',sans-serif;font-weight:700;letter-spacing:0.5px;font-size:16px}
-nav a{margin-left:18px;text-decoration:none;color:#111;font-weight:600;font-size:13px}
-nav a:hover{color:#FF1E2D}
-.hero{background:#0a0a0a;color:#fff;text-align:center;padding:50px 20px 45px}
-.logo-box{max-width:520px;margin:0 auto;background:#fff;border-radius:26px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,0.5)}
-.logo-box img{width:100%;display:block;border-radius:18px}
-.hero h1{margin-top:22px;font-family:'Fredoka',sans-serif;font-size:42px;line-height:1}
-.hero h1 span{color:#FF1E2D}
-.hero p{color:#aaa;margin-top:8px;font-size:15px}
-.badge{margin-top:16px;display:inline-block;background:#1d1d1d;border:1px solid #333;padding:9px 18px;border-radius:100px;font-size:13px;color:#ddd}
-.btn{display:inline-block;padding:13px 24px;border-radius:100px;text-decoration:none;font-weight:600;font-size:14px;margin:7px;transition:0.2s}
-.btn-white{background:#fff;color:#111}
-.btn-yellow{background:#FFD400;color:#111}
-.btn-white:hover,.btn-yellow:hover{transform:translateY(-2px)}
-.container{max-width:1100px;margin:0 auto;padding:0 5%}
-.section{padding:60px 0}
-.label{font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:#FF1E2D;font-weight:700;margin-bottom:8px}
-.title{font-family:'Fredoka',sans-serif;font-size:33px;line-height:1.1;max-width:600px}
-.text{color:#555;margin-top:12px;max-width:620px;font-size:14.5px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:26px}
-.card{background:#fff;border-radius:18px;padding:26px;border:1px solid #f3e9c6;box-shadow:0 8px 22px rgba(0,0,0,0.04)}
-.card h3{font-family:'Fredoka',sans-serif;font-size:19px;margin-bottom:6px}
-.card p{font-size:13.5px;color:#5a5a5a}
-.contact-box{background:#111;color:#fff;border-radius:26px;padding:38px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
-.contact-box a{color:#FFD400;text-decoration:none}
-.contact-box .label{color:#FFD400}
-footer{text-align:center;padding:32px;color:#888;font-size:12px;border-top:1px solid #eee}
-@media(max-width:600px){header nav{display:none}.hero h1{font-size:32px}.title{font-size:26px}}
+body{font-family:'Poppins',sans-serif;background:#FFFEF8;color:#111;line-height:1.6}
+header{padding:16px 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);position:sticky;top:0;z-index:50;border-bottom:1px solid #f0e6c8}
+.logo-text{font-family:'Fredoka',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.5px}
+.logo-text span{color:#FF1A2E}
+nav a{margin-left:22px;text-decoration:none;color:#111;font-weight:600;font-size:13px;letter-spacing:0.2px}
+nav a:hover{color:#FF1A2E}
+.hero{background:radial-gradient(1200px 600px at 50% -10%, #222 0%, #0a0a0a 60%);color:#fff;text-align:center;padding:60px 20px 70px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at 50% 20%, rgba(255,212,0,0.08) 0%, transparent 50%)}
+.hero-content{position:relative;z-index:2;max-width:700px;margin:0 auto}
+.logo-card{background:#fff;border-radius:28px;padding:14px;box-shadow:0 25px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.1);display:inline-block;transform:rotate(-0.5deg);transition:0.3s}
+.logo-card:hover{transform:rotate(0deg) scale(1.02)}
+.logo-card img{width:100%;max-width:480px;display:block;border-radius:18px}
+.hero h1{margin-top:28px;font-family:'Fredoka',sans-serif;font-size:48px;line-height:0.9;letter-spacing:-1px}
+.hero h1 .red{color:#FF1A2E}
+.hero h1 .white{color:#fff}
+.hero .tagline{color:#bbb;margin-top:12px;font-size:16px;font-weight:400;letter-spacing:0.3px}
+.badge-wrap{margin-top:20px}
+.badge{display:inline-block;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(10px);padding:10px 20px;border-radius:100px;font-size:13px;color:#ddd;font-weight:500}
+.btns{margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:14px 28px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14px;transition:0.2s;display:inline-flex;align-items:center;justify-content:center}
+.btn-white{background:#fff;color:#111;box-shadow:0 8px 20px rgba(0,0,0,0.2)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,0.25)}
+.btn-yellow{background:#FFD400;color:#111;box-shadow:0 8px 20px rgba(255,212,0,0.25)}
+.btn-yellow:hover{transform:translateY(-2px);background:#ffdb33}
+.container{max-width:1120px;margin:0 auto;padding:0 5%}
+.section{padding:70px 0}
+.label{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#FF1A2E;font-weight:700;margin-bottom:10px}
+.title{font-family:'Fredoka',sans-serif;font-size:38px;line-height:1.05;max-width:650px;letter-spacing:-0.5px}
+.text{color:#555;margin-top:14px;max-width:640px;font-size:15px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:32px}
+.card{background:#fff;border-radius:20px;padding:28px;border:1px solid #f5e9be;box-shadow:0 10px 30px rgba(0,0,0,0.04);transition:0.3s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#FF1A2E,#FFD400)}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,0.08)}
+.card h3{font-family:'Fredoka',sans-serif;font-size:20px;margin-bottom:8px}
+.card p{font-size:14px;color:#666;line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px;max-width:500px}
+.stat{background:#111;color:#fff;border-radius:16px;padding:18px;text-align:center}
+.stat b{font-family:'Fredoka',sans-serif;font-size:22px;display:block}
+.stat span{font-size:11px;color:#aaa;letter-spacing:1px;text-transform:uppercase}
+.contact-section{background:#111;color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:36px;position:relative;overflow:hidden}
+.contact-section::before{content:'';position:absolute;top:-100px;right:-100px;width:300px;height:300px;background:radial-gradient(circle,#FFD40022,transparent 70%)}
+.contact-section .label{color:#FFD400}
+.contact-section a{color:#FFD400;text-decoration:none;font-weight:600}
+.contact-section a:hover{text-decoration:underline}
+.map-btn{margin-top:20px}
+footer{text-align:center;padding:36px 20px;color:#888;font-size:12px;border-top:1px solid #eee;margin-top:20px;line-height:1.8}
+@media(max-width:768px){header nav{display:none}.hero h1{font-size:36px}.title{font-size:28px}.contact-section{grid-template-columns:1fr;padding:28px}.stats{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <header>
-<div class="brand">ANNIE'S PETS</div>
+<div class="logo-text">ANNIE'S <span>PETS</span></div>
 <nav>
 <a href="#about">About</a>
 <a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <div class="hero">
-<div class="logo-box">
-<img src="Logo-WA3476.jpg" alt="Annie's Pets Logo">
+<div class="hero-content">
+<div class="logo-card">
+<img src="logo.jpg" alt="Annie's Pets Logo - Pets make everything better, even Mondays">
 </div>
-<h1><span>ANNIE'S</span> PETS</h1>
-<p>Pets make everything better, even Mondays!</p>
+<h1><span class="red">ANNIE'S</span> <span class="white">PETS</span></h1>
+<p class="tagline">Pets make everything better, even Mondays!</p>
+<div class="badge-wrap">
 <div class="badge">5.0 Rating from 117 reviews - Clare Estate Durban</div>
-<br>
-<a class="btn btn-white" style="margin-top:22px" href="tel:0642812086">Call 064 281 2086</a>
+</div>
+<div class="btns">
+<a class="btn btn-white" href="tel:0642812086">Call 064 281 2086</a>
 <a class="btn btn-yellow" href="https://wa.me/27642812086">WhatsApp Us</a>
+</div>
+</div>
 </div>
 
 <div class="container">
 
 <div class="section" id="about">
 <div class="label">About Us</div>
-<div class="title">Your trusted one-stop pet shop in Clare Estate, Durban.</div>
-<div class="text">Annie's Pets supplies premium pet food, live pets, fish, birds, reptiles and all accessories at honest prices. From Montego, Jock, Grandeur and Complete to cages, bowls, toys and tanks.</div>
+<div class="title">Clare Estate's most loved pet shop since 2015</div>
+<p class="text">Annie's Pets is your trusted one-stop destination for premium pet food, live pets, fish, birds, reptiles and all accessories. We stock Montego, Jock, Grandeur, Complete, Ideal and every top brand at honest, affordable prices. Friendly service, expert advice, and happy pets guaranteed.</p>
+<div class="stats">
+<div class="stat"><b>117+</b><span>5 Star Reviews</span></div>
+<div class="stat"><b>500+</b><span>Happy Pets</span></div>
+<div class="stat"><b>2015</b><span>Established</span></div>
+</div>
 </div>
 
 <div class="section" id="services">
 <div class="label">What We Offer</div>
-<div class="title">Everything your pet needs</div>
+<div class="title">Everything your best friend needs</div>
 <div class="grid">
 <div class="card">
 <h3>Premium Pet Food</h3>
-<p>Montego, Jock, Grandeur, Complete, Ideal and more. Available from 2kg to 40kg bags. Dry, wet, puppy and kitten.</p>
+<p>Montego, Jock, Grandeur, Complete, Ideal, Bobtail, Catmore and more. Dry food, wet food, puppy, kitten, senior. From 2kg to 40kg bags at best prices in Durban.</p>
 </div>
 <div class="card">
-<h3>Live Pets and Fish</h3>
-<p>Birds, parrots, hamsters, turtles, rabbits, chameleons, tropical fish, goldfish and aquariums.</p>
+<h3>Live Pets, Birds & Fish</h3>
+<p>Birds, parrots, budgies, cockatiels, hamsters, turtles, rabbits, goldfish, tropical fish, chameleons, geckos and beautiful aquariums ready to go.</p>
 </div>
 <div class="card">
-<h3>Accessories and Care</h3>
-<p>Cages, collars, leads, beds, bowls, toys, filters, grooming products and veterinary care essentials.</p>
+<h3>Accessories & Pet Care</h3>
+<p>Cages, fish tanks, filters, collars, leads, beds, bowls, toys, scratch posts, grooming shampoos, vitamins and veterinary care essentials.</p>
 </div>
 </div>
 </div>
 
+<div class="section" id="reviews">
+<div class="label">Customer Love</div>
+<div class="title">What Clare Estate says about us</div>
+<p class="text">"Best pet shop in Durban! Great prices, friendly staff and my dog loves the food from Annie's." - 5 star review</p>
+</div>
+
 <div class="section" id="contact">
-<div class="contact-box">
+<div class="contact-section">
 <div>
 <div class="label">Visit Our Shop</div>
-<h2 style="font-family:'Fredoka',sans-serif;font-size:26px">Annie's Pet Shop</h2>
-<p style="color:#bbb;margin-top:10px">3 O'Flaherty Road<br>Clare Estate, Durban<br
+<h2 style="font-family:'Fredoka',sans-serif;font-size:30px;line-height:1.1">Annie's Pet Shop<br>Clare Estate</h2>
+<p style="color:#bbb;margin-top:14px;line-height:1.7">3 O'Flaherty Road<br>Clare Estate, Durban<br>4068, South Africa</p>
+<p style="color:#bbb;margin-top:18px;line-height:1.8"><strong style="color:#fff">Opening Hours:</strong><br>Monday to Saturday: 9AM - 6PM<br>Sunday & Public Holidays: 9AM - 1PM</p>
+<div class="map-btn">
+<a class="btn btn-white" href="https://www.google.com/maps/search/?api=1&query=3+O'Flaherty+Road+Clare+Estate+Durban">Get Directions on Maps</a>
+</div>
+</div>
+<div>
+<div class="label">Get In Touch</div>
+<p style="color:#bbb;line-height:2">Phone / WhatsApp:<br><a href="tel:0642812086" style="font-size:20px;color:#fff">064 281 2086</a><br><br><a href="https://wa.me/27642812086">Chat on WhatsApp</a><br>We reply in minutes!</p>
+<p style="color:#666;margin-top:24px;font-size:13px">We deliver in Clare Estate and surrounding areas. Call us for delivery prices.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<strong style="color:#111">Annie's Pets</strong> - 3 O'Flaherty Road, Clare Estate, Durban - 064 281 2086<br>
+Copyright 2026 - Made with love for pets in Clare Estate Durban<br>
+<a href="https://wa.me/27642812086" style="color:#FF1A2E;text-decoration:none;font-weight:600">WhatsApp Us Now</a>
+</footer>
+
+</body>
+  </html>
