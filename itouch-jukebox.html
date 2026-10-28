@@ -6,76 +6,66 @@
 <title>iTouch Jukebox - Premium Pool Tables</title>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#0A0A0F;
-  --card:#12121A;
-  --neon1:#7C3AED;
-  --neon2:#06B6D4;
-  --text:#EAEAF0;
-  --muted:#9A9AAF;
-}
+:root{--bg:#0A0A0F;--card:#15151F;--neon1:#7C3AED;--neon2:#06B6D4;--text:#EAEAF0;--muted:#9A9AAF}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Manrope',sans-serif}
-body{background:var(--bg);color:var(--text);overflow-x:hidden}
-nav{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:rgba(10,10,15,0.8);backdrop-filter:blur(20px);position:sticky;top:0;z-index:10;border-bottom:1px solid #1E1E2A}
-.logo{font-weight:700;letter-spacing:1px;font-size:18px}
-.logo span{background:linear-gradient(90deg,var(--neon1),var(--neon2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.nav-links{display:flex;gap:32px;color:var(--muted);font-size:14px}
-.btn-gradient{background:linear-gradient(90deg,var(--neon1),var(--neon2));color:white;padding:12px 24px;border-radius:100px;border:none;font-weight:600;cursor:pointer;box-shadow:0 0 20px rgba(124,58,237,0.4);text-decoration:none;display:inline-block;text-align:center}
-.hero{padding:80px 6%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:center}
-.hero h1{font-size:52px;line-height:1.1;font-weight:700}
-.hero h1 i{font-style:italic;font-weight:300;background:linear-gradient(90deg,var(--neon1),var(--neon2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.hero p{color:var(--muted);margin:20px 0 30px;font-size:16px;line-height:1.6;max-width:480px}
-.hero-img{position:relative;border-radius:24px;overflow:hidden;background:var(--card);padding:8px;box-shadow:0 0 60px rgba(124,58,237,0.15)}
-.hero-img img{width:100%;border-radius:18px;display:block;object-fit:cover;height:420px}
-.badge{position:absolute;top:20px;right:20px;background:rgba(10,10,15,0.8);border:1px solid #2A2A3A;padding:8px 14px;border-radius:100px;font-size:12px;backdrop-filter:blur(10px)}
-.stats{display:flex;gap:40px;margin-top:30px;border-top:1px solid #1E1E2A;padding-top:20px}
-.stats h3{font-size:24px}
-.stats span{color:var(--muted);font-size:12px;letter-spacing:1px}
-.services{padding:60px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:var(--card);border:1px solid #1E1E2A;border-radius:20px;padding:28px}
-.card h4{margin-bottom:10px}
-.card p{color:var(--muted);font-size:14px;line-height:1.5}
-.icon{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--neon1),var(--neon2));display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.cta{margin:60px 6%;background:radial-gradient(100% 100% at 50% 0%, #1E1235 0%, #12121A 100%);border:1px solid #2A2A3A;border-radius:28px;padding:60px;text-align:center}
-.cta h2{font-size:36px;margin-bottom:12px}
-.cta p{color:var(--muted);margin-bottom:28px}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:36px}.services{grid-template-columns:1fr}.nav-links{display:none}}
+body{background:var(--bg);color:var(--text)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;background:#0A0A0F;border-bottom:1px solid #1E1E2A;position:sticky;top:0;z-index:10}
+.logo{font-weight:700;font-size:18px}.logo span{background:linear-gradient(90deg,var(--neon1),var(--neon2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.btn-gradient{background:linear-gradient(90deg,var(--neon1),var(--neon2));color:white;padding:12px 22px;border-radius:100px;border:none;font-weight:700;text-decoration:none;display:inline-block}
+.hero{padding:50px 6%;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px}
+.hero h1{font-size:48px;line-height:1.1;font-weight:700}.hero h1 i{font-style:italic;font-weight:300;background:linear-gradient(90deg,var(--neon1),var(--neon2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);margin:20px 0;font-size:15px;line-height:1.6}
+.hero-img{position:relative;border-radius:24px;background:var(--card);padding:8px;border:1px solid #1E1E2A}
+.hero-img img{width:100%;border-radius:18px;display:block;height:380px;object-fit:cover;background:#222}
+.badge{position:absolute;top:18px;right:18px;background:#0A0A0F;border:1px solid #2A2A3A;padding:8px 14px;border-radius:100px;font-size:11px}
+.stats{display:flex;gap:30px;margin-top:28px;border-top:1px solid #1E1E2A;padding-top:18px}
+.stats h3{font-size:26px;font-weight:700}.stats span{color:var(--muted);font-size:11px;letter-spacing:1px;display:block;margin-top:4px}
+.services{padding:40px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid #1E1E2A;border-radius:20px;padding:24px}
+.card p{color:var(--muted);font-size:13px;margin-top:8px;line-height:1.5}
+.cta{margin:50px 6%;background:#12121A;border:1px solid #2A2A3A;border-radius:28px;padding:50px;text-align:center}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}.services{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <nav>
-  <div class="logo">iTouch <span>Jukebox</span></div>
-  <div class="nav-links"><span>Pool Tables</span><span>Services</span><span>Projects</span></div>
-  <a class="btn-gradient" href="https://wa.me/27833219008?text=Hi%20Miles%20I%20want%20a%20private%20quote%20for%20a%20pool%20table">Request Quote</a>
+<div class="logo">iTouch <span>Jukebox</span></div>
+<a class="btn-gradient" href="https://wa.me/27833219008?text=Hi%20Miles%20I%20want%20a%20quote%20for%20a%20pool%20table">Request Quote</a>
 </nav>
+
 <section class="hero">
-  <div>
-    <h1>Premium Pool Tables<br>For <i>True Players</i></h1>
-    <p>We don't just sell tables. We create entertainment spaces for homes, lodges, bars and game rooms. Sales, professional installation and repairs — nationwide.</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <a class="btn-gradient" href="https://wa.me/27833219008?text=Hi%20Miles%20I%20want%20a%20private%20quote%20for%20a%20pool%20table%20-%20I%20saw%20the%20demo">Request a Private Quote</a>
-      <a style="background:transparent;border:1px solid #2A2A3A;color:white;padding:12px 24px;border-radius:100px;text-decoration:none" href="#projects">View Projects</a>
-    </div>
-    <div class="stats">
-      <div><h3>500+</h3><span>TABLES INSTALLED</span></div>
-      <div><h3>10 Yrs</h3><span>EXPERIENCE</span></div>
-      <div><h3>100%</h3><span>WORKMANSHIP</span></div>
-    </div>
-  </div>
-  <div class="hero-img">
-    <div class="badge">✦ Premium Quality</div>
-    <img src="https://images.unsplash.com/photo-1506368249632-4b5b4c08dfb7?q=80&w=800&auto=format&fit=crop" alt="Premium Pool Table - iTouch Jukebox">
-  </div>
+<div>
+<h1>Premium Pool Tables<br>For <i>True Players</i></h1>
+<p>We don't just sell tables. We create entertainment spaces for homes, lodges, bars and game rooms. Sales, professional installation and repairs — nationwide.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+<a class="btn-gradient" href="https://wa.me/27833219008?text=Hi%20Miles%20I%20saw%20the%20demo%20site%20-%20I%20want%20a%20private%20quote">Request a Private Quote</a>
+<a style="border:1px solid #2A2A3A;color:white;padding:12px 22px;border-radius:100px;text-decoration:none" href="#services">View Projects</a>
+</div>
+<div class="stats">
+<div><h3>500+</h3><span>TABLES INSTALLED</span></div>
+<div><h3>10 Yrs</h3><span>EXPERIENCE</span></div>
+<div><h3>100%</h3><span>WORKMANSHIP</span></div>
+</div>
+</div>
+
+<div class="hero-img">
+<div class="badge">✦ Premium Quality</div>
+<img src="https://images.unsplash.com/photo-1579783483458-2f92d93a7a6e?q=80&w=800&auto=format&fit=crop" 
+     onerror="this.src='https://images.pexels.com/photos/4008610/pexels-photo-4008610.jpeg?auto=compress&cs=tinysrgb&w=800'"
+     alt="Pool Table">
+</div>
 </section>
-<section class="services" id="projects">
-  <div class="card"><div class="icon">◈</div><h4>Sales</h4><p>Luxury brand new pool tables, jukeboxes and arcade machines for your home or business.</p></div>
-  <div class="card"><div class="icon">◎</div><h4>Installation</h4><p>Professional leveling and installation. We make sure every table plays perfectly.</p></div>
-  <div class="card"><div class="icon">✦</div><h4>Repairs & Refelting</h4><p>Full restoration, refelting, cushion replacement and moving. Your table like new.</p></div>
+
+<section class="services" id="services">
+<div class="card"><h4>◈ Sales</h4><p>Luxury brand new pool tables, jukeboxes and arcade machines.</p></div>
+<div class="card"><h4>◎ Installation</h4><p>Professional leveling and installation. Perfect play guaranteed.</p></div>
+<div class="card"><h4>✦ Repairs</h4><p>Full restoration, refelting, cushion replacement and moving.</p></div>
 </section>
+
 <section class="cta">
-  <h2>Ready For A Real Table?</h2>
-  <p>No cheap boards. No time-wasters. Only serious enquiries for premium work.</p>
-  <a class="btn-gradient" href="https://wa.me/27833219008?text=Hi%20Miles%20I%20saw%20your%20premium%20demo%20site%20-%20I%20want%20a%20quote">Request Private Quote on WhatsApp</a>
+<h2>Ready For A Real Table?</h2>
+<p style="color:var(--muted);margin:12px 0 24px">No cheap boards. Only serious enquiries for premium work.</p>
+<a class="btn-gradient" href="https://wa.me/27833219008?text=Hi%20Miles%20I%20saw%20your%20premium%20demo%20-%20I%20want%20a%20quote">Request Private Quote on WhatsApp</a>
 </section>
 </body>
   </html>
