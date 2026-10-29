@@ -3,46 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iTouch Jukebox - Premium Pool Tables</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<title>iTouch Jukebox Durban | Durban's Most Trusted Jukebox & Pool Table Hire</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
-body{background:#08080c;color:#fff}
-.top{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a22;position:sticky;top:0;background:#08080c;z-index:10}
-.logo{font-weight:800;font-size:18px}.logo span{background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.btn-grad{background:linear-gradient(90deg,#7b5cff,#00d4ff);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:600;font-size:14px;box-shadow:0 4px 20px #7b5cff40;display:inline-block}
-.hero{padding:30px 22px;max-width:1150px;margin:auto;display:grid;gap:30px}
-.hero h1{font-size:42px;line-height:1.1;font-weight:800}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:400}
-.hero p{color:#9a9aa8;margin:18px 0 28px;font-size:15px;line-height:1.6}
-.btn-row{display:flex;flex-direction:column;gap:12px;max-width:320px}.btn-outline{background:transparent;border:1px solid #2a2a35;color:#fff;padding:14px 22px;border-radius:30px;text-decoration:none;text-align:center;font-weight:600;font-size:14px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#08080c;color:#fff;line-height:1.6}
+.top{padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a22;position:sticky;top:0;background:#08080ce8;backdrop-filter:blur(10px);z-index:100}
+.logo{font-weight:800;font-size:19px}.logo span{background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.btn-grad{background:linear-gradient(90deg,#7b5cff,#00d4ff);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:600;font-size:14px;box-shadow:0 4px 20px #7b5cff40;display:inline-block;border:none;cursor:pointer}
+.btn-outline{background:transparent;border:1px solid #2a2a35;color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:600;font-size:14px;display:inline-block}
+.wrap{max-width:1150px;margin:auto;padding:0 22px}
+.hero{padding:40px 0 20px;display:grid;gap:30px}.hero h1{font-size:42px;line-height:1.05;font-weight:800}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:400}
+.sub{color:#9a9aa8;margin:16px 0 26px;font-size:15px}
 .img-wrap{border-radius:20px;overflow:hidden;border:1px solid #2a2a35;box-shadow:0 20px 60px #00000080}.img-wrap img{width:100%;display:block}
-.divider{height:1px;background:#1a1a22;margin:10px 0}.note{color:#6b6b7a;font-size:12px}
-@media(min-width:850px){.hero{grid-template-columns:1.1fr 0.9fr;align-items:center;padding:60px 22px}.hero h1{font-size:54px}.btn-row{flex-direction:row}}
+.grid2{display:grid;gap:16px;margin:24px 0}
+.card{background:#111118;border:1px solid #1f1f2a;border-radius:16px;padding:20px}
+.card h3{font-size:15px;margin-bottom:6px}.card p{color:#9a9aa8;font-size:13px}
+.badge{display:inline-block;background:#1e1e2e;border:1px solid #2a2a35;color:#7b5cff;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:10px;letter-spacing:0.6px}
+.section{padding:50px 0;border-top:1px solid #14141c}
+.section h2{font-size:28px;margin-bottom:8px}.section .sub2{color:#9a9aa8;font-size:14px;margin-bottom:22px}
+.list{list-style:none}.list li{padding:8px 0;color:#c2c2d0;font-size:14px;display:flex;gap:10px}.list li::before{content:"✓";color:#00d4ff;font-weight:700}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.kpi div{background:#111118;border:1px solid #1f1f2a;border-radius:14px;padding:14px;text-align:center}.kpi b{font-size:20px;display:block;background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.kpi span{font-size:11px;color:#9a9aa8}
+.faq{background:#111118;border:1px solid #1f1f2a;border-radius:14px;padding:16px;margin:10px 0}.faq b{font-size:14px}.faq p{color:#9a9aa8;font-size:13px;margin-top:6px}
+.cta{background:linear-gradient(135deg,#151525,#10101a);border:1px solid #2a2a35;border-radius:20px;padding:28px;text-align:center}
+@media(min-width:900px){.hero{grid-template-columns:1.15fr 0.85fr;align-items:center;padding:60px 0 30px}.hero h1{font-size:54px}.grid2{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr 1fr 1fr;display:grid;gap:16px}}
 </style>
 </head>
 <body>
 
 <div class="top">
-<div class="logo">iTouch <span>Jukebox</span></div>
-<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20I%20need%20a%20quote">Request Quote</a>
+<div class="logo">iTouch <span>Jukebox</span> Durban</div>
+<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox%20Durban!%20I%20need%20a%20hire%20quote">Request Quote</a>
 </div>
 
+<div class="wrap">
 <div class="hero">
 <div>
-<h1>Premium Pool Tables For <em>True Players</em></h1>
-<p>We don't sell tables. We create luxury entertainment spaces for hire for homes, lodges, bars and game rooms. Nationwide hire, professional installation and repairs. We only service our own machines.</p>
-<div class="btn-row">
-<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20Private%20Quote%20please">Request a Private Quote</a>
-<a class="btn-outline" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20Send%20projects">View Projects</a>
+<span class="badge">BASED IN DURBAN • DURBAN'S MOST TRUSTED</span>
+<h1>Durban's Most Trusted Pool Tables & Jukeboxes For <em>True Players</em></h1>
+<p class="sub">We are based in Durban. We don't sell machines. We supply luxury entertainment on hire for Durban pubs, lodges, clubs, bars, game rooms & events. Professional installation in Durban & KZN, and full support — we only service our own machines.</p>
+<div style="display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox%20Durban!%20I%20want%20a%20Private%20Quote%0ADate:%0AVenue:%20%0AItem:%20Jukebox%20/%20Pool%20Table">Request Private Quote</a>
+<a class="btn-outline" href="#why">Why Trust Us</a>
 </div>
-<div class="divider"></div>
-<div class="note"><b style="color:#9a9aa8">HIRE ONLY:</b> We do not sell machines. <b style="color:#9a9aa8">SERVICING:</b> We only service our own machines.</div>
+<div class="kpi">
+<div><b>10+ Yrs</b><span>In Durban</span></div>
+<div><b>500+</b><span>Durban Venues</span></div>
+<div><b>24-48h</b><span>Durban Install</span></div>
+</div>
+</div>
+<div class="img-wrap"><img src="pool.jpg" alt="Premium Pool Table Durban"></div>
 </div>
 
-<div class="img-wrap">
-<img src="pool.jpg" alt="Premium Pool Table">
+<div id="why" class="section">
+<h2>Why Durban Trusts iTouch Jukebox</h2>
+<p class="sub2">Based in Durban. Not a shop. We are Durban's hire & service partner. More income, zero headache.</p>
+<div class="grid2 grid3">
+<div class="card"><h3>📍 Based in Durban, Built for Durban</h3><p>We live here. Fast response in Durban, Umhlanga, Ballito, Pinetown, Hillcrest, Amanzimtoti & all KZN.</p></div>
+<div class="card"><h3>🔧 We Only Service Our Machines</h3><p>No third-party headaches. Our machines = our responsibility. Fast repairs in Durban, genuine parts.</p></div>
+<div class="card"><h3>💰 More Revenue For Your Durban Venue</h3><p>Jukebox & pool tables keep Durban customers longer. Coin-operated, fully managed hire model.</p></div>
+<div class="card"><h3>🎵 iTouch Jukebox - Latest Hits</h3><p>Touchscreen, thousands of songs, music videos, automatic updates, coin + free-play modes.</p></div>
+<div class="card"><h3>🎱 Tournament Grade Pool Tables</h3><p>Solid timber, professional cloth, levelled slate, accessories included. Built for Durban's heavy use.</p></div>
+<div class="card"><h3>📞 Durban Direct Support</h3><p>One Durban number: 083 321 9008. No call center. Speak directly to the Durban owner/technician.</p></div>
 </div>
 </div>
 
-<!-- ROBOT WITH 083 321 9008 - SAME AS YOUR SCREENSHOT -->
-<div id
+<div class="section">
+<h2>What You Get On Hire - Durban</h2>
+<div class="grid2">
+<div class="card">
+<span class="badge">JUKEBOX HIRE DURBAN</span>
+<h3>iTouch Digital Jukebox - Durban's Favourite</h3>
+<ul class="list">
+<li>55,000+ Songs + Music Videos</li>
+<li>Coin operated + Bluetooth + Free Play</li>
+<li>Remote monitoring & credit clearing</li>
+<li>No music licenses needed - we handle</li>
+<li>Monthly profit share / fixed rental in Durban</li>
+</ul>
+</div>
+<div class="card">
+<span class="badge">POOL TABLE HIRE DURBAN</span>
+<h3>Premium Pool Tables - Durban Hire</h3>
+<ul class="list">
+<li>7ft & 8ft Supreme / Steel Block</li>
+<li>Coin operated or free
