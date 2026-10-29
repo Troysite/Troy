@@ -9,64 +9,40 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
 body{background:#08080c;color:#fff}
 .top{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a22;position:sticky;top:0;background:#08080c;z-index:10}
-.logo{font-weight:800;font-size:18px;letter-spacing:0.5px}
-.logo span{background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.btn-grad{background:linear-gradient(90deg,#7b5cff,#00d4ff);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:600;font-size:14px;box-shadow:0 4px 20px #7b5cff40;display:inline-block;border:none;cursor:pointer}
-.hero{padding:50px 22px 40px;max-width:1100px;margin:auto}
-.hero h1{font-size:42px;line-height:1.1;font-weight:800;max-width:320px}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:400}
-.hero p{color:#9a9aa8;margin:18px 0 28px;font-size:15px;line-height:1.6;max-width:340px}
-.btn-row{display:flex;flex-direction:column;gap:12px;max-width:320px}
-.btn-outline{background:transparent;border:1px solid #2a2a35;color:#fff;padding:14px 22px;border-radius:30px;text-decoration:none;text-align:center;font-weight:600;font-size:14px}
-.divider{height:1px;background:#1a1a22;margin:30px 0}
-.note{color:#6b6b7a;font-size:12px;line-height:1.5;max-width:340px}
-.note b{color:#9a9aa8}
-@media(min-width:700px){.hero h1{max-width:500px;font-size:56px}.hero p{max-width:500px}.btn-row{flex-direction:row}}
+.logo{font-weight:800;font-size:18px}.logo span{background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.btn-grad{background:linear-gradient(90deg,#7b5cff,#00d4ff);color:#fff;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:600;font-size:14px;box-shadow:0 4px 20px #7b5cff40;display:inline-block}
+.hero{padding:30px 22px;max-width:1150px;margin:auto;display:grid;gap:30px}
+.hero h1{font-size:42px;line-height:1.1;font-weight:800}.hero h1 em{font-style:normal;background:linear-gradient(90deg,#7b5cff,#00d4ff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:400}
+.hero p{color:#9a9aa8;margin:18px 0 28px;font-size:15px;line-height:1.6}
+.btn-row{display:flex;flex-direction:column;gap:12px;max-width:320px}.btn-outline{background:transparent;border:1px solid #2a2a35;color:#fff;padding:14px 22px;border-radius:30px;text-decoration:none;text-align:center;font-weight:600;font-size:14px}
+.img-wrap{border-radius:20px;overflow:hidden;border:1px solid #2a2a35;box-shadow:0 20px 60px #00000080}.img-wrap img{width:100%;display:block}
+.divider{height:1px;background:#1a1a22;margin:10px 0}.note{color:#6b6b7a;font-size:12px}
+@media(min-width:850px){.hero{grid-template-columns:1.1fr 0.9fr;align-items:center;padding:60px 22px}.hero h1{font-size:54px}.btn-row{flex-direction:row}}
 </style>
 </head>
 <body>
 
 <div class="top">
 <div class="logo">iTouch <span>Jukebox</span></div>
-<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20I%20need%20a%20quote%20from%20your%20website">Request Quote</a>
+<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20I%20need%20a%20quote">Request Quote</a>
 </div>
 
 <div class="hero">
+<div>
 <h1>Premium Pool Tables For <em>True Players</em></h1>
 <p>We don't sell tables. We create luxury entertainment spaces for hire for homes, lodges, bars and game rooms. Nationwide hire, professional installation and repairs. We only service our own machines.</p>
-
 <div class="btn-row">
-<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20I%20want%20a%20Private%20Quote%0A%0ADate:%0AVenue:">Request a Private Quote</a>
-<a class="btn-outline" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20Please%20send%20me%20your%20projects">View Projects</a>
+<a class="btn-grad" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20Private%20Quote%20please">Request a Private Quote</a>
+<a class="btn-outline" href="https://wa.me/27833219008?text=Hi%20iTouch%20Jukebox!%20Send%20projects">View Projects</a>
 </div>
-
 <div class="divider"></div>
-<div class="note"><b>HIRE ONLY:</b> We do not sell machines. <br><b>SERVICING:</b> We only service our own machines, not third-party machines.</div>
+<div class="note"><b style="color:#9a9aa8">HIRE ONLY:</b> We do not sell machines. <b style="color:#9a9aa8">SERVICING:</b> We only service our own machines.</div>
 </div>
 
-<!-- ROBOT - 083 321 9008 -->
-<div id="jb-bot" style="position:fixed;bottom:20px;right:20px;z-index:9999">
-<button onclick="document.getElementById('jb-chat').style.display=document.getElementById('jb-chat').style.display=='block'?'none':'block'" style="background:linear-gradient(90deg,#7b5cff,#00d4ff);color:#fff;border:none;padding:15px 22px;border-radius:50px;font-weight:700;box-shadow:0 6px 20px #7b5cff60;cursor:pointer">💬 Chat</button>
-<div id="jb-chat" style="display:none;width:310px;background:#111118;color:#fff;border:1px solid #2a2a35;border-radius:14px;box-shadow:0 10px 40px #00000080;overflow:hidden;margin-top:10px">
-<div style="padding:12px 14px;font-weight:700;background:#15151f;border-bottom:1px solid #2a2a35">iTouch Assistant <span onclick="document.getElementById('jb-chat').style.display='none'" style="float:right;cursor:pointer">✕</span></div>
-<div id="jb-msgs" style="padding:12px;height:230px;overflow-y:auto;font-size:14px;background:#0a0a10"><div style="margin:8px 0"><span style="background:#1e1e2e;padding:8px 12px;border-radius:12px;display:inline-block">Hi! I can get you a quote fast. What date is your event? 🎱</span></div></div>
-<div style="display:flex;border-top:1px solid #2a2a35"><input id="jb-input" placeholder="Type here..." style="flex:1;padding:12px;background:#0a0a10;border:none;outline:none;color:#fff" onkeypress="if(event.key==='Enter'){jbSend()}"><button onclick="jbSend()" style="border:none;background:linear-gradient(90deg,#7b5cff,#00d4ff);color:#fff;padding:0 18px;font-weight:700;cursor:pointer">Send</button></div>
+<div class="img-wrap">
+<img src="pool.jpg" alt="Premium Pool Table">
 </div>
 </div>
-<script>
-let jbStep=0, jbData={};
-function jbSend(){
-let i=document.getElementById('jb-input'), m=document.getElementById('jb-msgs'), t=i.value.trim();
-if(!t) return;
-m.innerHTML+='<div style="text-align:right;margin:8px 0"><span style="background:linear-gradient(90deg,#7b5cff,#00d4ff);padding:8px 12px;border-radius:12px;display:inline-block">'+t+'</span></div>';
-i.value='';
-if(jbStep==0){jbData.date=t; setTimeout(()=>{m.innerHTML+='<div style="margin:8px 0"><span style="background:#1e1e2e;padding:8px 12px;border-radius:12px;display:inline-block">Nice. What venue / area?</span></div>'; m.scrollTop=m.scrollHeight},500); jbStep=1;}
-else if(jbStep==1){jbData.venue=t; setTimeout(()=>{m.innerHTML+='<div style="margin:8px 0"><span style="background:#1e1e2e;padding:8px 12px;border-radius:12px;display:inline-block">Thanks. Your name?</span></div>'; m.scrollTop=m.scrollHeight},500); jbStep=2;}
-else{jbData.name=t; let msg=`Hi iTouch Jukebox!%0A%0ANew enquiry from website:%0ADate: ${encodeURIComponent(jbData.date)}%0AVenue: ${encodeURIComponent(jbData.venue)}%0AName: ${encodeURIComponent(jbData.name)}`; window.open(`https://wa.me/27833219008?text=${msg}`,'_blank'); m.innerHTML+='<div style="margin:8px 0"><span style="background:#1e1e2e;padding:8px 12px;border-radius:12px;display:inline-block">Opening WhatsApp now... ✅</span></div>';}
-m.scrollTop=m.scrollHeight;
-}
-</script>
-<!-- ROBOT END -->
 
-</body>
-     </html>
+<!-- ROBOT WITH 083 321 9008 - SAME AS YOUR SCREENSHOT -->
+<div id
