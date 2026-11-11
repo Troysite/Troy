@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xpress Laundrette | Wash, Iron & Dry Cleaning</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+  body{background:#f4f8fb;color:#1a2a3a}
+  header{background:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;box-shadow:0 2px 10px rgba(0,0,0,0.08);z-index:10}
+  header b{font-size:22px;color:#0077c8} header b span{color:#00b4e6}
+  header a{background:#25D366;color:#fff;padding:10px 18px;border-radius:30px;text-decoration:none;font-weight:700;font-size:14px}
+  .hero{background:linear-gradient(135deg,#0077c8,#00b4e6);color:#fff;padding:60px 20px;text-align:center}
+  .hero h1{font-size:38px;line-height:1.1;margin-bottom:12px}
+  .hero p{font-size:17px;opacity:.95;max-width:600px;margin:0 auto 20px}
+  .badge{background:#fff;color:#0077c8;display:inline-block;padding:8px 16px;border-radius:30px;font-weight:700;font-size:14px;margin-bottom:18px}
+  .hero-btns a{display:inline-block;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:800;margin:5px}
+  .btn-green{background:#25D366;color:#fff}
+  .btn-white{background:#fff;color:#0077c8}
+  .trust{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:20px;font-size:14px;font-weight:600}
+  .section{max-width:1000px;margin:0 auto;padding:45px 20px}
+  .section h2{text-align:center;font-size:28px;margin-bottom:8px;color:#0077c8}
+  .section p.sub{text-align:center;color:#666;margin-bottom:30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+  .card{background:#fff;padding:25px;border-radius:16px;text-align:center;box-shadow:0 4px 15px rgba(0,0,0,0.06)}
+  .card .icon{font-size:38px;margin-bottom:10px}
+  .card h3{margin-bottom:8px} .card p{color:#666;font-size:14px;line-height:1.5}
+  .card .price{color:#0077c8;font-weight:800;margin-top:10px}
+  .price-box{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,0.06)}
+  .price-box table{width:100%;border-collapse:collapse}
+  .price-box td{padding:16px 20px;border-bottom:1px solid #eee;font-size:15px}
+  .price-box td:last-child{text-align:right;font-weight:800;color:#0077c8}
+  .reviews{background:#0077c8;color:#fff;text-align:center;padding:50px 20px}
+  .reviews h2{color:#fff}
+  .stars{font-size:26px;color:#FFD700;margin:10px 0}
+  .review-card{background:#fff;color:#333;max-width:650px;margin:20px auto;padding:22px;border-radius:14px;text-align:left}
+  .info{background:#fff;border-radius:16px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px;box-shadow:0 4px 15px rgba(0,0,0,0.06)}
+  @media(max-width:600px){.info{grid-template-columns:1fr}.hero h1{font-size:30px}}
+  footer{background:#0a2a43;color:#fff;text-align:center;padding:25px;font-size:14px}
+  .float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:14px 20px;border-radius:50px;text-decoration:none;font-weight:800;box-shadow:0 5px 20px rgba(0,0,0,0.3);z-index:99}
+</style>
+</head>
+<body>
+
+<header><b>XPRESS <span>LAUNDRETTE</span></b><a href="https://wa.me/27616077812">WhatsApp Us</a></header>
+
+<div class="hero">
+  <div class="badge">⭐ 4.5 Rated | 66 Google Reviews | Trusted Locally</div>
+  <h1>Fresh, Clean Laundry.<br>Done For You, Fast.</h1>
+  <p>Wash & Fold, Ironing & Dry Cleaning - done properly, ready on time, every time. No stress, just fresh clothes.</p>
+  <div class="hero-btns">
+    <a class="btn-green" href="https://wa.me/27616077812?text=Hi%20Xpress%20Laundrette,%20I%20want%20to%20book%20a%20wash">📲 Book on WhatsApp</a>
+    <a class="btn-white" href="#prices">See Prices ↓</a>
+  </div>
+  <div class="trust"><span>✅ Open Today - Closes 5pm</span><span>✅ Same-Day Service Available</span><span>✅ Walk-ins Welcome</span></div>
+</div>
+
+<div class="section">
+  <h2>Our Services</h2><p class="sub">Everything your laundry needs, under one roof.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">👕</div><h3>Wash & Fold</h3><p>Everyday laundry washed, dried & neatly folded. Ready to wear.</p><div class="price">WhatsApp for Price</div></div>
+    <div class="card"><div class="icon">👔</div><h3>Wash & Iron</h3><p>Crisp, clean shirts & clothes, ironed to perfection. Look sharp.</p><div class="price">WhatsApp for Price</div></div>
+    <div class="card"><div class="icon">🧥</div><h3>Dry Cleaning</h3><p>Suits, dresses, blankets & delicate items handled with care.</p><div class="price">WhatsApp for Price</div></div>
+    <div class="card"><div class="icon">⚡</div><h3>Express Service</h3><p>Need it urgent? Ask about our same-day express turnaround.</p><div class="price">Ask In-Store</div></div>
+  </div>
+</div>
+
+<div class="section" id="prices">
+  <h2>Simple Prices</h2><p class="sub">No hidden costs. WhatsApp us for an exact quote.</p>
+  <div class="price-box"><table>
+    <tr><td>Wash & Fold - Per Load</td><td><a href="https://wa.me/27616077812" style="color:#0077c8;text-decoration:none;">Get Price →</a></td></tr>
+    <tr><td>Wash & Iron - Per Item</td><td><a href="https://wa.me/27616077812" style="color:#0077c8;text-decoration:none;">Get Price →</a></td></tr>
+    <tr><td>Dry Cleaning - Suits / Dresses</td><td><a href="https://wa.me/27616077812" style="color:#0077c8;text-decoration:none;">Get Price →</a></td></tr>
+    <tr><td>Blankets / Duvets</td><td><a href="https://wa.me/27616077812" style="color:#0077c8;text-decoration:none;">Get Price →</a></td></tr>
+    <tr><td>Ironing Only</td><td><a href="https://wa.me/27616077812" style="color:#0077c8;text-decoration:none;">Get Price →</a></td></tr>
+  </table></div>
+  <p style="text-align:center;margin-top:15px;color:#666;font-size:14px;">Prices vary by size & fabric. WhatsApp us on 061 607 7812 for an exact quote.</p>
+</div>
+
+<div class="reviews">
+  <h2>Customers Love Us</h2>
+  <div class="stars">★★★★★</div>
+  <p><b>4.5 out of 5 - Based on 66 Google Reviews</b></p>
+  <div class="review-card">“Very clean, fast and friendly service. My clothes always come back fresh and neatly folded. Highly recommended!”<br><br><b>- Happy Customer, Google Review</b></div>
+  <p style="margin-top:15px;font-size:14px;opacity:.9;">Join 66+ happy customers who trust Xpress Laundrette.</p>
+</div>
+
+<div class="section">
+  <h2>Visit Us / Contact</h2>
+  <div class="info">
+    <div><h3 style="margin-bottom:10px;">📍 Find Us</h3><p>Xpress Laundrette<br><br><b>Open Today:</b> Closes 5pm<br>Walk-ins Welcome<br><br><b>Call / WhatsApp:</b><br>061 607 7812</p></div>
+    <div><h3 style="margin-bottom:10px;">📞 Get In Touch</h3><p>WhatsApp: 061 607 7812<br>Call: 061 607 7812<br><br><a href="https://wa.me/27616077812" style="background:#25D366;color:#fff;padding:12px 20px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;">Chat on WhatsApp →</a></p></div>
+  </div>
+</div>
+
+<footer>© 2026 Xpress Laundrette. All Rights Reserved.<br>Fresh. Clean. On Time. | 061 607 7812</footer>
+<a class="float" href="https://wa.me/27616077812">💬 WhatsApp</a>
+</body>
+</html>
