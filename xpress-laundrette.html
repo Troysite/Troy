@@ -3,131 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Xpress Laundrette | Wash, Iron & Dry Cleaning</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Xpress Laundrette | Summerstrand</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
   body{background:#f8f9fb;color:#111827;line-height:1.6}
-  .topbar{background:#0F2A44;color:#fff;padding:8px 20px;font-size:13px;text-align:center}
+  .topbar{background:#0F2A44;color:#fff;padding:9px 20px;font-size:13px;text-align:center}
   .topbar span{color:#7DD3FC;font-weight:700}
-  header{background:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto}
-  .logo{font-size:22px;font-weight:800;letter-spacing:-0.5px;color:#0F2A44}
+  header{background:#fff;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;max-width:1150px;margin:0 auto}
+  .logo{font-size:22px;font-weight:900;color:#0F2A44;line-height:1.1}
   .logo i{color:#0284C7;font-style:normal}
   .nav a{color:#111827;text-decoration:none;font-weight:600;font-size:14px;margin-left:20px}
   .nav .cta{background:#0284C7;color:#fff;padding:11px 20px;border-radius:8px}
-  .hero{max-width:1100px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:center}
-  .hero h1{font-size:52px;line-height:1.05;letter-spacing:-1.5px;color:#0F2A44}
-  .hero h1 span{color:#0284C7}
-  .hero p{font-size:18px;color:#4B5563;margin:18px 0 28px;max-width:520px}
-  .hero-btns a{display:inline-block;padding:15px 26px;border-radius:10px;text-decoration:none;font-weight:700;font-size:15px}
+  .hero-wrap{position:relative;background:#0F2A44}
+  .hero-bg-img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;opacity:0.55;display:block}
+  .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg, rgba(15,42,68,0.95) 0%, rgba(15,42,68,0.70) 60%, rgba(15,42,68,0.40) 100%)}
+  .hero{position:relative;z-index:2;max-width:1150px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:30px;align-items:center}
+  .hero h1{font-size:50px;line-height:1.02;letter-spacing:-1.2px;color:#fff}
+  .hero h1 span{color:#7DD3FC}
+  .hero p{font-size:17px;color:#E2E8F0;margin:18px 0 26px;max-width:520px}
+  .hero-btns a{display:inline-block;padding:15px 24px;border-radius:12px;text-decoration:none;font-weight:800;font-size:15px}
   .btn-blue{background:#0284C7;color:#fff}
-  .btn-outline{border:1px solid #D1D5DB;color:#111827;margin-left:10px;background:#fff}
-  .rating{margin-top:22px;display:flex;gap:12px;align-items:center;font-size:14px}
-  .stars{color:#F59E0B;letter-spacing:2px;font-size:18px}
-  .hero-card{background:#0F2A44;color:#fff;border-radius:20px;padding:28px}
-  .hero-card h3{font-size:20px;margin-bottom:6px}
-  .hero-card p{color:#CBD5E1;font-size:14px;margin-bottom:20px}
-  .hero-card .row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.12);font-size:14px}
-  .hero-card .row b{color:#fff}
-  .hero-card .row span{color:#94A3B8}
-  .section{max-width:1100px;margin:0 auto;padding:50px 20px}
-  .section h2{font-size:32px;letter-spacing:-0.5px;color:#0F2A44;margin-bottom:8px}
-  .section p.sub{color:#6B7280;margin-bottom:28px}
+  .btn-white{background:#fff;color:#0F2A44;margin-left:10px}
+  .rating{margin-top:20px;display:flex;gap:10px;align-items:center;font-size:14px;flex-wrap:wrap;color:#fff}
+  .stars{color:#FBBF24;letter-spacing:2px;font-size:18px}
+  .hero-card{background:#fff;color:#111827;border-radius:20px;padding:24px;box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+  .hero-card h3{font-size:20px;margin-bottom:6px;color:#0F2A44}
+  .hero-card p{color:#6B7280;font-size:14px;margin-bottom:16px}
+  .hero-card .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #F3F4F6;font-size:14px}
+  .section{max-width:1150px;margin:0 auto;padding:50px 20px}
+  .section h2{font-size:32px;color:#0F2A44;margin-bottom:8px}
+  .section p.sub{color:#6B7280;margin-bottom:26px}
   .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .card{background:#fff;border:1px solid #E5E7EB;padding:26px;border-radius:16px}
+  .card{background:#fff;border:1px solid #E5E7EB;padding:24px;border-radius:16px}
   .card h3{font-size:18px;margin:14px 0 8px;color:#0F2A44}
   .card p{font-size:14px;color:#6B7280}
   .card .tag{font-size:12px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;color:#0284C7}
-  .price-section{background:#fff;border:1px solid #E5E7EB;border-radius:20px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
-  .price-row{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #F3F4F6}
-  .price-row b{font-size:15px}
+  .price-section{background:#fff;border:1px solid #E5E7EB;border-radius:20px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  .price-row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #F3F4F6}
   .price-row span{color:#0284C7;font-weight:700}
   .dark{background:#0F2A44;color:#fff}
   .dark .section h2{color:#fff}
-  .dark .section p.sub{color:#94A3B8}
-  .testi{background:#fff;border-radius:16px;padding:28px;color:#111827;max-width:700px;margin:0 auto}
-  .testi p{font-size:17px;line-height:1.7}
+  .testi{background:#fff;border-radius:16px;padding:26px;color:#111827;max-width:700px;margin:0 auto;text-align:center}
   .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .contact-box{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:28px}
+  .contact-box{background:#fff;border:1px solid #E5E7EB;border-radius:16px;padding:26px}
   .contact-box h3{margin-bottom:10px;color:#0F2A44}
   .contact-box p{color:#6B7280;font-size:15px}
-  .contact-box a{color:#0284C7;font-weight:700;text-decoration:none}
+  .map-wrap{border-radius:16px;overflow:hidden;border:1px solid #E5E7EB;margin-top:20px}
+  .map-wrap iframe{width:100%;height:320px;border:0;display:block}
   footer{background:#0F2A44;color:#94A3B8;text-align:center;padding:24px;font-size:13px}
   @media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:36px}.grid{grid-template-columns:1fr 1fr}.price-section,.contact{grid-template-columns:1fr}.nav a{display:none}.nav .cta{display:block}}
 </style>
 </head>
 <body>
+<div class="topbar">Now Open | 7:30am - 5pm | Call <span>061 607 7812</span></div>
+<header><div class="logo">XPRESS<br><i>LAUNDRETTE</i></div><div class="nav"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#reviews">Reviews</a><a href="#visit">Find Us</a><a class="cta" href="https://wa.me/27616077812">Book on WhatsApp</a></div></header>
 
-<div class="topbar">Now Open &nbsp;|&nbsp; Closes 5pm &nbsp;|&nbsp; Call <span>061 607 7812</span></div>
-
-<header>
-  <div class="logo">XPRESS <i>LAUNDRETTE</i></div>
-  <div class="nav"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#reviews">Reviews</a><a class="cta" href="https://wa.me/27616077812">Book on WhatsApp</a></div>
-</header>
-
-<div class="hero">
-  <div>
-    <h1>Laundry done right.<br><span>Ready on time.</span></h1>
-    <p>Professional wash, iron and dry cleaning. No stress, no missing socks, just fresh clothes returned neatly and on schedule.</p>
-    <div class="hero-btns">
-      <a class="btn-blue" href="https://wa.me/27616077812?text=Hi%20Xpress%20Laundrette,%20I%20want%20to%20book%20a%20wash">Book on WhatsApp</a>
-      <a class="btn-outline" href="#prices">View Prices</a>
-    </div>
-    <div class="rating"><span class="stars">★★★★★</span><b>4.5 / 5</b><span style="color:#6B7280">Based on 66 Google Reviews</span></div>
-  </div>
-  <div class="hero-card">
-    <h3>Today at Xpress</h3>
-    <p>Walk-ins welcome. Same-day service available on request.</p>
-    <div class="row"><span>Opening Hours</span><b>Open Today - Closes 5pm</b></div>
-    <div class="row"><span>Turnaround</span><b>Same-Day Available</b></div>
-    <div class="row"><span>Call / WhatsApp</span><b>061 607 7812</b></div>
-    <div style="margin-top:20px"><a href="https://wa.me/27616077812" style="display:block;text-align:center;background:#25D366;color:#fff;padding:14px;border-radius:10px;text-decoration:none;font-weight:700">Chat Now on WhatsApp</a></div>
-  </div>
-</div>
-
-<div class="section" id="services">
-  <h2>What we do</h2><p class="sub">Everything your laundry needs, under one roof.</p>
-  <div class="grid">
-    <div class="card"><div class="tag">01 - Everyday</div><h3>Wash & Fold</h3><p>Your everyday laundry washed, dried and neatly folded. Ready to wear.</p></div>
-    <div class="card"><div class="tag">02 - Smart</div><h3>Wash & Iron</h3><p>Crisp shirts and clothes, ironed to perfection. Look sharp every day.</p></div>
-    <div class="card"><div class="tag">03 - Care</div><h3>Dry Cleaning</h3><p>Suits, dresses, blankets and delicate items handled with care.</p></div>
-    <div class="card"><div class="tag">04 - Urgent</div><h3>Express Service</h3><p>Need it today? Ask about our same-day express turnaround.</p></div>
-  </div>
-</div>
-
-<div class="section" id="prices">
-  <div class="price-section">
+<div class="hero-wrap">
+  <img class="hero-bg-img" src="https://images.pexels.com/photos/5599618/pexels-photo-5599618.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Washing machines">
+  <div class="hero-overlay"></div>
+  <div class="hero">
     <div>
-      <h2 style="font-size:28px">Simple, honest pricing</h2>
-      <p class="sub">No hidden costs. Get an exact quote in 30 seconds on WhatsApp.</p>
-      <a href="https://wa.me/27616077812" style="display:inline-block;background:#0284C7;color:#fff;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700">Get Exact Price on WhatsApp</a>
-      <p style="font-size:13px;color:#6B7280;margin-top:14px">Prices vary by size and fabric. Send us a photo of your items for a fast quote.</p>
+      <h1>Laundry done right.<br><span>Ready on time.</span></h1>
+      <p>Professional wash, iron and dry cleaning in Summerstrand. No stress, no missing socks, just fresh clothes returned neatly and on schedule.</p>
+      <div class="hero-btns">
+        <a class="btn-blue" href="https://wa.me/27616077812?text=Hi%20Xpress%20Laundrette,%20I%20want%20to%20book%20a%20wash">Book on WhatsApp</a>
+        <a class="btn-white" href="https://www.google.com/maps/search/?api=1&query=Shop+No.+7B+Seagate+Shopping+Centre+Torquay+St+Summerstrand+Gqeberha+6019" target="_blank">Get Directions</a>
+      </div>
+      <div class="rating"><span class="stars">★★★★★</span><b>4.5 / 5</b><span>Based on 66 Google Reviews</span></div>
+      <p style="font-size:14px;color:#CBD5E1;margin-top:14px">Shop No. 7B, Seagate Shopping Centre, Torquay St, Summerstrand, Gqeberha, 6019</p>
     </div>
-    <div>
-      <div class="price-row"><b>Wash & Fold - Per Load</b><span>Get Price</span></div>
-      <div class="price-row"><b>Wash & Iron - Per Item</b><span>Get Price</span></div>
-      <div class="price-row"><b>Dry Cleaning - Suits / Dresses</b><span>Get Price</span></div>
-      <div class="price-row"><b>Blankets / Duvets</b><span>Get Price</span></div>
-      <div class="price-row"><b>Ironing Only</b><span>Get Price</span></div>
+    <div class="hero-card">
+      <h3>Today at Xpress</h3>
+      <p>Walk-ins welcome. Same-day service available on request.</p>
+      <div class="row"><span>Opening Hours</span><b>7:30am - 5pm</b></div>
+      <div class="row"><span>Location</span><b>Seagate Centre</b></div>
+      <div class="row"><span>Turnaround</span><b>Same-Day Available</b></div>
+      <div class="row"><span>Call / WhatsApp</span><b>061 607 7812</b></div>
+      <div style="margin-top:18px"><a href="https://wa.me/27616077812" style="display:block;text-align:center;background:#25D366;color:#fff;padding:14px;border-radius:10px;text-decoration:none;font-weight:700">Chat Now on WhatsApp</a></div>
+      <div style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=Shop+No.+7B+Seagate+Shopping+Centre+Torquay+St+Summerstrand+Gqeberha+6019" target="_blank" style="display:block;text-align:center;background:#0F2A44;color:#fff;padding:14px;border-radius:10px;text-decoration:none;font-weight:700">Get Directions on Google Maps</a></div>
     </div>
   </div>
 </div>
 
-<div class="dark" id="reviews">
-  <div class="section" style="text-align:center">
-    <h2>Trusted by local customers</h2><p class="sub">4.5 out of 5 from 66 Google Reviews</p>
-    <div class="testi"><p>“Very clean, fast and friendly service. My clothes always come back fresh and neatly folded. Highly recommended.”</p><p style="margin-top:14px;font-size:14px;color:#6B7280"><b style="color:#111827">Happy Customer</b> - Google Review</p></div>
-  </div>
-</div>
+<div class="section" id="services"><h2>What we do</h2><p class="sub">Everything your laundry needs, under one roof.</p><div class="grid"><div class="card"><div class="tag">01 - Everyday</div><h3>Wash & Fold</h3><p>Your everyday laundry washed, dried and neatly folded. Ready to wear.</p></div><div class="card"><div class="tag">02 - Smart</div><h3>Wash & Iron</h3><p>Crisp shirts and clothes, ironed to perfection. Look sharp every day.</p></div><div class="card"><div class="tag">03 - Care</div><h3>Dry Cleaning</h3><p>Suits, dresses, blankets and delicate items handled with care.</p></div><div class="card"><div class="tag">04 - Urgent</div><h3>Express Service</h3><p>Need it today? Ask about our same-day express turnaround.</p></div></div></div>
 
-<div class="section">
-  <h2>Visit us</h2><p class="sub">Walk in or message us first.</p>
-  <div class="contact">
-    <div class="contact-box"><h3>Xpress Laundrette</h3><p>Open Today: Closes 5pm<br>Walk-ins Welcome<br><br>Call: <a href="tel:+27616077812">061 607 7812</a></p></div>
-    <div class="contact-box"><h3>Get in touch</h3><p>WhatsApp is fastest. We reply within minutes during opening hours.</p><p style="margin-top:14px"><a href="https://wa.me/27616077812">Chat on WhatsApp - 061 607 7812</a></p></div>
-  </div>
-</div>
+<div class="section" id="prices"><div class="price-section"><div><h2 style="font-size:28px">Simple, honest pricing</h2><p class="sub">No hidden costs. Get an exact quote in 30 seconds on WhatsApp.</p><a href="https://wa.me/27616077812" style="display:inline-block;background:#0284C7;color:#fff;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:700">Get Exact Price on WhatsApp</a></div><div><div class="price-row"><b>Wash & Fold - Per Load</b><span>Get Price</span></div><div class="price-row"><b>Wash & Iron - Per Item</b><span>Get Price</span></div><div class="price-row"><b>Dry Cleaning - Suits / Dresses</b><span>Get Price</span></div><div class="price-row"><b>Blankets / Duvets</b><span>Get Price</span></div><div class="price-row"><b>Ironing Only</b><span>Get Price</span></div></div></div></div>
 
-<footer>© 2026 Xpress Laundrette. All Rights Reserved. &nbsp;|&nbsp; 061 607 7812</footer>
+<div class="dark" id="reviews"><div class="section"><div class="testi"><p>“Clothes clean and well folded.”</p><p style="margin-top:14px;font-size:14px;color:#6B7280"><b style="color:#111827">Happy Customer</b> - Google Review</p></div></div></div>
+
+<div class="section" id="visit"><h2>Visit us</h2><p class="sub">Find us in Seagate Shopping Centre, Summerstrand.</p><div class="contact"><div class="contact-box"><h3>Xpress Laundrette</h3><p>Shop No. 7B, Seagate Shopping Centre,<br>Torquay St, Summerstrand,<br>Gqeberha, 6019<br><br><b>Hours:</b> 7:30am - 5pm<br><b>Call:</b> <a href="tel:+27616077812">061 607 7812</a></p><p style="margin-top:16px"><a href="https://www.google.com/maps/search/?api=1&query=Shop+No.+7B+Seagate+Shopping+Centre+Torquay+St+Summerstrand+Gqeberha+6019" target="_blank" style="display:inline-block;background:#0F2A44;color:#fff;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:700">Get Directions on Google Maps</a></p></div><div><div class="contact-box"><h3>Find us on the map</h3><p>Tap the map to open Google Maps.</p></div><div class="map-wrap"><iframe src="https://www.google.com/maps?q=Seagate%20Shopping%20Centre%20Torquay%20St%20Summerstrand%20Gqeberha&output=embed" loading="lazy"></iframe></div></div></div></div>
+<footer>© 2026 Xpress Laundrette. All Rights Reserved.<br>Shop No. 7B, Seagate Shopping Centre, Torquay St, Summerstrand, Gqeberha, 6019 | 061 607 7812</footer>
 </body>
-</html>
+         </html>
