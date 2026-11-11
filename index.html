@@ -8,62 +8,64 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial,sans-serif}
-body{background:#0A0A0A;color:#fff;line-height:1.6}
+body{background:#04182B;color:#fff;line-height:1.6}
 a{text-decoration:none}
-.topbar{background:#C9A227;color:#000;text-align:center;padding:9px 12px;font-size:12px;font-weight:800;letter-spacing:.5px}
+.topbar{background:linear-gradient(90deg,#0EA5E9,#38BDF8,#C9A227);color:#04182B;text-align:center;padding:9px 12px;font-size:12px;font-weight:800;letter-spacing:.5px}
 header{max-width:1150px;margin:0 auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Playfair Display',serif;font-size:26px;font-weight:800;background:linear-gradient(180deg,#FFE98A,#C9A227 55%,#8A6D1A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1}
-.logo small{display:block;font-size:10px;letter-spacing:3px;color:#C9A227;-webkit-text-fill-color:#C9A227;font-family:'Inter',sans-serif;font-weight:700;margin-top:2px}
-.nav a{color:#fff;font-size:14px;font-weight:600;margin-left:20px}
-.nav .cta{background:linear-gradient(180deg,#FFE98A,#C9A227);color:#000;padding:11px 18px;border-radius:50px;font-weight:800}
-.hero{max-width:1150px;margin:0 auto;padding:20px 20px 40px;text-align:center}
-.logo-img{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;border-radius:18px}
-.hero p.sub{color:#D1D5DB;font-size:17px;max-width:620px;margin:16px auto 0}
-.badge{display:inline-block;background:#111;border:1px solid #C9A227;color:#FFE98A;padding:8px 16px;border-radius:50px;font-size:12px;font-weight:800;letter-spacing:2px;margin-top:20px}
-.price-card{max-width:720px;margin:26px auto 0;background:linear-gradient(180deg,#FFE98A,#E6C64A 45%,#B8931F);color:#000;border-radius:24px;padding:28px 20px;box-shadow:0 20px 50px rgba(201,162,39,.35)}
+.logo{font-family:'Playfair Display',serif;font-size:26px;font-weight:800;color:#fff;line-height:1}
+.logo span{color:#38BDF8}
+.logo small{display:block;font-size:10px;letter-spacing:3px;color:#7DD3FC;font-family:'Inter',sans-serif;font-weight:700;margin-top:2px}
+.nav a{color:#E0F2FE;font-size:14px;font-weight:600;margin-left:20px}
+.nav .cta{background:linear-gradient(180deg,#38BDF8,#0EA5E9);color:#fff;padding:11px 18px;border-radius:50px;font-weight:800}
+.hero{max-width:1150px;margin:0 auto;padding:20px 20px 40px;text-align:center;background:radial-gradient(circle at 50% 0%,#0C4A6E 0%,#04182B 65%)}
+.logo-img{width:100%;max-width:520px;height:auto;display:block;margin:0 auto;border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.5);border:1px solid rgba(125,211,252,.3)}
+.hero p.sub{color:#BAE6FD;font-size:17px;max-width:620px;margin:16px auto 0}
+.badge{display:inline-block;background:rgba(14,165,233,.15);border:1px solid #38BDF8;color:#7DD3FC;padding:8px 16px;border-radius:50px;font-size:12px;font-weight:800;letter-spacing:2px;margin-top:20px}
+.price-card{max-width:720px;margin:26px auto 0;background:linear-gradient(135deg,#FFFFFF,#E0F2FE 50%,#7DD3FC);color:#04182B;border-radius:24px;padding:28px 20px;box-shadow:0 20px 50px rgba(56,189,248,.35)}
 .price-card h2{font-size:38px;line-height:1.1;font-weight:900;letter-spacing:-.5px}
-.price-card p{font-size:14px;font-weight:700;margin-top:10px;letter-spacing:.5px}
+.price-card p{font-size:14px;font-weight:700;margin-top:10px;letter-spacing:.5px;color:#0C4A6E}
 .btn-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
 .btn{display:inline-block;padding:16px 26px;border-radius:50px;font-weight:800;font-size:14px;letter-spacing:1px;text-align:center}
 .btn-gold{background:linear-gradient(180deg,#FFE98A,#C9A227);color:#000;box-shadow:0 10px 25px rgba(201,162,39,.35)}
-.btn-white{background:#fff;color:#000}
-.btn-outline{background:transparent;border:1px solid #C9A227;color:#FFE98A}
+.btn-blue{background:linear-gradient(180deg,#38BDF8,#0EA5E9);color:#fff}
+.btn-white{background:#fff;color:#04182B}
+.btn-outline{background:transparent;border:1px solid #38BDF8;color:#7DD3FC}
 .section{max-width:1150px;margin:0 auto;padding:52px 20px}
-.section h2{font-size:32px;text-align:center;font-family:'Playfair Display',serif;background:linear-gradient(180deg,#FFF3B0,#C9A227);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.section p.center{color:#9CA3AF;text-align:center;margin:10px auto 28px;max-width:650px}
-.gold-label{text-align:center;color:#C9A227;font-size:12px;font-weight:800;letter-spacing:3px;margin-bottom:8px}
-.gold-line{width:60px;height:3px;background:#C9A227;margin:12px auto 0;border-radius:2px}
+.section h2{font-size:32px;text-align:center;font-family:'Playfair Display',serif;color:#fff}
+.section p.center{color:#BAE6FD;text-align:center;margin:10px auto 28px;max-width:650px}
+.gold-label{text-align:center;color:#38BDF8;font-size:12px;font-weight:800;letter-spacing:3px;margin-bottom:8px}
+.gold-line{width:60px;height:3px;background:linear-gradient(90deg,#38BDF8,#C9A227);margin:12px auto 0;border-radius:2px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:#141414;border:1px solid #2A2A2A;border-radius:18px;padding:24px}
-.card .icon{width:48px;height:48px;border-radius:12px;background:#1F1A00;border:1px solid #C9A227;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;letter-spacing:1px;color:#FFE98A}
-.card h3{font-size:17px;margin:14px 0 6px}
-.card p{color:#9CA3AF;font-size:14px}
-.card span{color:#C9A227;font-size:12px;font-weight:700;display:block;margin-top:10px;letter-spacing:1px;text-transform:uppercase}
-.why{background:#111;border-top:1px solid #222;border-bottom:1px solid #222}
+.card{background:#082F49;border:1px solid #0E4A6E;border-radius:18px;padding:24px}
+.card .icon{width:48px;height:48px;border-radius:12px;background:#0C4A6E;border:1px solid #38BDF8;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;letter-spacing:1px;color:#7DD3FC}
+.card h3{font-size:17px;margin:14px 0 6px;color:#fff}
+.card p{color:#BAE6FD;font-size:14px}
+.card span{color:#38BDF8;font-size:12px;font-weight:700;display:block;margin-top:10px;letter-spacing:1px;text-transform:uppercase}
+.why{background:#062A43;border-top:1px solid #0E4A6E;border-bottom:1px solid #0E4A6E}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.why-box{background:#0A0A0A;border:1px solid #2A2A2A;border-radius:18px;padding:26px;border-left:4px solid #C9A227}
-.why-box h3{color:#FFE98A;font-size:18px;margin-bottom:8px}
-.why-box p{color:#D1D5DB;font-size:14px}
+.why-box{background:#04182B;border:1px solid #0E4A6E;border-radius:18px;padding:26px;border-left:4px solid #38BDF8}
+.why-box h3{color:#7DD3FC;font-size:18px;margin-bottom:8px}
+.why-box p{color:#E0F2FE;font-size:14px}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.step{background:linear-gradient(180deg,#1A1600,#111);border:1px solid #C9A227;border-radius:18px;padding:26px;text-align:center}
-.step b{font-size:36px;color:#FFE98A}
-.step h3{margin:8px 0 6px}
-.step p{color:#9CA3AF;font-size:14px}
-.example{background:#141414;border:1px solid #2A2A2A;border-radius:20px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
-.example h3{font-size:24px}
-.example p{color:#9CA3AF;margin:10px 0 16px;font-size:15px}
-.example ul{list-style:none;color:#D1D5DB;font-size:14px;line-height:2}
+.step{background:linear-gradient(180deg,#0C4A6E,#082F49);border:1px solid #38BDF8;border-radius:18px;padding:26px;text-align:center}
+.step b{font-size:36px;color:#7DD3FC}
+.step h3{margin:8px 0 6px;color:#fff}
+.step p{color:#BAE6FD;font-size:14px}
+.example{background:#082F49;border:1px solid #0E4A6E;border-radius:20px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.example h3{font-size:24px;color:#fff}
+.example p{color:#BAE6FD;margin:10px 0 16px;font-size:15px}
+.example ul{list-style:none;color:#E0F2FE;font-size:14px;line-height:2}
 .example ul li{padding-left:22px;position:relative}
-.example ul li:before{content:"";position:absolute;left:0;top:13px;width:10px;height:2px;background:#C9A227}
-.form-box{background:#141414;border:1px solid #C9A227;border-radius:20px;padding:28px;max-width:700px;margin:0 auto}
-.form-box input,.form-box select,.form-box textarea{width:100%;padding:14px;border-radius:12px;border:1px solid #333;background:#0A0A0A;color:#fff;margin-bottom:12px;font-size:15px}
-.form-box label{font-size:13px;font-weight:700;display:block;margin-bottom:6px;color:#FFE98A}
+.example ul li:before{content:"";position:absolute;left:0;top:13px;width:10px;height:2px;background:#38BDF8}
+.form-box{background:#082F49;border:1px solid #38BDF8;border-radius:20px;padding:28px;max-width:700px;margin:0 auto}
+.form-box input,.form-box select,.form-box textarea{width:100%;padding:14px;border-radius:12px;border:1px solid #0E4A6E;background:#04182B;color:#fff;margin-bottom:12px;font-size:15px}
+.form-box label{font-size:13px;font-weight:700;display:block;margin-bottom:6px;color:#7DD3FC}
 .faq{max-width:700px;margin:0 auto}
-.faq details{background:#141414;border:1px solid #2A2A2A;border-radius:14px;padding:16px 18px;margin-bottom:10px}
-.faq summary{font-weight:700;cursor:pointer}
-.faq p{color:#9CA3AF;font-size:14px;margin-top:8px}
+.faq details{background:#082F49;border:1px solid #0E4A6E;border-radius:14px;padding:16px 18px;margin-bottom:10px}
+.faq summary{font-weight:700;cursor:pointer;color:#fff}
+.faq p{color:#BAE6FD;font-size:14px;margin-top:8px}
 .contact{text-align:center}
-footer{text-align:center;padding:28px 16px;color:#6B7280;font-size:12px;letter-spacing:2px;border-top:1px solid #222;line-height:2}
+footer{text-align:center;padding:28px 16px;color:#7DD3FC;font-size:12px;letter-spacing:2px;border-top:1px solid #0E4A6E;line-height:2}
 .float{position:fixed;right:16px;bottom:16px;z-index:99;background:#25D366;color:#fff;padding:14px 18px;border-radius:50px;font-weight:800;font-size:14px;box-shadow:0 10px 25px rgba(0,0,0,.4)}
 @media(max-width:820px){.grid,.why-grid,.steps{grid-template-columns:1fr 1fr}.example{grid-template-columns:1fr}.nav a{display:none}.nav .cta{display:block}.price-card h2{font-size:30px}.logo-img{max-width:100%}}
 @media(max-width:520px){.grid,.why-grid,.steps{grid-template-columns:1fr}}
@@ -71,14 +73,14 @@ footer{text-align:center;padding:28px 16px;color:#6B7280;font-size:12px;letter-s
 </head>
 <body>
 <div class="topbar">PREMIUM WEBSITES &nbsp;|&nbsp; ROODEPOORT &nbsp;|&nbsp; SOUTH AFRICA &nbsp;|&nbsp; DONE IN 24HRS</div>
-<header><div class="logo">Troy Site<small>PREMIUM &nbsp;|&nbsp; NO SUBSCRIPTION</small></div><div class="nav"><a href="#included">What's Included</a><a href="#why">Why Me</a><a href="#how">How It Works</a><a href="#quote">Get Quote</a><a class="cta" href="https://wa.me/27780902298">WhatsApp Now</a></div></header>
+<header><div class="logo">Troy <span>Site</span><small>PREMIUM &nbsp;|&nbsp; NO SUBSCRIPTION</small></div><div class="nav"><a href="#included">What's Included</a><a href="#why">Why Me</a><a href="#how">How It Works</a><a href="#quote">Get Quote</a><a class="cta" href="https://wa.me/27780902298">WhatsApp Now</a></div></header>
 <div class="hero">
 <img class="logo-img" src="IMG-20261011-WA4001.jpg" alt="Troy Site Logo">
 <div class="badge">PREMIUM &nbsp;|&nbsp; NO SUBSCRIPTION</div>
 <p class="sub">I build premium, professional websites for South African businesses that make you look trustworthy on Google, WhatsApp and Maps - so customers call you first, not your competitor.</p>
 <div class="price-card"><h2>R2,500 ONCE-OFF<br>NO MONTHLY FEE<br>DONE IN 24HRS</h2><p>ONE PAYMENT &nbsp;|&nbsp; YOU OWN IT FOREVER &nbsp;|&nbsp; NO HIDDEN COSTS</p></div>
 <div class="btn-row"><a class="btn btn-gold" href="tel:+27780902298">CALL 078 090 2298</a><a class="btn btn-white" href="https://wa.me/27780902298?text=Hi%20Troy,%20I%20want%20a%20website%20for%20my%20business">WHATSAPP NOW</a><a class="btn btn-outline" href="#quote">GET FREE QUOTE</a></div>
-<p style="color:#9CA3AF;font-size:13px;margin-top:16px">Trusted by local businesses in Roodepoort and Johannesburg &nbsp;|&nbsp; Est. 2024 &nbsp;|&nbsp; Your link: <b style="color:#FFE98A">troysite.co.za/your-name</b></p>
+<p style="color:#BAE6FD;font-size:13px;margin-top:16px">Trusted by local businesses in Roodepoort and Johannesburg &nbsp;|&nbsp; Est. 2024 &nbsp;|&nbsp; Your link: <b style="color:#7DD3FC">troysite.co.za/your-name</b></p>
 </div>
 <div class="section" id="included">
 <div class="gold-label">WHAT'S INCLUDED</div><h2>Everything Your Business Needs To Get Customers</h2><div class="gold-line"></div><p class="center">No tech stress. No monthly fees. One professional site that does the selling for you.</p>
@@ -115,8 +117,8 @@ footer{text-align:center;padding:28px 16px;color:#6B7280;font-size:12px;letter-s
 </div>
 </div>
 <div class="section" style="padding-top:0"><div class="example">
-<div><div class="gold-label" style="text-align:left">LIVE EXAMPLE</div><h3>See What Your Site Could Look Like</h3><p>Like the laundrette sites I build - clean, professional and made to get calls. Your business, your colours, your services.</p><ul><li>Your business name at the top</li><li>Your services, photos and reviews</li><li>Call, WhatsApp and Directions buttons</li><li>Your Google Maps location</li></ul><a class="btn btn-gold" href="https://wa.me/27780902298?text=Hi%20Troy,%20show%20me%20an%20example%20for%20my%20business">SHOW ME MY EXAMPLE</a></div>
-<div style="background:linear-gradient(180deg,#FFE98A,#C9A227);color:#000;border-radius:16px;padding:24px;text-align:center"><div style="font-size:13px;font-weight:900;letter-spacing:3px">YOUR BUSINESS</div><h3 style="font-size:22px;margin-top:10px">YOUR BUSINESS HERE</h3><p style="color:#333;font-size:14px">Your Name &nbsp;|&nbsp; Your Services &nbsp;|&nbsp; Your Location<br>Call &nbsp;|&nbsp; WhatsApp &nbsp;|&nbsp; Directions</p><div style="background:#000;color:#FFE98A;padding:12px;border-radius:50px;font-weight:800;font-size:13px">TROYSITE.CO.ZA/YOUR-NAME</div></div>
+<div><div class="gold-label" style="text-align:left">LIVE EXAMPLE</div><h3>See What Your Site Could Look Like</h3><p>Like the laundrette sites I build - clean, professional and made to get calls. Your business, your colours, your services.</p><ul><li>Your business name at the top</li><li>Your services, photos and reviews</li><li>Call, WhatsApp and Directions buttons</li><li>Your Google Maps location</li></ul><a class="btn btn-blue" href="https://wa.me/27780902298?text=Hi%20Troy,%20show%20me%20an%20example%20for%20my%20business">SHOW ME MY EXAMPLE</a></div>
+<div style="background:linear-gradient(135deg,#FFFFFF,#7DD3FC);color:#04182B;border-radius:16px;padding:24px;text-align:center"><div style="font-size:13px;font-weight:900;letter-spacing:3px">YOUR BUSINESS</div><h3 style="font-size:22px;margin-top:10px">YOUR BUSINESS HERE</h3><p style="color:#0C4A6E;font-size:14px">Your Name &nbsp;|&nbsp; Your Services &nbsp;|&nbsp; Your Location<br>Call &nbsp;|&nbsp; WhatsApp &nbsp;|&nbsp; Directions</p><div style="background:#04182B;color:#7DD3FC;padding:12px;border-radius:50px;font-weight:800;font-size:13px">TROYSITE.CO.ZA/YOUR-NAME</div></div>
 </div></div>
 <div class="section" id="quote" style="padding-top:0">
 <div class="gold-label">GET YOUR QUOTE</div><h2>Get Your Website In 24Hrs</h2><div class="gold-line"></div><p class="center">Fill this in - it goes straight to Troy on WhatsApp. No spam.</p>
@@ -127,7 +129,7 @@ footer{text-align:center;padding:28px 16px;color:#6B7280;font-size:12px;letter-s
 <label>Your WhatsApp Number</label><input id="qPhone" type="tel" placeholder="e.g. 078 090 2298">
 <label>Message (Optional)</label><textarea id="qMsg" rows="3" placeholder="Tell me what you want on your site..."></textarea>
 <button class="btn btn-gold" style="width:100%;border:0;cursor:pointer" onclick="sendQuote()">SEND QUOTE REQUEST ON WHATSAPP</button>
-<p style="text-align:center;color:#9CA3AF;font-size:12px;margin-top:12px">Or WhatsApp me directly: 078 090 2298 &nbsp;|&nbsp; Reply within hours</p>
+<p style="text-align:center;color:#BAE6FD;font-size:12px;margin-top:12px">Or WhatsApp me directly: 078 090 2298 &nbsp;|&nbsp; Reply within hours</p>
 </div>
 </div>
 <div class="section" style="padding-top:0"><div class="faq">
@@ -141,20 +143,6 @@ footer{text-align:center;padding:28px 16px;color:#6B7280;font-size:12px;letter-s
 <div class="section contact" id="contact" style="padding-top:0">
 <div class="gold-label">CONTACT</div><h2>Let's Build Yours Today</h2><div class="gold-line"></div><p class="center">Your competitors are already online. Don't wait.</p>
 <div class="btn-row"><a class="btn btn-gold" href="tel:+27780902298">CALL 078 090 2298</a><a class="btn btn-white" href="https://wa.me/27780902298">WHATSAPP NOW</a></div>
-<p style="color:#9CA3AF;font-size:14px;margin-top:18px">Roodepoort &nbsp;|&nbsp; South Africa &nbsp;|&nbsp; Est. 2024<br>troysite.co.za &nbsp;|&nbsp; Your link: troysite.co.za/your-name</p>
+<p style="color:#BAE6FD;font-size:14px;margin-top:18px">Roodepoort &nbsp;|&nbsp; South Africa &nbsp;|&nbsp; Est. 2024<br>troysite.co.za &nbsp;|&nbsp; Your link: troysite.co.za/your-name</p>
 </div>
-<footer>© 2026 TROY SITE &nbsp;|&nbsp; ROODEPOORT &nbsp;|&nbsp; SOUTH AFRICA &nbsp;|&nbsp; EST 2024<br>PREMIUM WEBSITES &nbsp;|&nbsp; R2,500 ONCE-OFF &nbsp;|&nbsp; NO MONTHLY FEE &nbsp;|&nbsp; DONE IN 24HRS</footer>
-<a class="float" href="https://wa.me/27780902298">WhatsApp Troy</a>
-<script>
-function sendQuote(){
-var n=document.getElementById('qName').value||'Not given';
-var b=document.getElementById('qBiz').value||'Not given';
-var t=document.getElementById('qType').value;
-var p=document.getElementById('qPhone').value||'Not given';
-var m=document.getElementById('qMsg').value||'';
-var text='Hi Troy, I want a website!%0A%0AName: '+encodeURIComponent(n)+'%0ABusiness: '+encodeURIComponent(b)+'%0AType: '+encodeURIComponent(t)+'%0AWhatsApp: '+encodeURIComponent(p)+'%0AMessage: '+encodeURIComponent(m);
-window.open('https://wa.me/27780902298?text='+text,'_blank');
-}
-</script>
-</body>
-  </html>
+<footer>© 2026 TROY SITE &
