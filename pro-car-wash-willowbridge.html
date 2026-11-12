@@ -13,11 +13,14 @@
   .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
   header{position:sticky;top:0;z-index:50;background:rgba(13,17,23,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  /* TEXT LOGO - NO IMAGE NEEDED */
   .logo{display:flex;align-items:center;gap:12px}
-  .logo-img{width:52px;height:52px;border-radius:12px;background:#0a2540;border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;overflow:hidden}
-  .logo-img img{width:100%;height:100%;object-fit:contain}
+  .logo-mark{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,#1a8cff,#0066cc);display:flex;align-items:center;justify-content:center;flex-direction:column;line-height:1;color:#fff;box-shadow:0 6px 20px rgba(26,140,255,.4)}
+  .logo-mark b{font-family:'Manrope',sans-serif;font-size:22px;letter-spacing:-1px}
+  .logo-mark span{font-size:8px;font-weight:800;letter-spacing:1.5px}
   .logo-text{line-height:1.1}
-  .logo-text b{font-family:'Manrope',sans-serif;font-size:20px;display:block}
+  .logo-text b{font-family:'Manrope',sans-serif;font-size:20px;display:block;letter-spacing:-.3px}
+  .logo-text b em{font-style:normal;color:#1a8cff}
   .logo-text span{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.6px;text-transform:uppercase}
   .links{display:flex;gap:28px;font-weight:600;font-size:14px;color:#d1d9e2}
   .btn{background:var(--blue);color:#fff;padding:12px 22px;border-radius:10px;font-weight:700;font-size:14px;display:inline-block;border:none;cursor:pointer}
@@ -34,6 +37,7 @@
   .hero-btns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
   .hero-right{position:relative;min-height:440px;overflow:hidden}
   .hero-right img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+  .hero-right:after{content:'';position:absolute;inset:0;background:linear-gradient(to right, #11161d 0%, transparent 18%)}
   .trust{background:#fff;color:#111;display:flex;justify-content:space-between;gap:20px;padding:18px 20px;flex-wrap:wrap}
   .trust div{text-align:center;flex:1;min-width:140px}
   .trust b{font-size:22px;display:block}
@@ -44,7 +48,9 @@
   h2{font-family:'Manrope',sans-serif;font-size:36px;letter-spacing:-.8px;margin:8px 0 10px}
   .sub{color:var(--muted);max-width:620px;margin:0 auto 36px}
   .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center;overflow:hidden}
+  .card-img{height:130px;margin:-24px -24px 16px -24px;overflow:hidden}
+  .card-img img{width:100%;height:100%;object-fit:cover}
   .icon{width:52px;height:52px;border:1px solid var(--blue);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:var(--blue);font-size:11px;font-weight:800}
   .card h3{font-size:17px;margin-bottom:6px}
   .card p{font-size:14px;color:var(--muted)}
@@ -57,7 +63,7 @@
   .price-card ul{list-style:none;margin:18px 0 22px;font-size:14px;color:#d6dde6}
   .price-card li{padding:6px 0;border-bottom:1px dashed #2c3644}
   .price-card .btn{width:100%;text-align:center}
-  .booking{background:#fff;color:#111;border-radius:20px;padding:32px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+  .booking{background:#fff;color:#111;border-radius:20px;padding:32px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;overflow:hidden}
   .booking h2{color:#111}
   .booking p{color:#555}
   .form{display:grid;gap:12px}
@@ -77,8 +83,8 @@
 <header>
   <div class="wrap nav">
     <div class="logo">
-      <div class="logo-img"><img src="logo.png" alt="Pro Car Wash Logo" onerror="this.style.display='none'"></div>
-      <div class="logo-text"><b>Pro Car Wash</b><span>@ Willowbridge Village</span></div>
+      <div class="logo-mark"><b>PC</b><span>WASH</span></div>
+      <div class="logo-text"><b>PRO <em>CAR WASH</em></b><span>@ Willowbridge Village</span></div>
     </div>
     <nav class="links"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#booking">Book Now</a><a href="#contact">Contact</a></nav>
     <a class="btn" href="tel:0796039153">Call 079 603 9153</a>
@@ -98,7 +104,7 @@
     </div>
     <p style="font-size:13px;margin-top:14px;color:#8a97a8">Willowbridge Village • No booking fee • 30-90 min service</p>
   </div>
-  <div class="hero-right"><img src="hero.jpg" alt="Freshly washed black SUV at Pro Car Wash"></div>
+  <div class="hero-right"><img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=1200&q=80&auto=format&fit=crop" alt="Freshly washed black SUV at Pro Car Wash"></div>
 </div>
 
 <div class="wrap"><div class="trust">
@@ -113,10 +119,10 @@
   <h2>Comprehensive care to keep your vehicle looking its best</h2>
   <p class="sub">Choose the wash that fits your car and your day. Every wash is done by hand, by trained staff.</p>
   <div class="grid4">
-    <div class="card"><div class="icon">WASH</div><h3>Full Wash</h3><p>Exterior hand wash, wheels, tyres and windows for a showroom shine.</p></div>
-    <div class="card"><div class="icon">DETAIL</div><h3>Interior Detail</h3><p>Vacuum, leather condition, dashboard and vents detailed to perfection.</p></div>
-    <div class="card"><div class="icon">WAX</div><h3>Wax and Polish</h3><p>Protective wax finish and polish for long-lasting gloss.</p></div>
-    <div class="card"><div class="icon">VALET</div><h3>Valet</h3><p>Full interior and exterior valet service for a complete refresh.</p></div>
+    <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=800&q=80&auto=format&fit=crop" alt="Full Wash"></div><h3>Full Wash</h3><p>Exterior hand wash, wheels, tyres and windows for a showroom shine.</p></div>
+    <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80&auto=format&fit=crop" alt="Interior Detail"></div><h3>Interior Detail</h3><p>Vacuum, leather condition, dashboard and vents detailed to perfection.</p></div>
+    <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80&auto=format&fit=crop" alt="Wax and Polish"></div><h3>Wax and Polish</h3><p>Protective wax finish and polish for long-lasting gloss.</p></div>
+    <div class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&q=80&auto=format&fit=crop" alt="Valet"></div><h3>Valet</h3><p>Full interior and exterior valet service for a complete refresh.</p></div>
   </div>
 </div></section>
 
@@ -184,4 +190,4 @@ function book(e){
 }
 </script>
 </body>
-</html>
+  </html>
