@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Car Wash @ Willowbridge Village | Premium Car Wash</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d1117;--card:#1a2029;--line:#2a3442;--blue:#1a8cff;--blue2:#0066cc;--text:#ffffff;--muted:#aab6c5;--gold:#ffb400}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:50;background:rgba(13,17,23,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo-img{width:52px;height:52px;border-radius:12px;background:#0a2540;border:2px solid var(--blue);display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .logo-img img{width:100%;height:100%;object-fit:contain}
+  .logo-text{line-height:1.1}
+  .logo-text b{font-family:'Manrope',sans-serif;font-size:20px;display:block}
+  .logo-text span{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+  .links{display:flex;gap:28px;font-weight:600;font-size:14px;color:#d1d9e2}
+  .btn{background:var(--blue);color:#fff;padding:12px 22px;border-radius:10px;font-weight:700;font-size:14px;display:inline-block;border:none;cursor:pointer}
+  .btn:hover{background:var(--blue2)}
+  .btn-outline{background:transparent;border:1px solid #3a4656;color:#fff}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;background:#11161d}
+  .hero-left{padding:56px 0 56px 20px;max-width:600px;margin-left:auto}
+  .badge{display:inline-block;border:1px solid var(--blue);color:#7cc4ff;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase}
+  .hero h1{font-family:'Manrope',sans-serif;font-size:54px;line-height:1.05;letter-spacing:-1.5px;margin:18px 0 12px}
+  .stars{color:var(--gold);font-size:19px;letter-spacing:2px}
+  .stars span{color:#fff;font-size:16px;letter-spacing:0}
+  .open{color:#4ade80;font-weight:700;margin:8px 0 14px}
+  .hero p{color:var(--muted);font-size:16px;max-width:520px}
+  .hero-btns{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+  .hero-right{position:relative;min-height:440px;overflow:hidden}
+  .hero-right img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}
+  .trust{background:#fff;color:#111;display:flex;justify-content:space-between;gap:20px;padding:18px 20px;flex-wrap:wrap}
+  .trust div{text-align:center;flex:1;min-width:140px}
+  .trust b{font-size:22px;display:block}
+  .trust span{font-size:13px;color:#555}
+  section{padding:64px 0}
+  .center{text-align:center}
+  .kicker{color:var(--blue);font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:12px}
+  h2{font-family:'Manrope',sans-serif;font-size:36px;letter-spacing:-.8px;margin:8px 0 10px}
+  .sub{color:var(--muted);max-width:620px;margin:0 auto 36px}
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center}
+  .icon{width:52px;height:52px;border:1px solid var(--blue);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:var(--blue);font-size:11px;font-weight:800}
+  .card h3{font-size:17px;margin-bottom:6px}
+  .card p{font-size:14px;color:var(--muted)}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .price-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;text-align:left}
+  .price-card.popular{border:2px solid var(--blue)}
+  .popular-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--blue);padding:5px 12px;border-radius:999px;font-size:11px;font-weight:800}
+  .price{font-size:42px;font-weight:800;margin:8px 0 2px}
+  .price small{font-size:14px;color:var(--muted);font-weight:500}
+  .price-card ul{list-style:none;margin:18px 0 22px;font-size:14px;color:#d6dde6}
+  .price-card li{padding:6px 0;border-bottom:1px dashed #2c3644}
+  .price-card .btn{width:100%;text-align:center}
+  .booking{background:#fff;color:#111;border-radius:20px;padding:32px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+  .booking h2{color:#111}
+  .booking p{color:#555}
+  .form{display:grid;gap:12px}
+  .form input,.form select{width:100%;padding:13px 14px;border:1.5px solid #dfe5ec;border-radius:10px;font-size:14px;font-family:inherit}
+  .form label{font-size:13px;font-weight:700}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .review{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .review p{font-size:14px;color:#d6dde6;margin:10px 0 12px}
+  footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:var(--muted);font-size:13px}
+  footer a{color:#fff;font-weight:600}
+  .wa{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:13px 18px;border-radius:999px;font-weight:800;font-size:14px;z-index:99}
+  @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-left{padding:36px 20px}.hero h1{font-size:38px}.hero-right{min-height:300px}.links{display:none}.grid4,.grid3,.reviews{grid-template-columns:1fr}.booking{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <div class="logo-img"><img src="logo.png" alt="Pro Car Wash Logo" onerror="this.style.display='none'"></div>
+      <div class="logo-text"><b>Pro Car Wash</b><span>@ Willowbridge Village</span></div>
+    </div>
+    <nav class="links"><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#booking">Book Now</a><a href="#contact">Contact</a></nav>
+    <a class="btn" href="tel:0796039153">Call 079 603 9153</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-left">
+    <span class="badge">Premium Detailing • Willowbridge Village</span>
+    <h1>Premium Car Wash at Willowbridge Village</h1>
+    <div class="stars">★★★★★ <span>4.9 (384 reviews)</span></div>
+    <div class="open">Open Today • Closes 6pm</div>
+    <p>Experience premium, professional car care with hand-wash detail, interior restoration, and protective wax finishes. Trusted by hundreds of local drivers for spotless results every time.</p>
+    <div class="hero-btns">
+      <a class="btn" href="#booking">Book Now</a>
+      <a class="btn btn-outline" href="tel:0796039153">Call 079 603 9153</a>
+    </div>
+    <p style="font-size:13px;margin-top:14px;color:#8a97a8">Willowbridge Village • No booking fee • 30-90 min service</p>
+  </div>
+  <div class="hero-right"><img src="hero.jpg" alt="Freshly washed black SUV at Pro Car Wash"></div>
+</div>
+
+<div class="wrap"><div class="trust">
+  <div><b>384+</b><span>Happy Reviews</span></div>
+  <div><b>4.9 / 5</b><span>Google Rating</span></div>
+  <div><b>30 Min</b><span>Express Wash</span></div>
+  <div><b>Until 6pm</b><span>Open Today</span></div>
+</div></div>
+
+<section id="services"><div class="wrap center">
+  <div class="kicker">Our Services</div>
+  <h2>Comprehensive care to keep your vehicle looking its best</h2>
+  <p class="sub">Choose the wash that fits your car and your day. Every wash is done by hand, by trained staff.</p>
+  <div class="grid4">
+    <div class="card"><div class="icon">WASH</div><h3>Full Wash</h3><p>Exterior hand wash, wheels, tyres and windows for a showroom shine.</p></div>
+    <div class="card"><div class="icon">DETAIL</div><h3>Interior Detail</h3><p>Vacuum, leather condition, dashboard and vents detailed to perfection.</p></div>
+    <div class="card"><div class="icon">WAX</div><h3>Wax and Polish</h3><p>Protective wax finish and polish for long-lasting gloss.</p></div>
+    <div class="card"><div class="icon">VALET</div><h3>Valet</h3><p>Full interior and exterior valet service for a complete refresh.</p></div>
+  </div>
+</div></section>
+
+<section id="pricing" style="padding-top:0"><div class="wrap center">
+  <div class="kicker">Pricing</div>
+  <h2>Transparent pricing for every level of care</h2>
+  <p class="sub">Call 079 603 9153 to confirm price for your vehicle size.</p>
+  <div class="grid3">
+    <div class="price-card"><h3>Essential</h3><div class="price">R199 <small>/ per wash</small></div><ul><li>Exterior Hand Wash</li><li>Wheel and Tyre Clean</li><li>Window Clean and Dry</li><li>Approx 30 min service</li></ul><a class="btn btn-outline" href="#booking">Book Essential</a></div>
+    <div class="price-card popular"><span class="popular-tag">MOST POPULAR</span><h3>Premium</h3><div class="price">R349 <small>/ per wash</small></div><ul><li>Everything in Essential</li><li>Interior Vacuum and Wipe</li><li>Interior Detail and Deodorise</li><li>Tyre Shine and Protect</li><li>Approx 60 min service</li></ul><a class="btn" href="#booking">Book Premium</a></div>
+    <div class="price-card"><h3>Ultimate</h3><div class="price">R549 <small>/ per wash</small></div><ul><li>Everything in Premium</li><li>Wax and Polish Finish</li><li>Leather Condition and Protect</li><li>Engine Bay Clean</li><li>Approx 90 min service</li></ul><a class="btn btn-outline" href="#booking">Book Ultimate</a></div>
+  </div>
+</div></section>
+
+<section id="booking" style="padding-top:0"><div class="wrap">
+  <div class="booking">
+    <div>
+      <div class="kicker">Book Your Wash</div>
+      <h2>Book in 30 seconds. No account needed.</h2>
+      <p style="margin:14px 0">Pick your service, pick a time, we will confirm on WhatsApp. Walk-ins also welcome at Willowbridge Village.</p>
+      <p><b>Location:</b> Willowbridge Village<br><b>Hours:</b> Open today until 6pm<br><b>Phone / WhatsApp:</b> 079 603 9153<br><b>Rating:</b> 4.9 stars from 384 reviews</p>
+      <p style="margin-top:16px;font-size:13px">By booking you agree to pay in store. Prices may vary by vehicle size.</p>
+    </div>
+    <form class="form" onsubmit="book(event)">
+      <div><label>Your Name</label><input id="name" required placeholder="e.g. Thabo M"></div>
+      <div><label>Phone / WhatsApp</label><input id="phone" required placeholder="e.g. 082 123 4567"></div>
+      <div><label>Choose Service</label><select id="service"><option>Essential - R199</option><option selected>Premium - R349</option><option>Ultimate - R549</option><option>Full Valet - Ask in store</option></select></div>
+      <div><label>Preferred Date and Time</label><input id="date" type="datetime-local" required></div>
+      <button class="btn" type="submit">Confirm Booking on WhatsApp</button>
+      <p id="msg" style="font-size:13px;color:#0066cc;font-weight:600"></p>
+    </form>
+  </div>
+</div></section>
+
+<section id="reviews" style="padding-top:0"><div class="wrap center">
+  <div class="kicker">Reviews</div>
+  <h2>What Customers Say</h2>
+  <p class="sub">Rated 4.9 stars from 384 happy customers on Google.</p>
+  <div class="reviews">
+    <div class="review"><div class="stars">★★★★★</div><p>"Incredible attention to detail. My SUV has never looked this clean. Professional and fast service."</p><b>Sarah L.</b><br><span>Google Review</span></div>
+    <div class="review"><div class="stars">★★★★★</div><p>"I now bring all our family cars here. Consistent, reliable and premium quality every time."</p><b>Emma T.</b><br><span>Google Review</span></div>
+    <div class="review"><div class="stars">★★★★★</div><p>"Best wash at Willowbridge. The Premium wash is worth it, car looks brand new."</p><b>Michael D.</b><br><span>Google Review</span></div>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  <b style="color:#fff;font-size:16px">Pro Car Wash @ Willowbridge Village</b><br>
+  Willowbridge Village • Open until 6pm • 4.9 stars (384 reviews)<br><br>
+  <a href="tel:0796039153">Call 079 603 9153</a> &nbsp;•&nbsp; <a href="https://wa.me/27796039153">WhatsApp Us</a> &nbsp;•&nbsp; <a href="#booking">Book Now</a><br><br>
+  © 2026 Pro Car Wash @ Willowbridge Village • All rights reserved.
+</div></footer>
+
+<a class="wa" href="https://wa.me/27796039153?text=Hi%20Pro%20Car%20Wash%2C%20I%20want%20to%20book%20a%20wash" target="_blank">WhatsApp Us</a>
+
+<script>
+function book(e){
+  e.preventDefault();
+  const name=document.getElementById('name').value;
+  const phone=document.getElementById('phone').value;
+  const service=document.getElementById('service').value;
+  const date=document.getElementById('date').value;
+  const msg=`Hi Pro Car Wash, I want to book: ${service} - Name: ${name}, Phone: ${phone}, When: ${date}`;
+  document.getElementById('msg').innerText='Opening WhatsApp with your booking...';
+  window.open('https://wa.me/27796039153?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
+</body>
+</html>
