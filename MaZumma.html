@@ -4,114 +4,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ma.ZUMMA HAIR SALON | Montclair</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 * { box-sizing:border-box; }
-body { margin:0; font-family: Arial, sans-serif; background:#FFF5F7; color:#333; text-align:center; }
-.topbar { background:linear-gradient(90deg,#FF8FAB,#C2185B); color:#fff; padding:11px; font-size:13px; font-weight:bold; letter-spacing:1px; }
-.hero-video { width:100%; height:340px; object-fit:cover; display:block; }
-.hero-text { background:#fff; padding:22px 15px 8px; margin-top:-5px; }
-.hero-text h1 { font-size:34px; margin:0; color:#C2185B; line-height:1.1; }
-.hero-text p { color:#777; font-size:15px; line-height:1.6; }
-.slogan { color:#C2185B; font-weight:bold; font-style:italic; font-size:16px; margin-top:8px; }
-.badge { display:inline-block; background:#FFE0E9; color:#C2185B; padding:7px 12px; border-radius:20px; font-size:13px; margin:3px; font-weight:bold; }
-.btn { display:flex; align-items:center; gap:14px; text-decoration:none; padding:14px 16px; margin:12px 18px; border-radius:22px; background:#fff; border:1px solid #FFE0E9; box-shadow:0 10px 25px rgba(194,24,91,0.12); text-align:left; }
-.btn:active { transform:scale(0.98); }
-.btn-icon { width:52px; height:52px; border-radius:16px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.btn-icon svg { width:26px; height:26px; fill:#fff; }
-.btn-text { flex:1; }
-.btn-title { display:block; font-size:17px; font-weight:800; color:#222; line-height:1.2; }
-.btn-sub { display:block; font-size:13px; color:#999; margin-top:2px; }
-.btn-arrow { font-size:20px; color:#FF8FAB; font-weight:bold; }
-.btn-whatsapp .btn-icon { background:linear-gradient(135deg,#2BE071,#128C4B); box-shadow:0 6px 15px rgba(37,211,102,0.4); }
-.btn-call .btn-icon { background:linear-gradient(135deg,#4A9DFF,#1877F2); box-shadow:0 6px 15px rgba(24,119,242,0.4); }
-.btn-call2 .btn-icon { background:linear-gradient(135deg,#FF8FAB,#C2185B); box-shadow:0 6px 15px rgba(194,24,91,0.4); }
-.btn-maps .btn-icon { background:linear-gradient(135deg,#FF7A7A,#E91E63); box-shadow:0 6px 15px rgba(233,30,99,0.4); }
-.btn-primary { background:linear-gradient(135deg,#FF8FAB,#C2185B); border:none; }
-.btn-primary .btn-title { color:#fff; }
-.btn-primary .btn-sub { color:rgba(255,255,255,0.85); }
-.btn-primary .btn-arrow { color:#fff; }
-.btn-primary .btn-icon { background:rgba(255,255,255,0.25); }
-.section { padding:10px 15px; text-align:left; }
-.section h2 { color:#C2185B; font-size:24px; text-align:center; margin:28px 0 6px; }
-.section-sub { text-align:center; color:#999; font-size:14px; margin:0 0 12px; }
-.price-card { background:#fff; margin:10px 0; padding:16px 18px; border-radius:18px; border:1px solid #FFE0E9; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
-.price-card b { font-size:16px; color:#222; }
-.price-card span { font-size:13px; color:#999; display:block; margin-top:2px; }
-.price { color:#C2185B; font-weight:800; font-size:18px; white-space:nowrap; margin-left:10px; }
-.price-head { background:linear-gradient(90deg,#FF8FAB,#C2185B); color:#fff; padding:12px 16px; border-radius:18px; font-weight:800; font-size:16px; margin-top:18px; }
-.gallery { display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; }
-.gallery img { width:100%; height:150px; object-fit:cover; border-radius:16px; display:block; }
-/* BOOKING FORM */
-.form-box { background:#fff; border-radius:24px; padding:20px; border:1px solid #FFE0E9; box-shadow:0 10px 25px rgba(194,24,91,0.12); }
-.form-box label { display:block; text-align:left; font-size:13px; font-weight:bold; color:#C2185B; margin:12px 0 5px; }
-.form-box input, .form-box select, .form-box textarea { width:100%; padding:14px; border-radius:14px; border:1px solid #FFD1DD; background:#FFF5F7; font-size:15px; outline:none; }
-.form-box input:focus, .form-box select:focus, .form-box textarea:focus { border-color:#C2185B; background:#fff; }
-.book-btn { width:100%; margin:18px 0 0; padding:16px; border:none; border-radius:50px; background:linear-gradient(135deg,#2BE071,#128C4B); color:#fff; font-size:17px; font-weight:800; cursor:pointer; box-shadow:0 8px 20px rgba(37,211,102,0.4); }
-.footer { padding:25px 20px; color:#888; font-size:14px; line-height:1.7; background:#fff; border-top:1px solid #FFE0E9; margin-top:20px; }
+body { margin:0; font-family:'Poppins', sans-serif; background:#F8F3FF; color:#2D1B4A; text-align:center; font-weight:300; }
+.topbar { background:linear-gradient(90deg,#7B1FA2,#E040FB,#4A90E2); color:#fff; padding:12px; font-size:12px; font-weight:600; letter-spacing:2px; }
+.hero { position:relative; height:420px; overflow:hidden; }
+.hero img { width:100%; height:100%; object-fit:cover; display:block; }
+.hero-overlay { position:absolute; inset:0; background:linear-gradient(180deg, rgba(123,31,162,0.35), rgba(123,31,162,0.85) 55%, rgba(74,144,226,0.9)); display:flex; flex-direction:column; justify-content:flex-end; padding:25px 20px 30px; }
+.hero-script { font-family:'Great Vibes', cursive; font-size:48px; color:#FFD1EC; line-height:1; margin:0; }
+.hero-title { font-family:'Playfair Display', serif; font-size:32px; font-weight:800; color:#fff; margin:2px 0 6px; letter-spacing:1px; line-height:1.1; }
+.hero-sub { color:rgba(255,255,255,0.9); font-size:14px; line-height:1.6; margin:0; font-weight:300; }
+.slogan { display:inline-block; background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4); padding:7px 14px; border-radius:30px; font-size:12px; color:#fff; margin-top:12px; font-style:italic; }
+.pill-row { display:flex; justify-content:center; gap:8px; flex-wrap:wrap; padding:16px; }
+.pill { background:#fff; border:1px solid #EAD9FF; padding:8px 14px; border-radius:30px; font-size:12px; font-weight:500; color:#7B1FA2; box-shadow:0 4px 12px rgba(123,31,162,0.08); }
+
+/* NEW BUTTON STYLE - DIFFERENT FROM BEAUTY BY PRECIOUS */
+.action { display:flex; align-items:center; gap:14px; text-decoration:none; margin:12px 16px; padding:16px; border-radius:26px; text-align:left; color:#fff; position:relative; overflow:hidden; }
+.action:active { transform:scale(0.98); }
+.action-icon { width:54px; height:54px; border-radius:50%; background:rgba(255,255,255,0.25); display:flex; align-items:center; justify-content:center; flex-shrink:0; backdrop-filter:blur(5px); }
+.action-icon svg { width:26px; height:26px; fill:#fff; }
+.action-text { flex:1; }
+.action-title { display:block; font-family:'Playfair Display', serif; font-size:19px; font-weight:700; line-height:1.1; }
+.action-sub { display:block; font-size:12px; opacity:0.9; margin-top:3px; font-weight:300; }
+.action-arrow { width:32px; height:32px; border-radius:50%; background:rgba(255,255,255,0.25); display:flex; align-items:center; justify-content:center; font-size:18px; }
+.whatsapp-btn { background:linear-gradient(135deg,#7B1FA2,#E040FB); box-shadow:0 12px 25px rgba(123,31,162,0.35); }
+.call1-btn { background:linear-gradient(135deg,#4A90E2,#7B1FA2); box-shadow:0 12px 25px rgba(74,144,226,0.3); }
+.call2-btn { background:#fff; color:#2D1B4A; border:1px solid #EAD9FF; box-shadow:0 8px 20px rgba(123,31,162,0.1); }
+.call2-btn .action-title { color:#2D1B4A; }
+.call2-btn .action-sub { color:#999; }
+.call2-btn .action-icon { background:linear-gradient(135deg,#FF69B4,#7B1FA2); }
+.call2-btn .action-arrow { background:#F8F3FF; color:#7B1FA2; }
+.maps-btn { background:linear-gradient(135deg,#FF69B4,#4A90E2); box-shadow:0 12px 25px rgba(255,105,180,0.3); }
+
+.section { padding:10px 16px; text-align:left; }
+.section h2 { font-family:'Playfair Display', serif; font-size:28px; color:#7B1FA2; text-align:center; margin:30px 0 4px; }
+.section-sub { text-align:center; color:#999; font-size:13px; margin:0 0 14px; font-weight:300; }
+.cat-title { font-family:'Playfair Display', serif; font-size:20px; color:#fff; background:linear-gradient(90deg,#7B1FA2,#E040FB,#4A90E2); padding:13px 18px; border-radius:18px; margin:20px 0 12px; }
+.price-row { background:#fff; border-radius:18px; padding:16px 18px; margin:10px 0; display:flex; justify-content:space-between; align-items:center; border:1px solid #EAD9FF; box-shadow:0 4px 14px rgba(123,31,162,0.06); }
+.price-row b { font-family:'Playfair Display', serif; font-size:17px; font-weight:700; color:#2D1B4A; }
+.price-row span { display:block; font-size:12px; color:#999; margin-top:2px; font-weight:300; }
+.price { background:linear-gradient(135deg,#7B1FA2,#E040FB); color:#fff; padding:8px 14px; border-radius:30px; font-weight:700; font-size:15px; white-space:nowrap; margin-left:10px; }
+
+/* GALLERY - ROUNDED, DIFFERENT */
+.gallery { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.gallery img { width:100%; height:210px; object-fit:cover; border-radius:22px; display:block; }
+.gallery img:nth-child(3) { grid-column:span 2; height:230px; }
+
+/* BOOKING FORM - PURPLE GLASS */
+.form-wrap { background:linear-gradient(135deg,#7B1FA2,#4A90E2); padding:2px; border-radius:28px; }
+.form-inner { background:#fff; border-radius:26px; padding:22px; }
+.form-inner label { display:block; text-align:left; font-size:12px; font-weight:600; color:#7B1FA2; letter-spacing:1px; margin:14px 0 6px; text-transform:uppercase; }
+.form-inner input, .form-inner select, .form-inner textarea { width:100%; padding:14px 16px; border-radius:16px; border:1.5px solid #EAD9FF; background:#F8F3FF; font-size:14px; font-family:'Poppins', sans-serif; outline:none; color:#2D1B4A; }
+.form-inner input:focus, .form-inner select:focus { border-color:#E040FB; background:#fff; }
+.book-btn { width:100%; margin-top:20px; padding:16px; border:none; border-radius:50px; background:linear-gradient(90deg,#7B1FA2,#E040FB,#4A90E2); color:#fff; font-family:'Playfair Display', serif; font-size:18px; font-weight:700; cursor:pointer; box-shadow:0 10px 20px rgba(123,31,162,0.3); }
+.footer { background:#2D1B4A; color:#D9C6FF; padding:28px 20px; font-size:13px; line-height:1.8; border-radius:28px 28px 0 0; margin-top:25px; }
+.footer b { font-family:'Great Vibes', cursive; font-size:32px; color:#fff; font-weight:400; }
 </style>
 </head>
 <body>
 
-<div class="topbar">MA.ZUMMA HAIR SALON - MONTCLAIR - BOOK NOW</div>
+<div class="topbar">MA.ZUMMA HAIR SALON • HARBOUR VIEW • MONTCLAIR</div>
 
-<video class="hero-video" autoplay muted loop playsinline poster="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800">
-<source src="https://videos.pexels.com/video-files/5309381/5309381-hd_1080_1920_25fps.mp4" type="video/mp4">
-</video>
-
-<div class="hero-text">
-<h1>Ma.ZUMMA<br>HAIR SALON</h1>
-<p>Harbour View, Montclair<br>Installs | Customisation | Hair Care</p>
-<p class="slogan">Come for the install, leave feeling like THAT girl!</p>
-<div><span class="badge">INSTALLATION</span> <span class="badge">HAIR CARE</span> <span class="badge">FRONTAL PONYTAIL</span> <span class="badge">WIG WASH</span></div>
+<div class="hero">
+<img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Ma Zumma">
+<div class="hero-overlay">
+<p class="hero-script">Ma.Zumma</p>
+<h1 class="hero-title">HAIR SALON</h1>
+<p class="hero-sub">Installs • Customisation • Hair Care<br>Harbour View, Montclair</p>
+<div><span class="slogan">Come for the install, leave feeling like THAT girl!</span></div>
+</div>
 </div>
 
-<!-- IMPORTANT BUTTONS -->
-<a class="btn btn-whatsapp btn-primary" href="https://wa.me/27826247400?text=Hi%20Ma.ZUMMA!%20I%20want%20to%20book%20an%20appointment" target="_blank">
-<span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.9 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.6.7 2.2.8 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg></span>
-<span class="btn-text"><span class="btn-title">WhatsApp Us</span><span class="btn-sub">082 624 7400 - Fast reply</span></span><span class="btn-arrow">›</span>
+<div class="pill-row">
+<span class="pill">Installation</span><span class="pill">Frontal Ponytail</span><span class="pill">Wig Wash</span><span class="pill">Treatment</span>
+</div>
+
+<!-- PURPLE PINK BLUE BUTTONS -->
+<a class="action whatsapp-btn" href="https://wa.me/27826247400?text=Hi%20Ma.ZUMMA!%20I%20want%20to%20book%20an%20appointment" target="_blank">
+<span class="action-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.9 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.6.7 2.2.8 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg></span>
+<span class="action-text"><span class="action-title">WhatsApp Us</span><span class="action-sub">082 624 7400 - Fast reply</span></span><span class="action-arrow">→</span>
 </a>
 
-<a class="btn btn-call" href="tel:+27826247400">
-<span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
-<span class="btn-text"><span class="btn-title">Call Now - 082 624 7400</span><span class="btn-sub">Tap to call - WhatsApp number</span></span><span class="btn-arrow">›</span>
+<a class="action call1-btn" href="tel:+27826247400">
+<span class="action-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+<span class="action-text"><span class="action-title">Call 082 624 7400</span><span class="action-sub">Tap to call - Main number</span></span><span class="action-arrow">→</span>
 </a>
 
-<a class="btn btn-call2" href="tel:+27793976179">
-<span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
-<span class="btn-text"><span class="btn-title">Call Now - 079 397 6179</span><span class="btn-sub">Tap to call - Second number</span></span><span class="btn-arrow">›</span>
+<a class="action call2-btn" href="tel:+27793976179">
+<span class="action-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+<span class="action-text"><span class="action-title">Call 079 397 6179</span><span class="action-sub">Tap to call - Second number</span></span><span class="action-arrow">→</span>
 </a>
 
-<a class="btn btn-maps" href="https://www.google.com/maps/search/?api=1&query=Harbour+View+Montclair" target="_blank">
-<span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
-<span class="btn-text"><span class="btn-title">Get Directions</span><span class="btn-sub">Harbour View, Montclair</span></span><span class="btn-arrow">›</span>
+<a class="action maps-btn" href="https://www.google.com/maps/search/?api=1&query=Harbour+View+Montclair" target="_blank">
+<span class="action-icon"><svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
+<span class="action-text"><span class="action-title">Get Directions</span><span class="action-sub">Harbour View, Montclair</span></span><span class="action-arrow">→</span>
 </a>
 
 <div class="section">
 <h2>Price List</h2>
-<p class="section-sub">Same prices as your poster - no hidden fees</p>
+<p class="section-sub">Elegant prices, no hidden fees - from your poster</p>
 
-<div class="price-head">Installation</div>
-<div class="price-card"><div><b>Basic Installation</b><span>Neat, flat install</span></div><div class="price">R150</div></div>
-<div class="price-card"><div><b>Installed & Styled</b><span>Install + full styling</span></div><div class="price">R200</div></div>
-<div class="price-card"><div><b>Frontal Ponytail</b><span>Sleek, snatched ponytail</span></div><div class="price">R350</div></div>
+<div class="cat-title">Installation</div>
+<div class="price-row"><div><b>Basic Installation</b><span>Neat, flat install</span></div><div class="price">R150</div></div>
+<div class="price-row"><div><b>Installed & Styled</b><span>Install + full styling</span></div><div class="price">R200</div></div>
+<div class="price-row"><div><b>Frontal Ponytail</b><span>Sleek, snatched ponytail</span></div><div class="price">R350</div></div>
 
-<div class="price-head">Hair Care</div>
-<div class="price-card"><div><b>Full Customisation</b><span>Plucking, bleaching, styling</span></div><div class="price">R170</div></div>
-<div class="price-card"><div><b>Plucking Only</b><span>Natural hairline</span></div><div class="price">R100</div></div>
-<div class="price-card"><div><b>Wig Wash</b><span>Clean & fresh</span></div><div class="price">R150</div></div>
-<div class="price-card"><div><b>Wig Treatment</b><span>Deep treatment & revive</span></div><div class="price">R200</div></div>
+<div class="cat-title">Hair Care</div>
+<div class="price-row"><div><b>Full Customisation</b><span>Plucking, bleaching, styling</span></div><div class="price">R170</div></div>
+<div class="price-row"><div><b>Plucking Only</b><span>Natural hairline</span></div><div class="price">R100</div></div>
+<div class="price-row"><div><b>Wig Wash</b><span>Clean & fresh</span></div><div class="price">R150</div></div>
+<div class="price-row"><div><b>Wig Treatment</b><span>Deep treatment & revive</span></div><div class="price">R200</div></div>
 </div>
 
 <div class="section">
 <h2>Book Your Appointment</h2>
-<p class="section-sub">Fill this form - it will open WhatsApp automatically</p>
-<div class="form-box">
+<p class="section-sub">Fill this form - it opens WhatsApp with everything ready</p>
+<div class="form-wrap"><div class="form-inner">
 <form onsubmit="bookNow(event)">
-<label>Your Name *</label>
-<input id="name" type="text" placeholder="e.g. Precious" required>
-<label>Your Phone Number *</label>
-<input id="phone" type="tel" placeholder="e.g. 082 123 4567" required>
-<label>Choose Service *</label>
+<label>Your Name</label>
+<input id="name" type="text" placeholder="Your full name" required>
+<label>Your Phone Number</label>
+<input id="phone" type="tel" placeholder="082 123 4567" required>
+<label>Choose Service</label>
 <select id="service" required>
 <option value="">Select a service...</option>
 <option>Basic Installation - R150</option>
@@ -122,27 +137,30 @@ body { margin:0; font-family: Arial, sans-serif; background:#FFF5F7; color:#333;
 <option>Wig Wash - R150</option>
 <option>Wig Treatment - R200</option>
 </select>
-<label>Preferred Date *</label>
+<label>Preferred Date</label>
 <input id="date" type="date" required>
-<label>Preferred Time *</label>
+<label>Preferred Time</label>
 <select id="time" required>
 <option value="">Select time...</option>
-<option>08:00 AM</option>
-<option>09:00 AM</option>
-<option>10:00 AM</option>
-<option>11:00 AM</option>
-<option>12:00 PM</option>
-<option>13:00 PM</option>
-<option>14:00 PM</option>
-<option>15:00 PM</option>
-<option>16:00 PM</option>
-<option>17:00 PM</option>
+<option>08:00 AM</option><option>09:00 AM</option><option>10:00 AM</option><option>11:00 AM</option><option>12:00 PM</option><option>13:00 PM</option><option>14:00 PM</option><option>15:00 PM</option><option>16:00 PM</option><option>17:00 PM</option>
 </select>
-<label>Message / Style You Want (Optional)</label>
-<textarea id="msg" rows="3" placeholder="e.g. I want blonde frontal ponytail like in the photo..."></textarea>
+<label>Message / Style You Want</label>
+<textarea id="msg" rows="3" placeholder="e.g. Blonde frontal ponytail like in the photo..."></textarea>
 <button class="book-btn" type="submit">Send Booking on WhatsApp</button>
-<p style="font-size:12px; color:#999; text-align:center; margin:10px 0 0;">Your booking goes to 082 624 7400 on WhatsApp</p>
+<p style="font-size:12px; color:#999; text-align:center; margin:10px 0 0;">Goes to 082 624 7400 on WhatsApp</p>
 </form>
+</div></div>
+</div>
+
+<div class="section">
+<h2>Our Queens</h2>
+<p class="section-sub">Black beauties, slayed by Ma.Zumma</p>
+<div class="gallery">
+<img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blonde wig">
+<img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Styling">
+<img src="https://images.pexels.com/photos/3758951/pexels-photo-3758951.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sleek ponytail">
+<img src="https://images.pexels.com/photos/2711684/pexels-photo-2711684.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Braids">
+<img src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Curly">
 </div>
 </div>
 
@@ -160,30 +178,13 @@ window.open("https://wa.me/27826247400?text="+text,"_blank");
 }
 </script>
 
-<div class="section">
-<h2>Gallery - Our Queens</h2>
-<div class="gallery">
-<img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Blonde wig install">
-<img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hair styling">
-<img src="https://images.pexels.com/photos/2711684/pexels-photo-2711684.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Braids">
-<img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Smiling client">
-<img src="https://images.pexels.com/photos/3211476/pexels-photo-3211476.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Curly hair">
-<img src="https://images.pexels.com/photos/3758951/pexels-photo-3758951.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sleek ponytail">
-</div>
-</div>
-
-<a class="btn btn-whatsapp btn-primary" href="https://wa.me/27826247400?text=Hi%20Ma.ZUMMA!%20I%20want%20to%20book%20an%20appointment" target="_blank">
-<span class="btn-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.9 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.6.7 2.2.8 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg></span>
-<span class="btn-text"><span class="btn-title">Book on WhatsApp</span><span class="btn-sub">082 624 7400</span></span><span class="btn-arrow">›</span>
-</a>
-
 <div class="footer">
-<b style="color:#C2185B; font-size:18px;">Ma.ZUMMA HAIR SALON</b><br>
-Harbour View, Montclair<br><br>
+<b>Ma.Zumma</b><br>
+HAIR SALON - Harbour View, Montclair<br><br>
 WhatsApp: 082 624 7400<br>
 Call: 082 624 7400 / 079 397 6179<br><br>
 Come for the install, leave feeling like THAT girl!
 </div>
 
 </body>
-</html>
+  </html>
