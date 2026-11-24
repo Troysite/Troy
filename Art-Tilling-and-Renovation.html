@@ -9,17 +9,15 @@
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#faf9f7;scroll-behavior:smooth}
   h1,h2,h3{font-family:'Playfair Display',serif}
-  header{background:rgba(255,255,255,.98);backdrop-filter:blur(10px);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:30;box-shadow:0 2px 20px rgba(0,0,0,.06);flex-wrap:wrap;gap:10px}
-  .logo{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;line-height:1;letter-spacing:.3px}
-  .logo span{color:#b8964a;display:block;font-size:9px;letter-spacing:3px;font-family:'Inter',sans-serif;font-weight:700;margin-top:4px}
+  header{background:rgba(255,255,255,.98);backdrop-filter:blur(10px);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:30;box-shadow:0 2px 20px rgba(0,0,0,.06);flex-wrap:wrap;gap:10px}
+  /* LOGO - BLENDS IN, NO SQUARE, NO CIRCLE */
+  .logo-wrap{display:flex;align-items:center;gap:12px}
+  .logo-img{height:58px;width:auto;max-width:190px;object-fit:contain;display:block;background:transparent;border:none;outline:none;box-shadow:none;border-radius:0;mix-blend-mode:multiply;filter:drop-shadow(0 2px 4px rgba(0,0,0,.08))}
+  .logo-text{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;line-height:1;letter-spacing:.3px}
+  .logo-text span{color:#b8964a;display:block;font-size:9px;letter-spacing:3px;font-family:'Inter',sans-serif;font-weight:700;margin-top:4px}
   .top-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center}
   .nav-btn{padding:9px 15px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;background:#f3efe6;color:#111;border:1px solid #e8e0cc;white-space:nowrap}
   .nav-btn.gold{background:linear-gradient(180deg,#ffd66b,#c9a13a);color:#111;border:none;box-shadow:0 6px 15px rgba(201,161,58,.35)}
-  .nav-btn.green{background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;border:none;box-shadow:0 6px 15px rgba(21,154,72,.35)}
-  .top-contact{display:flex;gap:10px;align-items:center}
-  .pill{padding:10px 16px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px}
-  .pill-call{background:#111;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.2)}
-  .pill-wa{background:#1da851;color:#fff;box-shadow:0 8px 20px rgba(29,168,81,.35)}
   .hero{background:linear-gradient(rgba(10,10,10,.78),rgba(10,10,10,.62),rgba(17,17,17,.82)), url('tiles-background.jpg');background-size:cover;background-position:center;color:#fff;padding:70px 22px 60px;text-align:center;position:relative;overflow:hidden}
   .hero:before{content:"";position:absolute;width:420px;height:420px;background:radial-gradient(circle,rgba(184,150,74,.35),transparent 70%);top:-100px;right:-100px;border-radius:50%}
   .hero-badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:100px;font-size:12px;letter-spacing:1.5px;font-weight:600}
@@ -51,9 +49,6 @@
   .about{background:#fff;border-radius:24px;padding:32px;box-shadow:0 12px 35px rgba(0,0,0,.07);display:grid;grid-template-columns:1.4fr .8fr;gap:24px;align-items:center}
   .about-box{background:#111;color:#fff;border-radius:18px;padding:24px;text-align:center}
   .about-box h3{color:#d8b96a;font-size:28px}
-  form{background:#111;color:#fff;padding:30px;border-radius:24px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
-  form input,form select,form textarea{width:100%;padding:14px;margin:8px 0;border-radius:12px;border:1px solid #333;background:#1e1e1e;color:#fff}
-  form button{width:100%;padding:16px;background:linear-gradient(180deg,#ffd66b,#c9a13a);border:none;border-radius:100px;font-weight:800;font-size:16px;cursor:pointer}
   #chatBtn{position:fixed;bottom:20px;right:20px;background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;border:none;padding:15px 20px;border-radius:100px;font-weight:800;cursor:pointer;box-shadow:0 12px 28px rgba(21,154,72,.45);z-index:99;display:flex;align-items:center;gap:9px}
   #chatBox{position:fixed;bottom:85px;right:20px;width:340px;max-width:92vw;background:#fff;border-radius:20px;box-shadow:0 18px 45px rgba(0,0,0,.25);overflow:hidden;display:none;z-index:99}
   #chatHead{background:#111;color:#fff;padding:16px}
@@ -73,24 +68,21 @@
   .foot p{font-size:14px}
   .bottom{max-width:1050px;margin:30px auto 0;border-top:1px solid #2a2a2a;padding-top:16px;text-align:center;font-size:12px}
   .bottom a{color:#d8b96a;text-decoration:none;font-weight:700}
-  @media(max-width:900px){.top-contact{display:none}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:32px}.hero-btns{flex-direction:column}.btn{justify-content:center}}
+  @media(max-width:900px){.logo-img{height:48px;max-width:150px}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:32px}.hero-btns{flex-direction:column}.btn{justify-content:center}}
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">ART TILING <span>& RENOVATION • PRECISION • CARE • QUALITY</span></div>
-  <div class="top-contact">
-    <a class="pill pill-call" href="tel:+27697887676">+27 69 788 7676</a>
-    <a class="pill pill-wa" href="https://wa.me/27697887676?text=Hi%20Art%20Tiling%20and%20Renovation,%20I%20want%20a%20free%20quote" target="_blank">WhatsApp</a>
+  <div class="logo-wrap">
+    <!-- YOUR LOGO GOES HERE - IT WILL BLEND IN, NO BOX -->
+    <img src="logo.png" alt="Art Tiling and Renovation Logo" class="logo-img" onerror="this.style.display='none'">
+    <div class="logo-text">ART TILING <span>& RENOVATION • PRECISION • CARE • QUALITY</span></div>
   </div>
   <nav class="top-nav">
     <a class="nav-btn" href="#services">Services</a>
     <a class="nav-btn" href="#work">Our Work</a>
     <a class="nav-btn" href="#about">About Us</a>
-    <a class="nav-btn" href="#contact">Contact / Details</a>
-    <a class="nav-btn gold" href="#quote">Free Quote Form</a>
-    <a class="nav-btn" href="tel:+27697887676">Call Now</a>
-    <a class="nav-btn green" href="https://wa.me/27697887676" target="_blank">WhatsApp</a>
+    <a class="nav-btn gold" href="tel:+27697887676">Call Now</a>
   </nav>
 </header>
 
@@ -134,19 +126,6 @@
   </div>
 </section>
 
-<section class="section" id="quote">
-  <form onsubmit="sendToWhatsApp(event)">
-    <h2 style="font-size:28px">Get Your FREE Quote</h2>
-    <p style="color:#bbb;margin:6px 0 14px">Fill this in — it opens WhatsApp with your details ready to send.</p>
-    <input id="name" placeholder="Your Name *" required>
-    <input id="phone" placeholder="Your Phone Number *" required>
-    <select id="service"><option>Floor Tiling</option><option>Bathroom Renovation</option><option>Kitchen Tiling</option><option>Full Renovation / Building</option><option>Other</option></select>
-    <textarea id="msg" rows="3" placeholder="Tell us what you need... e.g. Bathroom 3m x 2m, need new tiles"></textarea>
-    <button type="submit">SEND QUOTE REQUEST ON WHATSAPP</button>
-    <p style="text-align:center;margin-top:14px;font-size:13px;color:#aaa">Or call directly: <a href="tel:+27697887676" style="color:#d8b96a;text-decoration:none;font-weight:700">+27 69 788 7676</a></p>
-  </form>
-</section>
-
 <button id="chatBtn" onclick="toggleChat()"><span style="width:10px;height:10px;background:#fff;border-radius:50%;display:inline-block"></span> Chat With Us</button>
 <div id="chatBox">
   <div id="chatHead"><b>Art Tiling Assistant</b><br><span>Online • Replies Instantly • Open 7am - 6pm</span></div>
@@ -161,24 +140,18 @@ function sendChat(){
   let box=document.getElementById('chatMsgs');
   box.innerHTML+='<div class="msg me">'+t+'</div>';inp.value='';
   let low=t.toLowerCase();let reply="Thank you. For a fast free quote, please send your name, area, and what you need tiled. Or tap WhatsApp below and we will reply.";
-  if(low.includes('1')||low.includes('quote')) reply="Perfect. Please click 'Get Free Quote' above or send us on WhatsApp: Your name, area, and room size. We will give you a free quote.";
+  if(low.includes('1')||low.includes('quote')) reply="Perfect. Please send us on WhatsApp: Your name, area, and room size. We will give you a free quote.";
   if(low.includes('2')||low.includes('price')||low.includes('cost')) reply="Prices depend on tile size and area size. Most jobs are quoted FREE after we see photos or measurements. Send photos on WhatsApp for a quick price: +27 69 788 7676";
   if(low.includes('3')||low.includes('service')) reply="We do: Floor Tiling, Bathroom Renovation, Kitchen Tiling, Full Renovation and Building. We handle everything start to finish.";
   if(low.includes('4')||low.includes('person')||low.includes('human')) reply="No problem. Call us now on +27 69 788 7676 or tap WhatsApp — a real person will help you.";
   setTimeout(()=>{box.innerHTML+='<div class="msg bot">'+reply+'</div>';box.scrollTop=box.scrollHeight},400);
-}
-function sendToWhatsApp(e){
-  e.preventDefault();
-  let n=document.getElementById('name').value;let p=document.getElementById('phone').value;let s=document.getElementById('service').value;let m=document.getElementById('msg').value;
-  let text="Hi Art Tiling and Renovation, I want a FREE quote.%0AName: "+encodeURIComponent(n)+"%0APhone: "+encodeURIComponent(p)+"%0AService: "+encodeURIComponent(s)+"%0ADetails: "+encodeURIComponent(m);
-  window.open("https://wa.me/27697887676?text="+text,"_blank");
 }
 </script>
 
 <footer id="contact">
   <div class="foot">
     <div><h3>ART TILING & RENOVATION</h3><p>Skilled tilers. Precision and care. We handle everything from start to finish, so you can enjoy your beautiful new space without any stress.</p><p style="margin-top:14px;color:#fff;font-weight:700">Trusted Local Tilers • 5-Star Service</p></div>
-    <div><h3>Quick Links</h3><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About Us</a><a href="#quote">Get Free Quote</a><a href="https://wa.me/27697887676">WhatsApp Us</a></div>
+    <div><h3>Quick Links</h3><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About Us</a><a href="https://wa.me/27697887676">WhatsApp Us</a></div>
     <div><h3>Contact Us</h3><a href="tel:+27697887676">+27 69 788 7676</a><a href="https://wa.me/27697887676">WhatsApp Business</a><p>Open Now<br>7:00 am – 6:00 pm<br>Mon – Sat</p></div>
   </div>
   <div class="bottom">© 2026 Art Tiling and Renovation. All Rights Reserved. | <a href="tel:+27697887676">Call: +27 69 788 7676</a> | Privacy Policy • Terms of Service</div>
