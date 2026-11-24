@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Tiling and Renovation | Expert Tilers</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif}
+  body{color:#222;line-height:1.6;background:#f8f8f8}
+  header{background:#111;color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+  .logo{font-size:22px;font-weight:900;letter-spacing:.5px}
+  .logo span{color:#f5b301}
+  .logo small{display:block;font-size:11px;letter-spacing:2px;color:#ccc;font-weight:400}
+  nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+  .hero{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)), url('YOUR-WORK-PHOTO-1.jpg');background-size:cover;background-position:center;color:#fff;padding:70px 20px;text-align:center}
+  .hero h1{font-size:38px;line-height:1.2;max-width:800px;margin:0 auto 14px}
+  .hero p{max-width:650px;margin:0 auto 22px;color:#eee}
+  .btn{display:inline-block;padding:14px 22px;border-radius:50px;text-decoration:none;font-weight:800;margin:6px}
+  .btn-call{background:#f5b301;color:#111}
+  .btn-wa{background:#25D366;color:#fff}
+  .btn-dark{background:#111;color:#fff}
+  .section{padding:45px 20px;max-width:1000px;margin:auto}
+  .section h2{font-size:28px;margin-bottom:12px}
+  .cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:20px}
+  .card{background:#fff;padding:20px;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+  .card b{font-size:18px}
+  .gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px}
+  .gallery div{background:#ddd;height:180px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#666;font-weight:700;text-align:center;padding:10px}
+  .about{background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 14px rgba(0,0,0,.06)}
+  form{background:#111;color:#fff;padding:28px;border-radius:16px}
+  form input,form select,form textarea{width:100%;padding:13px;margin:8px 0;border-radius:10px;border:none}
+  form button{width:100%;padding:15px;background:#f5b301;border:none;border-radius:50px;font-weight:900;font-size:16px;cursor:pointer}
+  /* Chat */
+  #chatBtn{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;border:none;padding:15px 18px;border-radius:50px;font-weight:800;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.25);z-index:99}
+  #chatBox{position:fixed;bottom:85px;right:20px;width:320px;max-width:90vw;background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;display:none;z-index:99}
+  #chatHead{background:#111;color:#fff;padding:14px;font-weight:800}
+  #chatMsgs{padding:14px;height:220px;overflow:auto;font-size:14px}
+  .msg{margin:8px 0;padding:10px 12px;border-radius:12px;max-width:85%}
+  .bot{background:#f1f1f1}
+  .me{background:#dcf8c6;margin-left:auto}
+  #chatInput{display:flex;padding:10px;border-top:1px solid #eee}
+  #chatInput input{flex:1;padding:10px;border:1px solid #ddd;border-radius:20px}
+  #chatInput button{margin-left:8px;background:#25D366;color:#fff;border:none;padding:10px 14px;border-radius:20px;font-weight:700}
+  footer{background:#0b0b0b;color:#ccc;padding:40px 20px 20px;margin-top:30px}
+  .foot{max-width:1000px;margin:auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px}
+  .foot h3{color:#fff;margin-bottom:10px}
+  .foot a{color:#ccc;text-decoration:none;display:block;margin:6px 0}
+  .bottom{max-width:1000px;margin:25px auto 0;border-top:1px solid #333;padding-top:15px;text-align:center;font-size:13px}
+  @media(max-width:700px){.cards,.gallery,.foot{grid-template-columns:1fr}.hero h1{font-size:30px}nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ART TILING <span>& RENOVATION</span><small>PRECISION • CARE • QUALITY</small></div>
+  <nav><a href="#services">Services</a><a href="#work">Our Work</a><a href="#quote">Get Quote</a></nav>
+</header>
+
+<section class="hero">
+  <p style="color:#f5b301;font-weight:800;letter-spacing:2px">OPEN NOW • 7:00 AM – 6:00 PM</p>
+  <h1>Your New Tiles, Fitted Perfectly. With Precision & Care.</h1>
+  <p>Whether you're remodeling or building, our team of skilled tilers ensures your new tiles are fitted perfectly, with precision and care. We handle everything from start to finish, so you can sit back and enjoy your beautiful new space without any stress. Call Art Tiling and Renovation to get a free quote.</p>
+  <a class="btn btn-call" href="tel:+27697887676">📞 CALL NOW: +27 69 788 7676</a>
+  <a class="btn btn-wa" href="https://wa.me/27697887676?text=Hi%20Art%20Tiling%20and%20Renovation,%20I%20want%20a%20free%20quote" target="_blank">💬 WHATSAPP US</a>
+  <br><a class="btn btn-dark" href="#quote">Get Free Quote ↓</a>
+</section>
+
+<section class="section" id="services">
+  <h2>What We Do</h2>
+  <p>Complete tiling & renovation — no stress for you.</p>
+  <div class="cards">
+    <div class="card"><b>🧱 Floor Tiling</b><p>Kitchen, bathroom, lounge, patio & full house tiling. Neat grouting, straight lines.</p></div>
+    <div class="card"><b>🚿 Bathroom Renovation</b><p>Wall tiles, showers, floors, full bathroom makeover from start to finish.</p></div>
+    <div class="card"><b>🏠 Full Renovation</b><p>Remodeling & building — we handle everything so you can relax.</p></div>
+  </div>
+  <div style="margin-top:18px;background:#fff3cd;padding:16px;border-radius:12px"><b>⭐ Why Choose Us?</b> Skilled tilers • Free Quote • Precision & Care • Start to Finish Service • Open 7am - 6pm</div>
+</section>
+
+<section class="section" id="work">
+  <h2>Our Work</h2>
+  <p>Pictures coming soon — send us your photos and we will add them here.</p>
+  <div class="gallery">
+    <div>LOGO / PHOTO 1<br>Your Work Here</div>
+    <div>PHOTO 2<br>Your Work Here</div>
+    <div>PHOTO 3<br>Your Work Here</div>
+  </div>
+  <p style="margin-top:12px;font-size:13px;color:#777">To replace: Change YOUR-WORK-PHOTO-1.jpg and the gallery boxes to your real pictures.</p>
+</section>
+
+<section class="section">
+  <div class="about">
+    <h2>About Art Tiling and Renovation</h2>
+    <p>Whether you're remodeling or building, our team of skilled tilers ensures your new tiles are fitted perfectly, with precision and care. We handle everything from start to finish, so you can sit back and enjoy your beautiful new space without any stress.</p>
+    <p style="margin-top:10px"><b>Call Art Tiling and Renovation to get a free quote today.</b></p>
+    <br>
+    <a class="btn btn-call" href="tel:+27697887676">📞 +27 69 788 7676</a>
+    <a class="btn btn-wa" href="https://wa.me/27697887676" target="_blank">💬 WhatsApp</a>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <form onsubmit="sendToWhatsApp(event)">
+    <h2 style="color:#fff">Get Your FREE Quote</h2>
+    <p style="color:#ccc">Fill this in — it will open WhatsApp with your details ready to send.</p>
+    <input id="name" placeholder="Your Name *" required>
+    <input id="phone" placeholder="Your Phone Number *" required>
+    <select id="service"><option>Floor Tiling</option><option>Bathroom Renovation</option><option>Kitchen Tiling</option><option>Full Renovation / Building</option><option>Other</option></select>
+    <textarea id="msg" rows="3" placeholder="Tell us what you need... e.g. Bathroom 3m x 2m, need new tiles"></textarea>
+    <button type="submit">SEND QUOTE REQUEST ON WHATSAPP →</button>
+    <p style="text-align:center;margin-top:12px;font-size:13px">Or call directly: <a href="tel:+27697887676" style="color:#f5b301">+27 69 788 7676</a></p>
+  </form>
+</section>
+
+<!-- CHAT ASSISTANT -->
+<button id="chatBtn" onclick="toggleChat()">💬 Chat With Us</button>
+<div id="chatBox">
+  <div id="chatHead">Art Tiling Assistant • Online<br><span style="font-weight:400;font-size:12px">Replies instantly • Open 7am - 6pm</span></div>
+  <div id="chatMsgs"><div class="msg bot">Hi! 👋 Welcome to Art Tiling and Renovation. What do you need? Type: <br>1 - Free Quote<br>2 - Prices<br>3 - Services<br>4 - Talk to a person</div></div>
+  <div id="chatInput"><input id="chatText" placeholder="Type your message..."><button onclick="sendChat()">Send</button></div>
+</div>
+
+<script>
+function toggleChat(){let b=document.getElementById('chatBox');b.style.display=b.style.display==='block'?'none':'block'}
+function sendChat(){
+  let inp=document.getElementById('chatText');let t=inp.value.trim();if(!t)return;
+  let box=document.getElementById('chatMsgs');
+  box.innerHTML+='<div class="msg me">'+t+'</div>';inp.value='';
+  let low=t.toLowerCase();let reply="Thanks! For a fast free quote, please send your name, area, and what you need tiled. Or tap WhatsApp below and we will reply.";
+  if(low.includes('1')||low.includes('quote')) reply="Great! 👉 Click 'Get Free Quote' above or send us on WhatsApp: Your name, area, and room size. We will give you a free quote.";
+  if(low.includes('2')||low.includes('price')||low.includes('cost')) reply="Prices depend on tile size & area size. Most jobs are quoted FREE after we see photos / measurements. Send photos on WhatsApp for a quick price: +27 69 788 7676";
+  if(low.includes('3')||low.includes('service')) reply="We do: Floor Tiling, Bathroom Renovation, Kitchen Tiling, Full Renovation & Building. We handle everything start to finish.";
+  if(low.includes('4')||low.includes('person')||low.includes('human')) reply="No problem! Call us now on +27 69 788 7676 or tap WhatsApp — a real person will help you.";
+  setTimeout(()=>{box.innerHTML+='<div class="msg bot">'+reply+'</div>';box.scrollTop=box.scrollHeight},400);
+}
+function sendToWhatsApp(e){
+  e.preventDefault();
+  let n=document.getElementById('name').value;let p=document.getElementById('phone').value;let s=document.getElementById('service').value;let m=document.getElementById('msg').value;
+  let text="Hi Art Tiling and Renovation, I want a FREE quote.%0AName: "+encodeURIComponent(n)+"%0APhone: "+encodeURIComponent(p)+"%0AService: "+encodeURIComponent(s)+"%0ADetails: "+encodeURIComponent(m);
+  window.open("https://wa.me/27697887676?text="+text,"_blank");
+}
+</script>
+
+<footer>
+  <div class="foot">
+    <div><h3>ART TILING & RENOVATION</h3><p>Skilled tilers. Precision & care. We handle everything from start to finish, so you can enjoy your beautiful new space without any stress.</p><p style="margin-top:12px">⭐⭐⭐⭐⭐ Trusted Local Tilers</p></div>
+    <div><h3>Quick Links</h3><a href="#services">Services</a><a href="#work">Our Work</a><a href="#quote">Get Free Quote</a><a href="https://wa.me/27697887676">WhatsApp Us</a></div>
+    <div><h3>Contact Us</h3><a href="tel:+27697887676">📞 +27 69 788 7676</a><a href="https://wa.me/27697887676">💬 WhatsApp Business</a><p>🕐 Open Now<br>7:00 am – 6:00 pm<br>Mon – Sat</p></div>
+  </div>
+  <div class="bottom">© 2026 Art Tiling and Renovation. All Rights Reserved. | <a href="tel:+27697887676" style="color:#f5b301">Call: +27 69 788 7676</a> | Privacy Policy • Terms of Service<br><span style="color:#888">Website designed for Art Tiling and Renovation</span></div>
+</footer>
+
+</body>
+</html>
