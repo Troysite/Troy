@@ -14,7 +14,6 @@
   .logo span{color:#b8964a;display:block;font-size:9px;letter-spacing:3px;font-family:'Inter',sans-serif;font-weight:700;margin-top:4px}
   .top-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center}
   .nav-btn{padding:9px 15px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;background:#f3efe6;color:#111;border:1px solid #e8e0cc;white-space:nowrap}
-  .nav-btn.active{background:#111;color:#fff;border-color:#111}
   .nav-btn.gold{background:linear-gradient(180deg,#ffd66b,#c9a13a);color:#111;border:none;box-shadow:0 6px 15px rgba(201,161,58,.35)}
   .nav-btn.green{background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;border:none;box-shadow:0 6px 15px rgba(21,154,72,.35)}
   .top-contact{display:flex;gap:10px;align-items:center}
@@ -28,10 +27,9 @@
   .hero h1 em{color:#d8b96a;font-style:normal}
   .hero p{max-width:640px;margin:0 auto 26px;color:#e8e8e8;font-size:16px}
   .hero-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-  .btn{padding:16px 26px;border-radius:100px;text-decoration:none;font-weight:800;font-size:15px;display:inline-flex;align-items:center;gap:10px;transition:.2s}
+  .btn{padding:16px 26px;border-radius:100px;text-decoration:none;font-weight:800;font-size:15px;display:inline-flex;align-items:center;gap:10px}
   .btn-call{background:linear-gradient(180deg,#ffd66b,#c9a13a);color:#111;box-shadow:0 12px 28px rgba(201,161,58,.45),inset 0 1px 0 #fff}
   .btn-wa{background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;box-shadow:0 12px 28px rgba(21,154,72,.45),inset 0 1px 0 rgba(255,255,255,.4)}
-  .icon{width:20px;height:20px;flex-shrink:0}
   .section{padding:50px 20px;max-width:1050px;margin:auto;scroll-margin-top:110px}
   .eyebrow{color:#b8964a;font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase}
   .section h2{font-size:32px;line-height:1.2;margin:8px 0 10px}
@@ -45,15 +43,17 @@
   .trust{background:#111;color:#fff;border-radius:24px;padding:28px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:18px;text-align:center}
   .trust b{font-size:26px;display:block;color:#d8b96a}
   .trust span{font-size:13px;color:#ccc}
-  .gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:20px}
-  .gallery div{background:linear-gradient(145deg,#e9e4db,#fff);height:200px;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#888;font-weight:600;text-align:center;padding:16px;border:1px dashed #ccc}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .gallery figure{margin:0;border-radius:18px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.1);background:#fff}
+  .gallery img{width:100%;height:320px;object-fit:cover;display:block}
+  .gallery figcaption{padding:14px 16px;font-weight:700;font-size:14px}
+  .gallery figcaption span{display:block;font-weight:400;color:#777;font-size:12px;margin-top:2px}
   .about{background:#fff;border-radius:24px;padding:32px;box-shadow:0 12px 35px rgba(0,0,0,.07);display:grid;grid-template-columns:1.4fr .8fr;gap:24px;align-items:center}
   .about-box{background:#111;color:#fff;border-radius:18px;padding:24px;text-align:center}
   .about-box h3{color:#d8b96a;font-size:28px}
   form{background:#111;color:#fff;padding:30px;border-radius:24px;box-shadow:0 18px 40px rgba(0,0,0,.25)}
   form input,form select,form textarea{width:100%;padding:14px;margin:8px 0;border-radius:12px;border:1px solid #333;background:#1e1e1e;color:#fff}
-  form input::placeholder,form textarea::placeholder{color:#999}
-  form button{width:100%;padding:16px;background:linear-gradient(180deg,#ffd66b,#c9a13a);border:none;border-radius:100px;font-weight:800;font-size:16px;cursor:pointer;box-shadow:0 10px 25px rgba(201,161,58,.4)}
+  form button{width:100%;padding:16px;background:linear-gradient(180deg,#ffd66b,#c9a13a);border:none;border-radius:100px;font-weight:800;font-size:16px;cursor:pointer}
   #chatBtn{position:fixed;bottom:20px;right:20px;background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;border:none;padding:15px 20px;border-radius:100px;font-weight:800;cursor:pointer;box-shadow:0 12px 28px rgba(21,154,72,.45);z-index:99;display:flex;align-items:center;gap:9px}
   #chatBox{position:fixed;bottom:85px;right:20px;width:340px;max-width:92vw;background:#fff;border-radius:20px;box-shadow:0 18px 45px rgba(0,0,0,.25);overflow:hidden;display:none;z-index:99}
   #chatHead{background:#111;color:#fff;padding:16px}
@@ -61,7 +61,7 @@
   #chatHead span{font-size:12px;color:#d8b96a}
   #chatMsgs{padding:14px;height:240px;overflow:auto;font-size:14px;background:#faf9f7}
   .msg{margin:8px 0;padding:11px 13px;border-radius:14px;max-width:86%;line-height:1.45}
-  .bot{background:#fff;border:1px solid #eee;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+  .bot{background:#fff;border:1px solid #eee}
   .me{background:#111;color:#fff;margin-left:auto}
   #chatInput{display:flex;padding:10px;border-top:1px solid #eee;background:#fff}
   #chatInput input{flex:1;padding:11px;border:1px solid #ddd;border-radius:100px;outline:none}
@@ -73,11 +73,10 @@
   .foot p{font-size:14px}
   .bottom{max-width:1050px;margin:30px auto 0;border-top:1px solid #2a2a2a;padding-top:16px;text-align:center;font-size:12px}
   .bottom a{color:#d8b96a;text-decoration:none;font-weight:700}
-  @media(max-width:900px){.top-contact{display:none}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.top-nav::-webkit-scrollbar{display:none}.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:32px}.hero-btns{flex-direction:column}.btn{justify-content:center}}
+  @media(max-width:900px){.top-contact{display:none}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:32px}.hero-btns{flex-direction:column}.btn{justify-content:center}}
 </style>
 </head>
 <body>
-
 <header>
   <div class="logo">ART TILING <span>& RENOVATION • PRECISION • CARE • QUALITY</span></div>
   <div class="top-contact">
@@ -120,9 +119,12 @@
 
 <section class="section" id="work">
   <span class="eyebrow">Our Work</span>
-  <h2>Recent Projects</h2>
-  <p class="sub">Your pictures will go here — send logo + work photos and I will place them for you.</p>
-  <div class="gallery"><div><b style="color:#111">LOGO / PHOTO 1</b><span>Your Work Here</span></div><div><b style="color:#111">PHOTO 2</b><span>Your Work Here</span></div><div><b style="color:#111">PHOTO 3</b><span>Your Work Here</span></div></div>
+  <h2>Recent Projects — Herringbone Brick Patio</h2>
+  <p class="sub">Real work by Art Tiling and Renovation. Precision herringbone brick tiling, neat border, perfect finish.</p>
+  <div class="gallery">
+    <figure><img src="work-1.jpg" alt="Herringbone brick tiling work"><figcaption>Herringbone Patio — Project 1<span>Art Tiling and Renovation • Precision Work</span></figcaption></figure>
+    <figure><img src="work-2.jpg" alt="Herringbone brick tiling finished"><figcaption>Herringbone Patio — Project 2<span>Neat Border • Perfect Finish</span></figcaption></figure>
+  </div>
 </section>
 
 <section class="section" id="about">
