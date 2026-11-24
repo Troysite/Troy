@@ -7,11 +7,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#faf9f7}
+  body{font-family:'Inter',sans-serif;color:#1a1a1a;line-height:1.6;background:#faf9f7;scroll-behavior:smooth}
   h1,h2,h3{font-family:'Playfair Display',serif}
-  header{background:rgba(255,255,255,.95);backdrop-filter:blur(10px);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20;box-shadow:0 2px 20px rgba(0,0,0,.06)}
-  .logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-height:1;letter-spacing:.3px}
-  .logo span{color:#b8964a;display:block;font-size:10px;letter-spacing:3px;font-family:'Inter',sans-serif;font-weight:700;margin-top:4px}
+  header{background:rgba(255,255,255,.98);backdrop-filter:blur(10px);padding:14px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:30;box-shadow:0 2px 20px rgba(0,0,0,.06);flex-wrap:wrap;gap:10px}
+  .logo{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;line-height:1;letter-spacing:.3px}
+  .logo span{color:#b8964a;display:block;font-size:9px;letter-spacing:3px;font-family:'Inter',sans-serif;font-weight:700;margin-top:4px}
+  .top-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center;justify-content:center}
+  .nav-btn{padding:9px 15px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;background:#f3efe6;color:#111;border:1px solid #e8e0cc;white-space:nowrap}
+  .nav-btn.active{background:#111;color:#fff;border-color:#111}
+  .nav-btn.gold{background:linear-gradient(180deg,#ffd66b,#c9a13a);color:#111;border:none;box-shadow:0 6px 15px rgba(201,161,58,.35)}
+  .nav-btn.green{background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;border:none;box-shadow:0 6px 15px rgba(21,154,72,.35)}
   .top-contact{display:flex;gap:10px;align-items:center}
   .pill{padding:10px 16px;border-radius:100px;text-decoration:none;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px}
   .pill-call{background:#111;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.2)}
@@ -26,9 +31,8 @@
   .btn{padding:16px 26px;border-radius:100px;text-decoration:none;font-weight:800;font-size:15px;display:inline-flex;align-items:center;gap:10px;transition:.2s}
   .btn-call{background:linear-gradient(180deg,#ffd66b,#c9a13a);color:#111;box-shadow:0 12px 28px rgba(201,161,58,.45),inset 0 1px 0 #fff}
   .btn-wa{background:linear-gradient(180deg,#2ee06f,#159a48);color:#fff;box-shadow:0 12px 28px rgba(21,154,72,.45),inset 0 1px 0 rgba(255,255,255,.4)}
-  .btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
   .icon{width:20px;height:20px;flex-shrink:0}
-  .section{padding:50px 20px;max-width:1050px;margin:auto}
+  .section{padding:50px 20px;max-width:1050px;margin:auto;scroll-margin-top:110px}
   .eyebrow{color:#b8964a;font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase}
   .section h2{font-size:32px;line-height:1.2;margin:8px 0 10px}
   .section p.sub{color:#666;max-width:650px}
@@ -69,7 +73,7 @@
   .foot p{font-size:14px}
   .bottom{max-width:1050px;margin:30px auto 0;border-top:1px solid #2a2a2a;padding-top:16px;text-align:center;font-size:12px}
   .bottom a{color:#d8b96a;text-decoration:none;font-weight:700}
-  @media(max-width:750px){.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:32px}.top-contact{display:none}.hero-btns{flex-direction:column}.btn{justify-content:center}}
+  @media(max-width:900px){.top-contact{display:none}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.top-nav::-webkit-scrollbar{display:none}.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:32px}.hero-btns{flex-direction:column}.btn{justify-content:center}}
 </style>
 </head>
 <body>
@@ -77,9 +81,18 @@
 <header>
   <div class="logo">ART TILING <span>& RENOVATION • PRECISION • CARE • QUALITY</span></div>
   <div class="top-contact">
-    <a class="pill pill-call" href="tel:+27697887676"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg> +27 69 788 7676</a>
+    <a class="pill pill-call" href="tel:+27697887676">+27 69 788 7676</a>
     <a class="pill pill-wa" href="https://wa.me/27697887676?text=Hi%20Art%20Tiling%20and%20Renovation,%20I%20want%20a%20free%20quote" target="_blank">WhatsApp</a>
   </div>
+  <nav class="top-nav">
+    <a class="nav-btn" href="#services">Services</a>
+    <a class="nav-btn" href="#work">Our Work</a>
+    <a class="nav-btn" href="#about">About Us</a>
+    <a class="nav-btn" href="#contact">Contact / Details</a>
+    <a class="nav-btn gold" href="#quote">Free Quote Form</a>
+    <a class="nav-btn" href="tel:+27697887676">Call Now</a>
+    <a class="nav-btn green" href="https://wa.me/27697887676" target="_blank">WhatsApp</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -87,13 +100,13 @@
   <h1>Your New Tiles, Fitted Perfectly. <em>With Precision & Care.</em></h1>
   <p>Whether you're remodeling or building, our team of skilled tilers ensures your new tiles are fitted perfectly, with precision and care. We handle everything from start to finish, so you can sit back and enjoy your beautiful new space without any stress. Call Art Tiling and Renovation to get a free quote.</p>
   <div class="hero-btns">
-    <a class="btn btn-call" href="tel:+27697887676"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg> CALL NOW</a>
+    <a class="btn btn-call" href="tel:+27697887676">CALL NOW</a>
     <a class="btn btn-wa" href="https://wa.me/27697887676?text=Hi%20Art%20Tiling%20and%20Renovation,%20I%20want%20a%20free%20quote" target="_blank">WHATSAPP US</a>
   </div>
   <p style="margin-top:18px;font-size:13px;opacity:.8">Trusted Local Tilers • No Stress • Start to Finish Service</p>
 </section>
 
-<section class="section">
+<section class="section" id="services">
   <span class="eyebrow">What We Do</span>
   <h2>Complete Tiling & Renovation.<br>No Stress For You.</h2>
   <p class="sub">One team. From first measurement to final clean. You relax, we deliver.</p>
@@ -105,14 +118,14 @@
   <div class="trust" style="margin-top:20px"><div><b>100%</b><span>Precision & Care</span></div><div><b>Free</b><span>Quote, No Obligation</span></div><div><b>7am - 6pm</b><span>Open Daily</span></div><div><b>Start to Finish</b><span>We Handle Everything</span></div></div>
 </section>
 
-<section class="section">
+<section class="section" id="work">
   <span class="eyebrow">Our Work</span>
   <h2>Recent Projects</h2>
   <p class="sub">Your pictures will go here — send logo + work photos and I will place them for you.</p>
   <div class="gallery"><div><b style="color:#111">LOGO / PHOTO 1</b><span>Your Work Here</span></div><div><b style="color:#111">PHOTO 2</b><span>Your Work Here</span></div><div><b style="color:#111">PHOTO 3</b><span>Your Work Here</span></div></div>
 </section>
 
-<section class="section">
+<section class="section" id="about">
   <div class="about">
     <div><span class="eyebrow">About Us</span><h2>Art Tiling and Renovation</h2><p style="color:#555;margin-top:10px">Whether you're remodeling or building, our team of skilled tilers ensures your new tiles are fitted perfectly, with precision and care. We handle everything from start to finish, so you can sit back and enjoy your beautiful new space without any stress.</p><p style="margin-top:12px;font-weight:700">Call Art Tiling and Renovation to get a free quote today.</p></div>
     <div class="about-box"><p style="font-size:12px;letter-spacing:2px;color:#aaa">CALL US TODAY</p><h3>+27 69 788 7676</h3><p style="font-size:13px;color:#ccc;margin:8px 0 16px">Open Now • 7:00 am – 6:00 pm</p><a class="btn btn-call" href="tel:+27697887676" style="width:100%;justify-content:center">CALL NOW</a><a class="btn btn-wa" href="https://wa.me/27697887676" target="_blank" style="width:100%;justify-content:center;margin-top:10px">WHATSAPP</a></div>
@@ -160,10 +173,10 @@ function sendToWhatsApp(e){
 }
 </script>
 
-<footer>
+<footer id="contact">
   <div class="foot">
     <div><h3>ART TILING & RENOVATION</h3><p>Skilled tilers. Precision and care. We handle everything from start to finish, so you can enjoy your beautiful new space without any stress.</p><p style="margin-top:14px;color:#fff;font-weight:700">Trusted Local Tilers • 5-Star Service</p></div>
-    <div><h3>Quick Links</h3><a href="#">Services</a><a href="#">Our Work</a><a href="#quote">Get Free Quote</a><a href="https://wa.me/27697887676">WhatsApp Us</a></div>
+    <div><h3>Quick Links</h3><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About Us</a><a href="#quote">Get Free Quote</a><a href="https://wa.me/27697887676">WhatsApp Us</a></div>
     <div><h3>Contact Us</h3><a href="tel:+27697887676">+27 69 788 7676</a><a href="https://wa.me/27697887676">WhatsApp Business</a><p>Open Now<br>7:00 am – 6:00 pm<br>Mon – Sat</p></div>
   </div>
   <div class="bottom">© 2026 Art Tiling and Renovation. All Rights Reserved. | <a href="tel:+27697887676">Call: +27 69 788 7676</a> | Privacy Policy • Terms of Service</div>
