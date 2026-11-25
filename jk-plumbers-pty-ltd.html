@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JK Plumbers (Pty) Ltd | Plumber in Queensburgh, Durban | 4.7 Rated</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#F2F4F7;color:#111827;line-height:1.6}
+h1,h2,h3{font-family:'Archivo',sans-serif;letter-spacing:-.5px}
+a{text-decoration:none}
+.icon{width:18px;height:18px;vertical-align:-3px;fill:currentColor}
+.icon-lg{width:38px;height:38px;fill:#007BFF}
+.topbar{background:#000;color:#fff;padding:9px 20px;font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.topbar b{color:#2E9BFF}
+header{background:#0B1628;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 4px 20px rgba(0,0,0,.35)}
+.logo{font-size:28px;font-weight:900;line-height:1}
+.logo span{color:#007BFF}
+.logo small{display:block;font-size:9px;letter-spacing:3.5px;color:#9CA3AF;font-weight:700;margin-top:2px}
+nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+nav a{color:#D1D5DB;font-weight:600;font-size:13.5px;padding:8px 10px;border-radius:6px;display:flex;align-items:center;gap:6px}
+nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.btn{background:#007BFF;color:#fff;padding:11px 18px;border-radius:6px;font-weight:800;display:inline-flex;align-items:center;gap:8px;font-size:13px}
+.btn-green{background:#16A34A}
+.btn-white{background:#fff;color:#0B1628}
+.btn-outline{border:1.5px solid #fff;color:#fff;background:transparent}
+.hero{position:relative;min-height:640px;display:flex;align-items:center;padding:55px 20px;color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=2000&auto=format&fit=crop') center/cover;z-index:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,8,18,.96) 0%,rgba(3,8,18,.88) 48%,rgba(3,8,18,.35) 100%);z-index:1}
+.hero-inner{position:relative;z-index:2;max-width:1180px;margin:auto;display:flex;gap:35px;align-items:center;flex-wrap:wrap;width:100%}
+.hero-text{flex:1;min-width:300px;max-width:630px}
+.badge{background:#007BFF;color:#fff;padding:7px 13px;border-radius:4px;font-weight:800;font-size:12px;letter-spacing:1px;display:inline-block}
+.hero h1{font-size:56px;line-height:.95;margin:18px 0}
+.hero h1 span{color:#2E9BFF}
+.hero p{color:#D1D5DB;font-size:17px;margin-bottom:10px}
+.rating{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);display:inline-flex;gap:8px;align-items:center;padding:9px 13px;border-radius:999px;font-size:13px;font-weight:700;margin:12px 0 18px}
+.hero-btns{display:flex;gap:11px;flex-wrap:wrap}
+.trust{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;font-size:13px;font-weight:600}
+.trust span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:8px 12px;border-radius:6px;display:flex;align-items:center;gap:6px}
+.form-card{background:#fff;color:#111827;border-radius:14px;padding:24px;width:390px;box-shadow:0 25px 50px rgba(0,0,0,.45)}
+.form-card h3{font-size:21px}
+.form-card p{font-size:13px;color:#6B7280;margin:4px 0 12px}
+.form-card input,.form-card select,.form-card textarea{width:100%;padding:12px;margin:7px 0;border:1.5px solid #E5E7EB;border-radius:8px;font-size:14px;font-family:'Inter',sans-serif}
+.form-card button{width:100%;background:#16A34A;color:#fff;border:0;padding:14px;border-radius:8px;font-weight:800;font-size:15px;cursor:pointer;display:flex;justify-content:center;gap:8px;align-items:center}
+.section{max-width:1180px;margin:auto;padding:55px 20px}
+.section h2{font-size:36px;text-align:center;color:#0B1628}
+.section p.sub{text-align:center;color:#6B7280;margin:8px 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:#fff;padding:24px;border-radius:12px;border-top:4px solid #007BFF;box-shadow:0 5px 20px rgba(0,0,0,.06)}
+.card h3{margin:10px 0 6px;font-size:18px}
+.card p{color:#6B7280;font-size:14px}
+.card b{color:#007BFF}
+.dark{background:#0B1628;color:#fff}
+.dark h2{color:#fff}
+.dark .card{background:#16233D;color:#fff;border-top-color:#2E9BFF}
+.dark .card p{color:#CBD5E1}
+.hours-box{background:#fff;border-radius:14px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.hours-row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid #F1F5F9;font-size:14px;font-weight:600}
+.hours-row:last-child{border:0}
+.review{background:#fff;padding:22px;border-radius:12px;border-left:4px solid #007BFF}
+.stars{color:#F59E0B;letter-spacing:2px}
+.areas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.areas span{background:#fff;border:1px solid #E5E7EB;padding:10px 18px;border-radius:999px;font-weight:600;font-size:14px}
+.contact-box{background:#fff;border-radius:14px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.float-btns{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:10px;z-index:100;align-items:flex-end}
+.float-call{background:#007BFF;color:#fff;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 25px rgba(0,0,0,.3);display:flex;gap:8px;align-items:center}
+.float-wa{background:#16A34A;color:#fff;padding:14px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 25px rgba(0,0,0,.3);display:flex;gap:8px;align-items:center}
+footer{background:#050A12;color:#9CA3AF;text-align:center;padding:24px;font-size:13px}
+@media(max-width:850px){nav{display:none}.hero h1{font-size:38px}.contact-box{grid-template-columns:1fr}.form-card{width:100%}}
+#chatBtn{position:fixed;bottom:20px;left:20px;background:#0B1628;color:#fff;border:2px solid #007BFF;padding:14px 18px;border-radius:999px;font-weight:800;cursor:pointer;z-index:100;box-shadow:0 10px 25px rgba(0,0,0,.3);display:flex;gap:8px;align-items:center}
+#chatBox{display:none;position:fixed;bottom:85px;left:20px;width:350px;max-width:calc(100vw - 40px);background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35);z-index:100}
+.chat-head{background:#0B1628;color:#fff;padding:14px;display:flex;justify-content:space-between;align-items:center}
+.chat-head span{font-size:12px;color:#2E9BFF}
+#chatMsgs{height:270px;overflow-y:auto;padding:14px;background:#F9FAFB;display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 12px;border-radius:12px;font-size:13px;max-width:88%}
+.msg.bot{background:#fff;border:1px solid #E5E7EB;align-self:flex-start}
+.msg.user{background:#007BFF;color:#fff;align-self:flex-end}
+.quick{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 10px;background:#F9FAFB}
+.quick button{background:#fff;border:1px solid #D1D5DB;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer}
+.chat-input{display:flex;padding:10px;gap:8px;border-top:1px solid #E5E7EB}
+.chat-input input{flex:1;padding:11px;border:1px solid #E5E7EB;border-radius:999px}
+.chat-input button{background:#007BFF;color:#fff;border:0;padding:11px 16px;border-radius:999px;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+
+<!-- SVG ICONS DEFINITION -->
+<svg style="display:none"><symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol><symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1.1.1-1.8-.1-2.1-.7-3.9-2.2-5-4-.3-.5-.9-1.6-.9-2.1 0-.5.3-1 .4-1.2.1-.2.3-.3.4-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.3-.1.5.4.7 1 1.4 1.8 1.8.2.1.4.1.5-.1l.6-.7c.2-.2.4-.3.6-.2l2 1c.3.1.5.3.5.6z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.6-3.5 2L9 13l3-1.7V7h1.5v5.6z"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13l-3-3 3.7-3.7z"/></symbol><symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 2s6 6.6 6 11a6 6 0 1 1-12 0c0-4.4 6-11 6-11z"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-5h-2V9h2V9z"/></symbol><symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm0 10.2-2.5-2.5-1.4 1.4L12 14l6-6-1.4-1.4L12 11.2z"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17l-6.1 3.6 1.4-6.8L2.2 9.1l6.9-.8L12 2z"/></symbol></svg>
+
+<div class="topbar"><span><svg class="icon"><use href="#i-pin"/></svg> 42 Kemp Pl, Queensburgh, Durban, 4093</span><span><svg class="icon"><use href="#i-star"/></svg> 4.7 Rated • 16 Google Reviews</span><span><svg class="icon"><use href="#i-phone"/></svg> <b>083 230 4725</b></span></div>
+
+<header>
+<div class="logo">JK <span>PLUMBERS</span><small>(PTY) LTD • DOMESTIC & INDUSTRIAL</small></div>
+<nav>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#hours">Hours</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a class="btn" href="tel:0832304725"><svg class="icon"><use href="#i-phone"/></svg> CALL NOW</a>
+<a class="btn btn-green" href="https://wa.me/27832304725?text=Hi%20JK%20Plumbers%2C%20I%20need%20a%20plumber"><svg class="icon"><use href="#i-wa"/></svg> WHATSAPP</a>
+<a class="btn btn-white" href="#quote">GET QUOTE</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-text">
+<span class="badge">TRUSTED PLUMBER IN QUEENSBURGH • DURBAN</span>
+<h1>DOMESTIC &<br><span>INDUSTRIAL</span><br>PLUMBING SERVICES</h1>
+<p>Professional, fast & affordable plumbers. Burst pipes, geysers, blocked drains & bathroom renovations — fixed right, first time.</p>
+<div class="rating"><span style="color:#F59E0B">★★★★★</span><span>4.7 / 5.0</span><span style="color:#9CA3AF">| 16 Google Reviews</span></div>
+<div class="hero-btns">
+<a class="btn" href="tel:0832304725"><svg class="icon"><use href="#i-phone"/></svg> CALL 083 230 4725</a>
+<a class="btn btn-green" href="https://wa.me/27832304725?text=Hi%20JK%20Plumbers%2C%20I%20need%20a%20plumber"><svg class="icon"><use href="#i-wa"/></svg> WHATSAPP US</a>
+<a class="btn btn-outline" href="#services">VIEW SERVICES</a>
+</div>
+<div class="trust"><span><svg class="icon"><use href="#i-check"/></svg> Same Day Service</span><span><svg class="icon"><use href="#i-check"/></svg> Upfront Pricing</span><span><svg class="icon"><use href="#i-check"/></svg> Guaranteed Work</span><span><svg class="icon"><use href="#i-check"/></svg> 4.7 Rated</span></div>
+</div>
+
+<div class="form-card" id="quote">
+<h3>Get Your Free Quote</h3>
+<p>Fill in — we reply on WhatsApp in minutes.</p>
+<input id="name" placeholder="Your Full Name *">
+<input id="phone" placeholder="Phone / WhatsApp *">
+<select id="service"><option>Geyser Installation / Repair</option><option>Burst Pipe / Leak Detection</option><option>Blocked Drain / Toilet</option><option>Bathroom Renovation</option><option>New Installation</option><option>Industrial Plumbing</option><option>Other</option></select>
+<input id="area" placeholder="Your Area e.g. Queensburgh">
+<textarea id="msg" placeholder="Describe the problem..."></textarea>
+<button onclick="sendQuote()"><svg class="icon"><use href="#i-wa"/></svg> GET QUOTE ON WHATSAPP</button>
+<p style="text-align:center">Free quote • No obligation • Fast response</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2>OUR SERVICES</h2><p class="sub">Complete plumbing solutions — for homes, businesses & industries.</p>
+<div class="grid">
+<div class="card"><svg class="icon-lg"><use href="#i-bolt"/></svg><h3>Geyser Installation & Repair</h3><p>New geysers, elements, thermostats, leaks & no hot water. Fixed same day.</p><br><b>From R850</b></div>
+<div class="card"><svg class="icon-lg"><use href="#i-drop"/></svg><h3>Burst Pipes & Leak Detection</h3><p>Hidden leak detection without unnecessary damage. Emergency repairs.</p><br><b>Emergency Service</b></div>
+<div class="card"><svg class="icon-lg"><use href="#i-wrench"/></svg><h3>Blocked Drains & Toilets</h3><p>Blocked drains, toilets, sinks & sewer lines unblocked fast.</p><br><b>From R450</b></div>
+<div class="card"><svg class="icon-lg"><use href="#i-wrench"/></svg><h3>Bathroom Renovations</h3><p>Full renovations — tiling, toilets, showers, basins, taps & piping.</p><br><b>Free Site Visit</b></div>
+<div class="card"><svg class="icon-lg"><use href="#i-shield"/></svg><h3>New Installations</h3><p>New houses, extensions, kitchens & bathrooms. Full plumbing done right.</p><br><b>Free Quotation</b></div>
+<div class="card"><svg class="icon-lg"><use href="#i-bolt"/></svg><h3>Industrial Plumbing</h3><p>Factories, schools, offices & complexes. Maintenance contracts available.</p><br><b>For Business</b></div>
+</div>
+</section>
+
+<section class="section dark" id="why">
+<h2>WHY CHOOSE JK PLUMBERS?</h2><p class="sub" style="color:#9CA3AF">Professional. Reliable. Affordable. Rated 4.7 on Google.</p>
+<div class="grid">
+<div class="card"><h3>FAST RESPONSE</h3><p>Quick response in Queensburgh & Durban. We value your time.</p></div>
+<div class="card"><h3>FAIR PRICING</h3><p>Upfront quote before we start. No hidden costs, no surprises.</p></div>
+<div class="card"><h3>GUARANTEED WORK</h3><p>All work guaranteed. If it leaks again, we come back and fix it.</p></div>
+<div class="card"><h3>QUALIFIED TEAM</h3><p>Experienced, professional & trusted plumbers. Clean work, every time.</p></div>
+</div>
+</section>
+
+<section class="section" id="hours">
+<h2>OPERATING HOURS</h2><p class="sub">Visit us or call us during working hours</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+<div class="hours-box">
+<div class="hours-row"><span>Monday</span><span>7:30 AM – 4:30 PM</span></div>
+<div class="hours-row"><span>Tuesday</span><span>7:30 AM – 4:30 PM</span></div>
+<div class="hours-row"><span>Wednesday</span><span>7:30 AM – 4:30 PM</span></div>
+<div class="hours-row"><span>Thursday</span><span>7:30 AM – 4:30 PM</span></div>
+<div class="hours-row"><span>Friday</span><span><b>7:30 AM – 4:30 PM</b></span></div>
+<div class="hours-row"><span>Saturday</span><span>Closed / By Appointment</span></div>
+<div class="hours-row"><span>Sunday</span><span>Closed / Emergency Only</span></div>
+</div>
+<div style="background:#0B1628;color:#fff;padding:24px;border-radius:14px">
+<h3 style="color:#fff">NEED US AFTER HOURS?</h3>
+<p style="color:#CBD5E1;font-size:14px;margin:8px 0">For emergencies, WhatsApp us anytime. We will respond as soon as possible.</p>
+<a href="tel:0832304725" style="display:flex;justify-content:center;gap:8px;align-items:center;background:#007BFF;color:#fff;text-align:center;padding:14px;border-radius:8px;font-weight:800;margin-top:14px"><svg class="icon"><use href="#i-phone"/></svg> CALL 083 230 4725</a>
+<a href="https://wa.me/27832304725" style="display:flex;justify-content:center;gap:8px;align-items:center;background:#16A34A;color:#fff;text-align:center;padding:14px;border-radius:8px;font-weight:800;margin-top:10px"><svg class="icon"><use href="#i-wa"/></svg> WHATSAPP US</a>
+<p style="text-align:center;font-size:13px;margin-top:12px;color:#9CA3AF">42 Kemp Pl, Queensburgh, Durban, 4093</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="reviews">
+<h2>WHAT CUSTOMERS SAY</h2><p class="sub">Rated 4.7 on Google • 16 Reviews • Trusted in Durban</p>
+<div class="grid">
+<div class="review"><div class="stars">★★★★★</div><p>"Professional and fast. Fixed my burst pipe same day. Highly recommend JK Plumbers!"</p><br><b>- Google Review • Queensburgh</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>"Best plumbers in the area. Fixed my geyser and price was fair. Clean work."</p><br><b>- Google Review • Durban</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>"They renovated my bathroom. Very professional team, on time and reliable."</p><br><b>- Google Review • Queensburgh</b></div>
+</div>
+</section>
+
+<section class="section" id="areas">
+<h2>AREAS WE SERVE</h2><p class="sub">Serving Queensburgh & Greater Durban</p>
+<div class="areas"><span>Queensburgh</span><span>Durban</span><span>Malvern</span><span>Chatsworth</span><span>Umbilo</span><span>Glenwood</span><span>Westville</span><span>Pinetown</span></div>
+</section>
+
+<section class="section" id="contact">
+<div class="contact-box">
+<div>
+<h2 style="text-align:left">NEED A PLUMBER NOW?</h2>
+<p style="color:#6B7280;margin:12px 0">Call or WhatsApp us now. We are ready to help.</p>
+<p><b>083 230 4725</b><br><b>42 Kemp Pl, Queensburgh, Durban, 4093</b><br><b>Mon - Fri: 7:30 AM – 4:30 PM</b><br><b>4.7 Rated on Google</b></p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+<a class="btn" href="tel:0832304725"><svg class="icon"><use href="#i-phone"/></svg> CALL NOW</a>
+<a class="btn btn-green" href="https://wa.me/27832304725"><svg class="icon"><use href="#i-wa"/></svg> WHATSAPP</a>
+<a class="btn" style="background:#111827" href="https://www.google.com/maps/search/?api=1&query=JK+Plumbers+42+Kemp+Pl+Queensburgh+Durban"><svg class="icon"><use href="#i-pin"/></svg> GET DIRECTIONS</a>
+</div>
+</div>
+<div style="background:#0B1628;color:#fff;padding:22px;border-radius:12px">
+<h3 style="color:#fff">EMERGENCY? DON'T WAIT</h3><p style="color:#CBD5E1;font-size:14px;margin:8px 0">Burst pipe? Flooding? Geyser leaking?</p>
+<a href="tel:0832304725" style="display:flex;justify-content:center;gap:8px;align-items:center;background:#007BFF;color:#fff;text-align:center;padding:14px;border-radius:8px;font-weight:800;margin-top:12px"><svg class="icon"><use href="#i-phone"/></svg> CALL 083 230 4725</a>
+<p style="text-align:center;font-size:13px;margin-top:10px;color:#9CA3AF">Mon - Fri: 7:30 AM – 4:30 PM</p>
+</div>
+</div>
+</section>
+
+<div class="float-btns">
+<a class="float-call" href="tel:0832304725"><svg class="icon"><use href="#i-phone"/></svg> Call</a>
+<a class="float-wa" href="https://wa.me/27832304725"><svg class="icon"><use href="#i-wa"/></svg> WhatsApp</a>
+</div>
+
+<button id="chatBtn" onclick="toggleChat()"><svg class="icon"><use href="#i-chat"/></svg> JK Assistant • Online</button>
+<div id="chatBox">
+<div class="chat-head"><div><b>JK Plumbers Assistant</b><br><span>Online • Replies instantly</span></div><span onclick="toggleChat()" style="cursor:pointer;font-size:20px">X</span></div>
+<div id="chatMsgs"><div class="msg bot">Hi! I'm the JK Plumbers assistant in Queensburgh. Ask me about prices, geysers, blocked drains, hours or directions.</div></div>
+<div class="quick">
+<button onclick="quickAsk('I need a plumber urgently')">Urgent Plumber</button>
+<button onclick="quickAsk('How much is a geyser?')">Geyser Price</button>
+<button onclick="quickAsk('How much to unblock a drain?')">Blocked Drain</button>
+<button onclick="quickAsk('What are your hours?')">Hours</button>
+</div>
+<div class="chat-input"><input id="chatInput" placeholder="Type your question..." onkeypress="if(event.key==='Enter')sendChat()"><button onclick="sendChat()">Send</button></div>
+</div>
+
+<footer>© 2026 JK PLUMBERS (PTY) LTD • Plumber in Queensburgh, Durban • 4.7 Rated<br>083 230 4725 • 42 Kemp Pl, Queensburgh, Durban, 4093 • Mon - Fri: 7:30 AM – 4:30 PM</footer>
+
+<script>
+function sendQuote(){
+let n=document.getElementById('name').value;
+let p=document.getElementById('phone').value;
+let s=document.getElementById('service').value;
+let a=document.getElementById('area').value;
+let m=document.getElementById('msg').value;
+if(!n||!p){alert('Please add your name and phone number');return;}
+let text=`Hi JK Plumbers, I need a quote:%0A%0AName: ${n}%0APhone: ${p}%0AService: ${s}%0AArea: ${a}%0AProblem: ${m}`;
+window.open(`https://wa.me/27832304725?text=${text}`,'_blank');
+}
+function toggleChat(){let b=document.getElementById('chatBox');b.style.display=b.style.display==='block'?'none':'block';}
+function quickAsk(t){addMsg(t,'user');setTimeout(()=>botReply(t),500);}
+function sendChat(){let i=document.getElementById('chatInput');let t=i.value.trim();if(!t)return;addMsg(t,'user');i.value='';setTimeout(()=>botReply(t),500);}
+function addMsg(t,who){let d=document.getElementById('chatMsgs');let div=document.createElement('div');div.className='msg '+who;div.innerHTML=t;d.appendChild(div);d.scrollTop=d.scrollHeight;}
+function botReply(q){
+let l=q.toLowerCase();let r="";
+if(l.includes('urgent')||l.includes('emergency')||l.includes('burst')||l.includes('flooding')) r="For emergencies, call us NOW on <b>083 230 4725</b> — we are in Queensburgh, Durban. Or click WhatsApp and we will help you now.";
+else if(l.includes('geyser')) r="<b>Geyser:</b> Repair from R850, new installation quoted free on site. Is it leaking, no hot water, or tripping power? Tell me and I will give you a better estimate.";
+else if(l.includes('drain')||l.includes('blocked')||l.includes('toilet')) r="<b>Blocked drain/toilet:</b> From R450. We unblock same day in Queensburgh & Durban. What area are you in?";
+else if(l.includes('price')||l.includes('cost')||l.includes('how much')) r="Prices: Blocked drain from R450, Geyser from R850, Leak detection quoted free. For exact price, send your area + problem on WhatsApp: <b>083 230 4725</b>";
+else if(l.includes('hour')||l.includes('open')||l.includes('close')) r="<b>We are open Mon - Fri: 7:30 AM – 4:30 PM.</b> Friday also 7:30 AM – 4:30 PM. For emergencies, WhatsApp us anytime.";
+else if(l.includes('area')||l.includes('where')||l.includes('cover')||l.includes('address')||l.includes('location')||l.includes('direction')) r="We are at <b>42 Kemp Pl, Queensburgh, Durban, 4093</b>. We cover Queensburgh, Malvern, Chatsworth, Umbilo, Glenwood, Westville & Pinetown.";
+else if(l.includes('bathroom')||l.includes('renovation')) r="Bathroom renovations — we do full makeovers. We offer a FREE site visit and quotation. Want me to book you one?";
+else if(l.includes('hello')||l.includes('hi')) r="Hi! How can I help? Do you need a plumber urgently, a geyser, or a blocked drain?";
+else r="Thanks! For fast help, call <b>083 230 4725</b> or WhatsApp us. Tell me — is it a geyser, burst pipe, blocked drain or renovation? I will help you right away.";
+addMsg(r,'bot');
+}
+</script>
+</body>
+</html>
