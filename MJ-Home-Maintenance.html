@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MJ Home Maintenance | Painting, Renovation & Repairs | Athlone, Cape Town</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
   :root{--blue:#1E4A7A;--teal:#17889A;--ink:#16222E;--muted:#5E6B76;--bg:#F7F5F1;--line:#E8E2D8}
-  body{font-family:'Inter',sans-serif;color:var(--ink);line-height:1.65;background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{font-family:'Playfair Display',serif;letter-spacing:-.2px}
+  body{font-family:'Inter',Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--bg);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Inter',Arial,sans-serif;font-weight:800;letter-spacing:-.5px}
   @keyframes logoFade{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
   header{background:#FFFFFF;border-bottom:1px solid var(--line);padding:10px 22px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:30;flex-wrap:wrap;gap:12px}
   .logo-wrap{display:flex;align-items:center;gap:16px;animation:logoFade 1.1s ease both;min-height:88px}
   .logo-img{height:88px;width:auto;max-width:260px;object-fit:contain;display:block;background:transparent;border:none;outline:none;box-shadow:none;border-radius:0}
   .logo-text{line-height:1.05}
-  .logo-text b{font-family:'Playfair Display',serif;font-size:23px;letter-spacing:.2px}
+  .logo-text b{font-family:'Inter',Arial,sans-serif;font-weight:900;font-size:23px;letter-spacing:.2px}
   .logo-text span{display:block;font-size:9.5px;letter-spacing:3.2px;font-weight:800;color:var(--teal);margin-top:5px}
   .top-nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
   .nav-btn{padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:700;font-size:13px;color:var(--ink);background:#F1EDE5;border:1px solid var(--line)}
@@ -51,6 +51,14 @@
   .about{background:#fff;border-radius:24px;padding:34px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(0,0,0,.06);display:grid;grid-template-columns:1.4fr .85fr;gap:26px;align-items:center}
   .about-box{background:var(--ink);color:#fff;border-radius:18px;padding:26px;text-align:center}
   .about-box h3{color:#9ED4DD;font-size:26px}
+  /* QUOTE FORM */
+  .quote-box{background:#fff;border-radius:24px;padding:32px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(0,0,0,.06)}
+  .quote-box label{display:block;font-weight:700;font-size:13.5px;margin:16px 0 6px}
+  .quote-box input,.quote-box select,.quote-box textarea{width:100%;padding:14px 15px;border:1px solid #D8D0C2;border-radius:12px;font-family:'Inter',Arial,sans-serif;font-size:15px;background:#FBFAF8;outline:none}
+  .quote-box input:focus,.quote-box select:focus,.quote-box textarea:focus{border-color:var(--teal);background:#fff}
+  .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  .check{display:flex;gap:10px;align-items:center;background:#F7F5F1;border:1px solid var(--line);border-radius:12px;padding:12px 13px;font-size:14px;font-weight:600;cursor:pointer}
+  .check input{width:18px;height:18px;accent-color:var(--teal)}
   footer{background:#101A23;color:#AEBBC5;padding:48px 20px 20px}
   .foot{max-width:1080px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
   .foot h3{color:#fff;margin-bottom:12px;font-size:18px}
@@ -58,7 +66,7 @@
   .foot p{font-size:14px}
   .bottom{max-width:1080px;margin:30px auto 0;border-top:1px solid #26333F;padding-top:16px;text-align:center;font-size:12px}
   .bottom a{color:#9ED4DD;text-decoration:none;font-weight:700}
-  @media(max-width:900px){.logo-img{height:68px;max-width:190px}.logo-text b{font-size:19px}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.cards,.gallery,.trust,.foot,.about{grid-template-columns:1fr}.hero h1{font-size:33px}.hero-btns{flex-direction:column}.btn-3d{width:100%}}
+  @media(max-width:900px){.logo-img{height:68px;max-width:190px}.logo-text b{font-size:19px}.top-nav{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:4px}.cards,.gallery,.trust,.foot,.about,.services-grid{grid-template-columns:1fr}.hero h1{font-size:33px}.hero-btns{flex-direction:column}.btn-3d{width:100%}}
 </style>
 </head>
 <body>
@@ -70,6 +78,7 @@
   <nav class="top-nav">
     <a class="nav-btn" href="#services">Services</a>
     <a class="nav-btn" href="#work">Our Work</a>
+    <a class="nav-btn" href="#quote">Get Quote</a>
     <a class="nav-btn" href="#about">About Us</a>
     <a class="nav-btn" href="tel:+27733858300" style="background:var(--blue);color:#fff;border:none">Call Now</a>
   </nav>
@@ -81,7 +90,7 @@
   <p>Painting, renovation and repairs — handled from start to finish. One trusted team, one perfect finish, no stress for you.</p>
   <div class="hero-btns">
     <a class="btn-3d btn-blue" href="tel:+27733858300">CALL NOW</a>
-    <a class="btn-3d btn-teal" href="https://wa.me/27733858300?text=Hi%20MJ%20Home%20Maintenance,%20I%20want%20a%20free%20quote" target="_blank">WHATSAPP US</a>
+    <a class="btn-3d btn-teal" href="#quote">GET FREE QUOTE</a>
   </div>
   <p class="hero-meta">Athlone, Cape Town, 7760 • Open 7:00 am – 6:00 pm • Trusted Local Team</p>
 </section>
@@ -112,6 +121,50 @@
   </div>
 </section>
 
+<section class="section" id="quote">
+  <span class="eyebrow">Get A Free Quote</span>
+  <h2>Request Your Free Quote</h2>
+  <p class="sub">Fill in this form. Choose the services you want. It will open WhatsApp with everything already written — just press Send.</p>
+  <div class="quote-box" style="margin-top:24px">
+    <form onsubmit="sendQuote(event)">
+      <label>Your Full Name *</label>
+      <input type="text" id="qName" placeholder="e.g. John Smith" required>
+      <label>Your Phone / WhatsApp Number *</label>
+      <input type="tel" id="qPhone" placeholder="e.g. 073 123 4567" required>
+      <label>Area / Address</label>
+      <input type="text" id="qArea" placeholder="e.g. Athlone, Cape Town">
+      <label>What services do you need? Tick all that apply *</label>
+      <div class="services-grid">
+        <label class="check"><input type="checkbox" name="service" value="Painting - Interior"> Painting - Interior</label>
+        <label class="check"><input type="checkbox" name="service" value="Painting - Exterior"> Painting - Exterior</label>
+        <label class="check"><input type="checkbox" name="service" value="Renovation - Bathroom"> Renovation - Bathroom</label>
+        <label class="check"><input type="checkbox" name="service" value="Renovation - Kitchen"> Renovation - Kitchen</label>
+        <label class="check"><input type="checkbox" name="service" value="Paving"> Paving</label>
+        <label class="check"><input type="checkbox" name="service" value="Repairs & Maintenance"> Repairs & Maintenance</label>
+        <label class="check"><input type="checkbox" name="service" value="Damp / Cracks Repair"> Damp / Cracks Repair</label>
+        <label class="check"><input type="checkbox" name="service" value="Full Home Renovation"> Full Home Renovation</label>
+      </div>
+      <label>What type of quote do you want?</label>
+      <select id="qType">
+        <option>Full Quote - Visit + Full Price</option>
+        <option>Quick Estimate - WhatsApp Estimate Only</option>
+        <option>Just Asking - Need Advice First</option>
+      </select>
+      <label>When do you want the work done?</label>
+      <select id="qWhen">
+        <option>As soon as possible</option>
+        <option>This week</option>
+        <option>This month</option>
+        <option>Not urgent - Just planning</option>
+      </select>
+      <label>Tell us more about the job</label>
+      <textarea id="qDetails" rows="4" placeholder="e.g. Paint 3 bedrooms + lounge, house is 2 bedrooms, etc."></textarea>
+      <button type="submit" class="btn-3d btn-teal" style="width:100%;margin-top:22px">SEND QUOTE TO WHATSAPP</button>
+      <p style="text-align:center;font-size:12.5px;color:#777;margin-top:12px">This opens WhatsApp with your full quote request ready to send to MJ.</p>
+    </form>
+  </div>
+</section>
+
 <section class="section" id="about">
   <div class="about">
     <div><span class="eyebrow">About Us</span><h2>MJ Home Maintenance</h2><p style="color:#5E6B76;margin-top:10px">Whether you are painting, repairing or renovating, our team ensures your work is done perfectly, with precision and care. We handle everything from start to finish, so you can sit back and enjoy your beautiful new space without any stress.</p><p style="margin-top:12px;font-weight:700">Call MJ Home Maintenance to get a free quote today.</p><p style="margin-top:10px;color:#5E6B76">Athlone, Cape Town, 7760, South Africa</p></div>
@@ -122,10 +175,34 @@
 <footer>
   <div class="foot">
     <div><h3>MJ HOME MAINTENANCE</h3><p>Skilled painters and renovators. Precision and care. We handle everything from start to finish, so you can enjoy your beautiful new space without any stress.</p><p style="margin-top:14px;color:#fff;font-weight:700">Trusted Local Team • High Standard Work</p></div>
-    <div><h3>Quick Links</h3><a href="#services">Services</a><a href="#work">Our Work</a><a href="#about">About Us</a><a href="https://wa.me/27733858300">WhatsApp Us</a></div>
+    <div><h3>Quick Links</h3><a href="#services">Services</a><a href="#work">Our Work</a><a href="#quote">Get Free Quote</a><a href="#about">About Us</a><a href="https://wa.me/27733858300">WhatsApp Us</a></div>
     <div><h3>Contact Us</h3><a href="tel:+27733858300">073 385 8300</a><a href="https://wa.me/27733858300">WhatsApp: 073 385 8300</a><p>Athlone, Cape Town,<br>7760, South Africa<br>Open Now • 7:00 am – 6:00 pm<br>Mon – Sat</p></div>
   </div>
   <div class="bottom">© 2026 MJ Home Maintenance. All Rights Reserved. | <a href="tel:+27733858300">Call: 073 385 8300</a> | Athlone, Cape Town</div>
 </footer>
+<script>
+function sendQuote(e){
+  e.preventDefault();
+  var name=document.getElementById('qName').value;
+  var phone=document.getElementById('qPhone').value;
+  var area=document.getElementById('qArea').value;
+  var type=document.getElementById('qType').value;
+  var when=document.getElementById('qWhen').value;
+  var details=document.getElementById('qDetails').value;
+  var checked=document.querySelectorAll('input[name="service"]:checked');
+  var services=[];
+  checked.forEach(function(c){services.push(c.value)});
+  if(services.length===0){alert('Please choose at least 1 service');return;}
+  var msg="Hi MJ Home Maintenance, I want a FREE QUOTE%0A%0A";
+  msg+="Name: "+name+"%0A";
+  msg+="Phone: "+phone+"%0A";
+  msg+="Area: "+area+"%0A";
+  msg+="Quote Type: "+type+"%0A";
+  msg+="When: "+when+"%0A";
+  msg+="Services Needed: "+services.join(", ")+"%0A";
+  msg+="Details: "+details;
+  window.open("https://wa.me/27733858300?text="+encodeURIComponent(decodeURIComponent(msg)),"_blank");
+}
+</script>
 </body>
 </html>
