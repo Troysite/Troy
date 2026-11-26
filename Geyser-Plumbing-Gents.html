@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geyser Plumbing Gents & Electrical | Thulani, Soweto | Open 24 Hours</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#F4F6F9;color:#16233F;line-height:1.7}
+.topbar{background:#0A1F4D;color:#FFC83D;text-align:center;padding:9px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
+header{background:linear-gradient(180deg,#0A1F4D,#0B2F6B);color:white;text-align:center;padding:26px 18px 38px}
+.logo-img{width:170px;height:170px;object-fit:cover;border-radius:22px;border:3px solid #FFC83D;box-shadow:0 10px 30px rgba(0,0,0,.35);background:white}
+.brand{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:1px;margin-top:14px;line-height:1.1}
+.brand span{color:#FFC83D}
+.tagline{color:#FFC83D;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;margin-top:8px;font-weight:600}
+.badges{margin-top:18px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.badge{border:1px solid rgba(255,200,61,.5);padding:8px 16px;border-radius:100px;font-size:13px;background:rgba(255,255,255,.06)}
+.badge b{color:#FFC83D}
+.hero{background:white;max-width:960px;margin:-20px auto 0;border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,.10);padding:36px 22px;text-align:center;position:relative}
+.hero h1{font-family:'Playfair Display',serif;font-size:33px;color:#0A1F4D;line-height:1.2}
+.hero p{color:#5A657E;max-width:680px;margin:14px auto;font-size:15.5px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.btn{padding:14px 28px;border-radius:100px;text-decoration:none;font-weight:700;font-size:14px}
+.btn-gold{background:#FFC83D;color:#0A1F4D}
+.btn-navy{background:#0A1F4D;color:white}
+.btn-red{background:#D7263D;color:white}
+.section{max-width:960px;margin:auto;padding:34px 18px 8px}
+.label{color:#D89E00;font-size:12px;letter-spacing:2.5px;text-transform:uppercase;font-weight:800}
+.section h2{font-family:'Playfair Display',serif;font-size:29px;color:#0A1F4D;margin:8px 0 8px}
+.sub{color:#5A657E;font-size:15px;margin-bottom:20px;max-width:700px}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+@media(max-width:700px){.grid{grid-template-columns:1fr 1fr}.hero h1{font-size:26px}.brand{font-size:26px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+.card{background:white;padding:22px;border-radius:16px;border:1px solid #E6EAF1;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:#FFC83D}
+.card h3{font-size:16px;color:#0A1F4D;margin-bottom:6px}
+.card p{font-size:14px;color:#5A657E}
+.card .price{margin-top:12px;font-size:12px;font-weight:700;color:#0B2F6B;letter-spacing:.5px;text-transform:uppercase}
+.why{background:#0A1F4D;color:white;border-radius:20px;padding:28px;margin-top:10px}
+.why h2{color:white}
+.why-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;margin-top:20px}
+@media(max-width:700px){.why-grid{grid-template-columns:1fr 1fr}}
+.why-item{border-top:2px solid #FFC83D;padding-top:12px}
+.why-item b{color:#FFC83D;font-size:26px;display:block}
+.why-item span{font-size:13px;color:#DDE3F0}
+.steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+@media(max-width:700px){.steps{grid-template-columns:1fr}}
+.step{background:#EAF0FF;padding:20px;border-radius:16px;text-align:center}
+.step b{width:38px;height:38px;background:#0A1F4D;color:#FFC83D;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:16px}
+.step h3{font-size:15px}
+.step p{font-size:13.5px;color:#5A657E;margin-top:6px}
+.review-wrap{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.review-wrap{grid-template-columns:1fr}}
+.review{background:white;padding:22px;border-radius:16px;border-left:4px solid #FFC83D}
+.review p{font-size:14.5px}
+.review small{color:#D89E00;font-weight:700;letter-spacing:1px}
+.form-box{background:white;border-radius:20px;padding:28px;box-shadow:0 15px 40px rgba(0,0,0,.08);display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+@media(max-width:700px){.form-box{grid-template-columns:1fr}}
+.form-box h3{font-family:'Playfair Display',serif;font-size:24px;color:#0A1F4D;margin-bottom:10px}
+.form-box p{font-size:14px;color:#5A657E}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #DDE3F0;border-radius:12px;font-family:inherit;font-size:14px;margin-bottom:12px;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#0B2F6B}
+label{font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#0A1F4D;display:block;margin-bottom:6px}
+.submit{width:100%;background:#FFC83D;color:#0A1F4D;border:none;padding:15px;border-radius:100px;font-weight:800;font-size:15px;cursor:pointer}
+.note{font-size:12px;color:#8A94A8;text-align:center;margin-top:10px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
+.contact-card{background:white;padding:22px;border-radius:16px}
+footer{background:#0A1F4D;color:#AAB4CC;text-align:center;padding:28px 16px;font-size:13px;margin-top:30px}
+footer b{color:white;letter-spacing:1px}
+.sticky{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;padding:10px;gap:10px;box-shadow:0 -5px 20px rgba(0,0,0,.12);z-index:99}
+.sticky a{flex:1;text-align:center;padding:14px;border-radius:100px;text-decoration:none;font-weight:800;font-size:14px}
+.call{background:#0A1F4D;color:white}
+.wa{background:#FFC83D;color:#0A1F4D}
+.space{height:78px}
+</style>
+</head>
+<body>
+
+<div class="topbar">Est. 2019 &nbsp;|&nbsp; Thulani, Soweto &nbsp;|&nbsp; Open 24 Hours &nbsp;|&nbsp; 067 951 5726</div>
+
+<header>
+<img src="geyser.png" class="logo-img" alt="Geyser Plumbing Gents & Electrical Logo">
+<div class="brand">GEYSER PLUMBING<br><span>GENTS & ELECTRICAL</span></div>
+<div class="tagline">Trusted &nbsp;•&nbsp; Professional &nbsp;•&nbsp; Guaranteed</div>
+<div class="badges">
+<div class="badge"><b>Est. 2019</b> &nbsp;|&nbsp; 6+ Years Experience</div>
+<div class="badge"><b>★★★★★</b> &nbsp; Rated Service</div>
+<div class="badge">Open 24 Hours</div>
+</div>
+</header>
+
+<div class="hero">
+<h1>Plumbing & Electrical Done Right. First Time.</h1>
+<p>From geysers and burst pipes to full electrical work — Geyser Plumbing Gents & Electrical has been serving Soweto and surrounding areas since 2019. Fast response, clean workmanship, honest pricing and a guarantee on every job.</p>
+<div class="btns">
+<a class="btn btn-gold" href="#quote">Get A Free Quote</a>
+<a class="btn btn-navy" href="tel:+27679515726">Call 067 951 5726</a>
+</div>
+</div>
+
+<div class="section">
+<div class="label">Our Services</div>
+<h2>One Team For Plumbing & Electrical</h2>
+<p class="sub">No need to call two companies. We handle your full home — water and power — professionally and safely.</p>
+<div class="grid">
+<div class="card"><h3>Geyser Installations, Repairs & Services</h3><p>New geysers, replacements, elements, thermostats, leaks and no hot water problems.</p><div class="price">Most Popular Service</div></div>
+<div class="card"><h3>Household Wiring</h3><p>Safe, neat wiring for new builds, extensions, renovations and upgrades.</p><div class="price">Certified Work</div></div>
+<div class="card"><h3>Electrical Troubleshooting</h3><p>Fault finding for tripping power, faulty plugs, lights and DB boards.</p><div class="price">Fast Diagnosis</div></div>
+<div class="card"><h3>Electrical Installations</h3><p>Plug points, lights, DB boards, stoves, geysers and full installations.</p><div class="price">Safe & Guaranteed</div></div>
+<div class="card"><h3>Plumbing Installations & Repairs</h3><p>Burst pipes, leaks, blocked drains, toilets, taps, showers and full plumbing.</p><div class="price">Same-Day Service</div></div>
+<div class="card"><h3>24 Hour Emergency Call-Out</h3><p>Water flooding? No power? No hot water? We come to you — day or night.</p><div class="price">Open 24 Hours</div></div>
+</div>
+</div>
+
+<div class="section">
+<div class="why">
+<div class="label">Why Choose Us</div>
+<h2>Professional Work. Honest Prices.</h2>
+<p style="color:#DDE3F0;font-size:14.5px;max-width:650px;">We have built our name since 2019 on one thing: doing the job properly and treating your home with respect.</p>
+<div class="why-grid">
+<div class="why-item"><b>2019</b><span>Established — 6+ Years Serving</span></div>
+<div class="why-item"><b>24 / 7</b><span>Emergency Call-Outs, Day & Night</span></div>
+<div class="why-item"><b>100%</b><span>Workmanship Guaranteed</span></div>
+<div class="why-item"><b>Fair</b><span>Upfront Quote — No Hidden Costs</span></div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="label">How It Works</div>
+<h2>Get Help In 3 Simple Steps</h2>
+<div class="steps">
+<div class="step"><b>1</b><h3>Request A Quote</h3><p>Fill in the form below or WhatsApp us with your problem.</p></div>
+<div class="step"><b>2</b><h3>We Confirm & Arrive</h3><p>We give you an honest price and arrive on time.</p></div>
+<div class="step"><b>3</b><h3>We Fix & Guarantee</h3><p>Clean, professional job done — with a guarantee.</p></div>
+</div>
+</div>
+
+<div class="section">
+<div class="label">Client Feedback</div>
+<h2>Trusted By Homeowners In Soweto</h2>
+<div class="review-wrap">
+<div class="review"><p>“They fixed my geyser the same day. Very professional and clean work. Highly recommended.”</p><small>★★★★★ &nbsp; VERIFIED CLIENT — SOWETO</small></div>
+<div class="review"><p>“Called at night for a burst pipe. They arrived fast and fixed it properly. No mess left behind.”</p><small>★★★★★ &nbsp; VERIFIED CLIENT — THULANI</small></div>
+</div>
+</div>
+
+<div class="section" id="quote">
+<div class="label">Free Quote</div>
+<h2>Request Your Free Quote</h2>
+<p class="sub">Fill in this form and it will send straight to us on WhatsApp. We reply within minutes during working hours. No obligation.</p>
+<div class="form-box">
+<div>
+<h3>Need Help Fast?</h3>
+<p style="margin-bottom:16px;">Tell us what is wrong and we will give you an honest price before we start any work.</p>
+<p><b>What you get:</b></p>
+<p>Free, no-obligation quote<br>Fast response — same day<br>Professional, guaranteed work<br>Serving homes & businesses</p>
+<br>
+<p><b>Hours:</b> Open 24 Hours<br><b>Est.:</b> 2019<br><b>Based in:</b> Thulani, Soweto</p>
+</div>
+<form onsubmit="sendQuote(event)">
+<label>Your Name *</label>
+<input id="qName" type="text" placeholder="e.g. Thabo Mokoena" required>
+<label>Phone / WhatsApp *</label>
+<input id="qPhone" type="tel" placeholder="e.g. 071 123 4567" required>
+<label>What Do You Need? *</label>
+<select id="qService" required>
+<option value="">Select a service...</option>
+<option>Geyser Installation / Repair / Service</option>
+<option>Household Wiring</option>
+<option>Electrical Troubleshooting</option>
+<option>Electrical Installation</option>
+<option>Plumbing Installation / Repair</option>
+<option>Burst Pipe / Leak</option>
+<option>Blocked Drain / Toilet</option>
+<option>Emergency Call-Out</option>
+<option>Other</option>
+</select>
+<label>Your Area / Location *</label>
+<input id="qArea" type="text" placeholder="e.g. Thulani, Soweto" required>
+<label>Describe The Problem</label>
+<textarea id="qMsg" rows="3" placeholder="e.g. My geyser is leaking and there is no hot water..."></textarea>
+<button class="submit" type="submit">Send Quote Request on WhatsApp</button>
+<div class="note">This will open WhatsApp with your details already filled in.</div>
+</form>
+</div>
+</div>
+
+<div class="section">
+<div class="contact-grid">
+<div class="contact-card">
+<h3 style="font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;">Contact Us</h3>
+<p style="font-size:14.5px;color:#5A657E;"><b>Phone / WhatsApp:</b><br>067 951 5726</p>
+<p style="font-size:14.5px;color:#5A657E;"><b>Email:</b><br>voltric@gmail.com</p>
+<p style="font-size:14.5px;color:#5A657E;"><b>Hours:</b> Open 24 Hours — 7 Days</p>
+</div>
+<div class="contact-card">
+<h3 style="font-family:'Playfair Display',serif;font-size:20px;margin-bottom:10px;">Service Area</h3>
+<p style="font-size:14.5px;color:#5A657E;">Thulani, Soweto, 1865<br>Soweto & Surrounding Areas<br>Johannesburg South<br><br>Emergency call-outs available.</p>
+</div>
+</div>
+</div>
+
+<div class="space"></div>
+<div class="sticky">
+<a class="call" href="tel:+27679515726">CALL NOW</a>
+<a class="wa" href="#quote">GET QUOTE</a>
+</div>
+
+<footer>
+<b>GEYSER PLUMBING GENTS & ELECTRICAL</b><br>
+Est. 2019 — Thulani, Soweto | 067 951 5726 | voltric@gmail.com<br>
+© 2026 Geyser Plumbing Gents & Electrical. All Rights Reserved.
+</footer>
+
+<script>
+function sendQuote(e){
+e.preventDefault();
+var name=document.getElementById('qName').value;
+var phone=document.getElementById('qPhone').value;
+var service=document.getElementById('qService').value;
+var area=document.getElementById('qArea').value;
+var msg=document.getElementById('qMsg').value;
+var text="Hi Geyser Plumbing Gents & Electrical, I need a FREE QUOTE%0A%0AName: "+encodeURIComponent(name)+"%0APhone: "+encodeURIComponent(phone)+"%0AService Needed: "+encodeURIComponent(service)+"%0AArea: "+encodeURIComponent(area)+"%0ADetails: "+encodeURIComponent(msg);
+window.open("https://wa.me/27679515726?text="+text,"_blank");
+}
+</script>
+
+</body>
+  </html>
